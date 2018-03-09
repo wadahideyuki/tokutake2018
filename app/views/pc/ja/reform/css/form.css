@@ -1,0 +1,69 @@
+@CHARSET "UTF-8";
+
+div.error {
+
+	font-weight : bold;
+	color       : #FF0000;
+	margin      : 4px 0px 8px 12px;
+	padding     : 4px 0px;
+	text-align  : left;
+	height      : 14px;
+	clear       : both;
+}
+
+div.err input,
+div.err select,
+div.err textarea {
+
+	border           : 1px solid #F00 !important;
+	background-color : #FEE !important;
+	margin           : 1px 0px;
+	padding          : 1px;
+}
+
+div.err p {
+	
+	margin      : 4px 0 0 0;
+}
+
+div.err span.err_str {
+	color       : #F00;
+	line-height : 120%;
+	width       : 100%;
+}
+
+div.formConfirm {
+
+	margin      : 12px 0 0 12px;
+	color       : #666;
+	line-height : 120%;
+	clear       : both;
+}
+
+div.radio {
+
+	margin : 3px 0px;
+}
+
+div.radio input {
+
+	margin         : 3px 3px 6px 3px;
+	cursor         : pointer;
+	vertical-align : middle;
+}
+
+html:not(:target) div.radio label {
+
+	white-space : nowrap;
+}
+html:not([lang*=""]) div.radio label {
+
+	white-space  : nowrap;
+	margin-right : 1.5em;
+}
+
+/*IE6*/
+* html div.radio input {
+
+	white-space : normal;
+}

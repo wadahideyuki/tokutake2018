@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+  /**
+   * プリセット CSS
+   */
+
+/**
+//=========================================//
+//-------------ベーシック設定--------------//
+//=========================================//
+*/
+
+/* safari only ¥*/
+html[xmlns*=""] body:last-child * {
+
+	font-family       : "メイリオ", Meiryo,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","Osaka",Verdana,Arial, Helvetica, sans-serif;
+}
+
+/*デフォルトリセット*/
+div,dl,dt,dd,ul,ol,li,
+h1,h2,h3,h4,h5,h6,
+form,fieldset,p,
+input,textarea,blockquote,table,th,tr,td,ul,li {
+
+	line-height       : 120%;
+	font-size         : 84%;
+	font-family       : "ＭＳ ゴシック";
+	font-size         : 1.0em;
+	margin            : 0;
+	padding           : 0;
+}
+/*デフォルトリセット*/
+img {
+
+	border            : 0;
+	margin            : 0;
+	padding           : 0;
+	vertical-align    : bottom;
+}
+
+strong {
+
+	font-weight : bold !important;
+}
+
+/*リンク色*/
+a {
+
+	color             : #00F;
+	text-decoration   : none;
+}
+
+/*訪問済みリンク色*/
+/*
+a:visited {
+
+	color             : #57002c;
+	text-decoration   : none;
+}
+*/
+
+/*オンマウスリンク色*/
+a:hover {
+    color           : #F00;
+    text-decoration : underline
+}
+
+/**
+//=========================================//
+//--------------フロート解除---------------//
+//=========================================//
+*/
+
+.clearfix:after {
+
+		content    : ".";  /* 新しい要素を作る */
+    display    : block;  /* ブロックレベル要素に */
+    clear      : both;
+    height     : 0;
+    visibility : hidden;
+}
+
+.clearfix {
+
+    min-height : 1px;
+}
+/*IE6*/
+* html .clearfix {
+
+    height     : 1px;
+    /*¥*//*/
+    height     : auto;
+    overflow   : hidden;
+    /**/
+}
+
+/**
+//=========================================//
+//--------------フォームフィールド---------//
+//=========================================//
+*/
+
+textarea.monospace {
+
+	font-family : monospace;
+	line-height : 100%;
+}
+
+/**
+//=========================================//
+//-----------------------------------------//
+//=========================================//
+*/

@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+  /**
+   *
+   * 管理ページ 印刷用CSS
+   *
+   */
+
+/**
+//=========================================//
+//-------------ベーシック設定--------------//
+//=========================================//
+*/
+
+body {
+
+	background      : #FFFFFF;
+	font-size       : 10pt;
+}
+
+/*リンク色*/
+a,
+a:visited,
+a:hover {
+
+	color           : #000;
+	text-decoration : none;
+}
+
+div.editForm th.bottomHead,
+.no_print,
+div.btn,
+#sidebarContainer,
+#pageHeader,
+div.right_btn,
+div.right_link,
+#footer,
+#helpDescription,
+div#tabs ul,
+div#subTabs,
+div.left_btn {
+
+	display         : none !important;
+}
+
+#subTabs h3, #tabs h3 {
+
+	color: #000;
+	float: left;
+	font-family: Verdana;
+	font-size: 14pt;
+	font-weight: bold;
+	letter-spacing: 0.2em;
+	line-height: 140%;
+	margin: 12px 0 0;
+	padding: 0 2px 0 0;
+	text-align: left;
+	text-shadow: none;
+}
+
+#container {
+
+	background      : #FFFFFF;
+	color           : #362928;
+	margin          : 0 auto;
+	text-align      : justify;
+	width           : 100%;
+	height          : 100%;
+}
+
+/*ヘッダー*/
+#content {
+
+	margin-left     : 0px;
+	margin-right    : 0px;
+	min-width       : 0px;
+	width           : 100%;
+}
+
+div.editForm {
+
+	overflow-x      : visible;
+	overflow-y      : visible;
+}
+
+div.editForm table {
+
+	background-color: #fff;
+	border: 1px solid #000;
+	border-collapse : collapse;
+	border-radius: 4px 4px 4px 4px;
+	clear: both;
+	margin: 8px 0;
+}
+
+div.editForm table tr.topHead th,
+div.editForm table th.topHead,
+div.editForm table tr.topHead th a,
+div.editForm table th.topHead a {
+
+	color      : #000;
+	background : none;
+	background-color: #E9E9E9 !important;
+	text-shadow : none;
+	font-weight : bold;
+}
+
+
+div.editForm table th,
+div.editForm table tr,
+div.editForm table td {
+
+	background-color: #fff;
+	border: 1px solid #000;
+}
+
+
+/**
+//=========================================//
+//-----------------------------------------//
+//=========================================//
+*/

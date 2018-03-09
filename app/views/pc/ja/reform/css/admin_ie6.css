@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+  /**
+   *
+   * 管理ページ・ユーザーページ共通 IE6用CSS
+   */
+
+/**
+//=========================================//
+//-------------ベーシック設定--------------//
+//=========================================//
+*/
+
+body {
+
+    background      : #FFF url(../images/sys/sidebar_bg.png) repeat-y scroll left;
+}
+
+/**
+//=========================================//
+//-------------共通レイアウト--------------//
+//=========================================//
+*/
+
+/*サイドバーコンテナ*/
+#sidebarContainer {
+
+    position        : absolute;
+    top             : 48px;
+    left            : 0px;
+
+}
+
+/*メインコンテナ*/
+#contentContainer {
+
+    padding         : 0px 0px 0px 182px;
+    width           : auto;
+    margin-left     : 0px;
+    position        : absolute;
+    top             : 48px;
+    left            : 0px;
+}
+
+div.right_btn {
+
+    text-align      : right;
+    float           : right;
+    margin          : 12px 0 8px;
+    padding         : 0;
+    width           : 460px;
+}
+
+/*コンテンツエリア*/
+#content {
+
+    margin-left     : 0px;
+		width           : 97%;
+}
+
+#footer {
+
+    display         : none;
+}
+
+#container {
+
+  height : auto;
+}
+
+
+#navcontainer li {
+
+    margin-top      : 0px;
+    margin-bottom   : -12px;
+}
+
+#navcontainer h2 {
+
+    margin          : 4px 0px 10px 8px;
+    text-decoration : underline;
+}
+
+
+div.editForm input.searchBtn,
+div.err input.searchBtn {
+
+    background      : url(../images/search.gif) no-repeat left;
+}
+
+div#ie6 {
+
+	line-height : 120%;
+	border  : solid 1px #F00;
+	padding : 4px 2px 2px 4px;
+	margin  : 4px;
+	width   : 150px;
+}
+
+div#ie6 strong {
+
+	color   : #F00;
+	padding : 0 0 0 2px;
+}
+
+div#ie6 a {
+
+	color   : #00F;
+	text-decoration : underline;
+	display : inline;
+	margin : 0;
+	padding : 0;
+}
+
+

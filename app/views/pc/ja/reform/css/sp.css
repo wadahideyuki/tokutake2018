@@ -1,0 +1,1617 @@
+@CHARSET "UTF-8";
+
+/*　タブレットなど 481px～960px（960px以下） まで
+========================================================================================================================================================================*/
+
+@media screen and (max-width: 960px) {
+
+	/* 全体幅 */
+	header, nav,
+	div.container,
+	footer {
+
+		/*min-width    : 481px;*/ /* 画面を狭めすぎるとフォントが隠れる */
+		min-width    : 768px;
+		max-width    : 960px;
+	}
+
+	header {
+		margin : 0 0 0 8px ;
+	}
+
+	header a.logo {
+		margin : 0 24px 0 0;
+	}
+
+	header ul.contact {
+		/*float  : left;*/
+		margin : 0 0 4px 0
+	}
+
+	div.header_wrapper {
+		background       : none;
+		background-color : #FFF;
+	}
+
+	nav {
+		width  : 100%;
+	}
+
+	nav ul {
+		padding : 0;
+		background-color: #54bfc6;
+		max-height : 40px;
+	}
+
+	nav ul li {
+		padding : 0;
+		margin  : 1px 0 0 0;
+		height : inherit;
+	}
+
+	nav ul li a {
+		width : 100%;
+		position: relative;
+	}
+
+	nav ul li img {
+
+		width  : 100%;
+		margin : 0 0 0 0;
+		/*
+		vertical-align: -moz-middle-with-baseline;
+		vertical-align: -moz-middle-with-baseline;
+		*/
+		position: relative;
+	}
+
+	nav ul li.aboutus {
+		width : 18.2%;
+	}
+	nav ul li.product {
+		width : 10%;
+	}
+	nav ul li.voice {
+		width : 11.2%;
+	}
+	nav ul li.builder {
+		width : 11%;
+	}
+	nav ul li.process {
+		width : 10.9%;
+	}
+	nav ul li.blog {
+		width : 8.6%;
+	}
+	nav ul li.afterservice {
+		width : 12%;
+	}
+	nav ul li.faq {
+		width : 9.1%;
+	}
+	nav ul li.maintenance_blog {
+		width : 9%;
+	}
+
+	div.mainContents {
+
+		padding : 20px 4px 0 4px;
+	}
+
+	div.mainContents,
+	div#top {
+		margin: 0;
+	}
+
+	div.top_slider ol.flex-control-nav,
+	div.top_slider ul.flex-direction-nav {
+		display : none;
+	}
+
+	#contents_grid {
+		margin : 0 0 0 0px;
+	}
+
+	#contents_grid div.box {
+		width : 31%;
+	}
+
+	#contents_grid div.box {
+		margin: 0 3% 3% 0;
+	}
+	#contents_grid div.right {
+		margin: 0 0 3% 0;
+	}
+
+	#contents_grid div.box_menu ul {
+		font-size: 100%;
+	}
+	#contents_grid div.box_menu ul li a {
+		line-height : 100%;
+	}
+
+	footer {
+		min-width : 100%;
+	}
+
+	footer div.address {
+		padding   : 0 0 0 0;
+		margin    : 0 0 12px 12px;
+		width     : auto;
+	}
+
+	footer div.footer_menu {
+		padding : 0 0 0 12px;
+	}
+
+	footer ul.col {
+		margin : 12px 2% 0 0px;
+		width  : auto;
+		min-height : 200px;
+	}
+
+	footer div.contact {
+
+		width    : auto;
+		float    : left;
+		position : relative;
+		margin   : 8px 0 0 8px;
+	}
+
+	footer div.contact a.facebook {
+		float  : left;
+		position: inherit;
+		margin   : 0 16px 0 0;
+	}
+
+	footer div.contact a.inquiry,
+	footer div.contact img.phone {
+
+		float  : left;
+		display: block;
+		margin   : 0 16px 0 0;
+	}
+
+	footer div.contact a.inquiry img {
+		width : 100%;
+	}
+
+	footer div.catch_phrase span {
+		white-space : nowrap;
+	}
+
+	/*施工事例*/
+	ul.product_list li.right {
+		margin: 0 60px 0 0;
+	}
+	ul.product_category_list li.right {
+		margin: 0 32px 32px 0;
+	}
+	ul.product_by_scene li.right {
+		margin: 0 32px 32px 0;
+	}
+	div.features {
+		display    : none;
+		visibility : hidden;
+	}
+
+	/* 見学会とイベント情報 */
+	div#event ul.contact {
+
+		width   : 100%;
+		margin  : 2px 0 0;
+		padding : 0;
+	}
+
+	div#event_calendar ul.month {
+		height : 28px;
+	}
+
+	div#event_calendar ul.month li {
+
+		font-size : 93%;
+		width  : 52px;
+		height : 28px;
+	}
+
+	div#event_calendar div.summary {
+		display: table;
+		float: none;
+		width: 100%;
+	}
+
+	div#event_calendar div.summary div {
+		margin: 12px auto;
+		width: 250px;
+		padding: 0;
+	}
+	div#event_calendar_legend dl {
+		float   : none;
+		margin  : 0;
+		width   : 100%;
+		padding : 0 0 0 24px;
+	}
+
+	div#afterservice div#numerical_targets img {
+		display: block;
+		margin: 48px auto 0;
+	}
+
+	/* MUURAN
+	--------------------------*/
+
+	div#muuran div.img_top {
+		width   : 45%;
+	}
+
+	div#muuran div.img_top img {
+		width   : 100%;
+	}
+
+	/* スタッフ紹介（代表）
+	--------------------------*/
+
+	div.president {
+		display    : none;
+		visibility : hidden;
+	}
+
+	div.president_tablet {
+		display    : block;
+		visibility : visible;
+		margin   : 0 0 24px 0 ;
+		padding  : 0;
+		position : relative;
+		width    : 630px;
+		height   : 420px;
+	}
+
+	div.president_tablet img.photo {
+		position : absolute;
+		top      : 24px;
+		height   : 242px;
+		z-index  : 1000;
+	}
+
+	div.president_tablet img.frame {
+		position : absolute;
+		z-index  : 1001;
+	}
+
+	div.president_tablet p.position {
+		position    : absolute;
+		z-index     : 1002;
+		top         : 272px;
+		margin      : 0 0 0 18px;
+		font-size   : 108%!important;
+	}
+
+	div.president_tablet p.name {
+		position    : absolute;
+		z-index     : 1002;
+		top         : 286px;
+		margin      : 0 0 0 18px;
+		font-size   : 182%!important;
+		font-weight : bold;
+	}
+
+	div.president_tablet p.speciality {
+		position    : absolute;
+		z-index     : 1002;
+		top         : 330px;
+		margin      : 0 0 0 18px;
+		line-height : 128%!important;
+		font-size   : 108%!important;
+	}
+
+	div.president_tablet p.comment {
+		position    : absolute;
+		z-index     : 1002;
+		top         : 44px;
+		margin      : 0 60px 0 360px;
+		line-height : 160%!important;
+		font-size   : 108%!important;
+		height      : 350px;
+		overflow    : hidden;
+	}
+
+	.btn_housing{
+		margin                : 10px 0 120px 0;
+	}
+
+
+}
+
+
+
+
+/* スマホ・小型タブレット 480pxまで（480px以下）
+========================================================================================================================================================================*/
+
+@media screen and (max-width: 480px) {
+
+	.sp {
+		display    : block;
+		visibility : visible;
+	}
+
+	.pc {
+		display    : none;
+		visibility : hidden;
+	}
+
+	/* 全体幅 */
+	header,
+	div.container,
+	footer {
+
+		min-width    : 320px;
+		max-width    : 480px;
+	}
+
+
+	div.header_wrapper {
+		position      : fixed;
+		z-index       : 1000;
+		border-bottom : 2px solid #54BFC6;
+	}
+
+	header {
+		background-color : #FFF;
+		margin           : 0 0 0 6px;
+		min-width        : 320px; /* iPhoneの幅基準 */
+		min-height       : 72px;
+	}
+
+	header div.catch_phrase {
+		display    : block;
+		visibility : visible;
+		margin     : 0;
+		padding    : 0;
+		font-size  : 88%;
+	}
+
+	nav {
+
+		min-width    : 0;
+	}
+
+	footer div.catch_phrase span.sp_hide,
+	header div.catch_phrase span.sp_hide {
+		visibility : hidden;
+		display    : none;
+	}
+
+	header a.logo {
+		display: block;
+		float: left;
+		margin: 0 0 0 0;
+		width : 72%;
+		width    : -webkit-calc(100% - 88px);
+		width    : -moz-calc(100% - 88px);
+		width    : calc(100% - 88px);
+	}
+
+	header a.logo img {
+		width      : 100%;
+		max-height : 40px;
+		max-width  : 265px;
+	}
+
+	div.header_wrapper {
+		/*height : 72px;*/
+	}
+
+	div.mainContents {
+
+		padding : 0 4px 0 4px;
+	}
+
+	div.mainContents,
+	div#top {
+		margin: 0;
+	}
+
+	div.container {
+		padding-top: 72px;
+	}
+
+	article {
+
+		float : none;
+		width : 100%;
+	}
+
+/* トップページ用
+---------------------------------------------------*/
+
+div#top {
+
+	margin : 0px 0 8px 0;
+}
+
+/*入替り画像*/
+div#top aside {
+
+		margin : 0 0 0 0;
+		width  : 100%;
+		float  : none;
+
+		border-radius         : 4px;
+		-moz-border-radius    : 4px;
+		-webkit-border-radius : 4px;
+}
+
+div.top_caption {
+	font-size : 14px;
+}
+
+div#top section {
+	margin-left : 0;
+	float       : none;
+}
+
+/*ヘッドライン*/
+div#top article {
+	float  : none;
+	width  : 100%;
+	margin : 16px 0 0 0;
+}
+
+	div.headlines {
+		margin: 0 0 12px 0;
+	}
+
+	div.headlines div.hd {
+		width    : 80%;
+		width    : -webkit-calc(100% - 78px);
+		width    : -moz-calc(100% - 78px);
+		width    : calc(100% - 78px);
+	}
+
+	div#news {
+
+		margin: 0 0 12px 0;
+	}
+
+	div#mailmagazine {
+
+		margin: 0 0 0 0;
+	}
+
+
+/* サブページ用
+---------------------------------------------------*/
+
+	div.mainContents h1 {
+		font-size: 197%;
+	}
+
+	aside {
+
+		width  : 100%;
+		margin : 12px 0 0 0;
+	}
+
+	div.entryform dl {
+		border: none;
+	}
+	div.entryform dt {
+
+		float : none;
+		width : 100%;
+		padding : 6px 0 0 0;
+	}
+	div.entryform dd {
+		margin  : 0;
+		padding : 8px 0;
+		border: none;
+	}
+
+
+
+/* ヘッダー
+---------------------------------------------------*/
+
+	header {
+		min-height : 60px;
+	}
+
+	header ul.contact,
+	nav {
+		display    : none;
+		visibility : hidden;
+	}
+
+	header a.logo {
+		display : block;
+		float   : left;
+		margin  : 0;
+		padding : 0;
+		width   : calc(100% - 88px);
+	}
+
+	div.nav_btn {
+		margin     : 0 4px 0 0;
+		display    : block;
+		visibility : visible;
+		position   : absolute;
+		right      : 2px;
+		top        : 2px;
+	}
+
+	header div.nav_btn img#menuBtn {
+
+		width : 48px;
+
+		border-radius         : 8px;
+		-moz-border-radius    : 8px;
+		-webkit-border-radius : 8px;
+
+		box-shadow         : 0 0 2px 1px rgba(128,128,128,.5);
+		-moz-box-shadow    : 0 0 2px 1px rgba(128,128,128,.5);
+		-webkit-box-shadow : 0 0 2px 1px rgba(128,128,128,.5);
+	}
+
+	nav {
+		background-color : rgba(0, 0, 0, 0.75);
+		display          : none;
+		right            : 0px;
+		opacity          : 0;
+		position         : absolute;
+		top              : 0;
+		z-index          : 1001;
+		height           : auto;
+		margin           : 0;
+		right            : 0;
+		opacity          : 1;
+		top              : 60px;
+		width            : 100%;
+	}
+
+	nav ul {
+		margin           : 0 auto;
+		padding          : 0;
+		max-height       : none;
+		background-color : transparent;
+	}
+
+	nav ul li {
+
+		display    : block;
+		clear      : both;
+		margin     : 0;
+		padding    : 0;
+		text-align : left;
+		border-bottom : 2px solid #000;
+		border-top    : 1px solid #666;
+		width : 100%!important;
+	}
+
+	nav ul li img {
+
+		display    : none;
+		visibility : hidden;
+	}
+
+	nav ul li span {
+		display    : block;
+		visibility : visible;
+	}
+
+	nav ul li a {
+		display : block;
+		clear   : both;
+		width   : 100%;
+		margin  : 0;
+		padding : 2px 0 2px 12px;
+		text-align   : left;
+		color        : #FFF;
+		text-shadow  : none;
+	}
+
+	nav ul li a:hover {
+		background-color : rgba(128, 128, 128, 0.5);
+	}
+
+	nav ul li a:link {
+		color : #FFF;
+	}
+
+	nav ul li a:visited {
+		color : #FFF;
+	}
+
+	nav.open {
+		transition : opacity 0.5s ease-out 0s;
+		display    : block;
+		visibility : visible;
+	}
+
+
+	div#event_calendar div.month_navi {
+		font-size : 123.1%;
+	}
+
+div#event_calendar div.prev_month {
+
+	background : url("../img/arrow_prev.png") no-repeat left 4px;
+}
+div#event_calendar div.next_month {
+
+	background  : url("../img/arrow_next.png") no-repeat right 4px;
+}
+
+
+/* フッター
+---------------------------------------------------*/
+
+	ul.col {
+		display    : none;
+		visibility : hidden;
+	}
+
+	footer ul.return_link {
+		padding : 0;
+	}
+	footer ul.return_link li {
+		padding : 0;
+		margin: 0 0 0 8px;
+	}
+
+	#contents_grid {
+		margin: 0 0 0 0;
+	}
+
+	#contents_grid div.box {
+		padding : 0;
+		margin: 6px 2px;
+		border-radius: 8px;
+		width: 98%;
+	}
+
+	footer div.address {
+		float  : left;
+		width  : 96%;
+		margin : 0 0 0 6px;
+	}
+
+	footer div.phone_fax_address {
+		float       : left;
+		font-size   : 14px;
+		line-height : 110%;
+		margin      : 8px 6px 0 6px;
+	}
+	footer img.logo {
+		float : left;
+		width : 96%;
+	}
+	footer div.contact a.inquiry,
+	footer div.contact img.phone {
+
+		width  : 226px;
+	}
+	div.view_select {
+
+		display   : block;
+		font-size : 100%;
+		border    : 2px solid #999;
+		margin    : 24px auto 0 auto;
+		padding   : 4px;
+		width     : 70%;
+		text-align: center;
+	}
+
+	/*施工事例*/
+
+	ul.product_list li {
+		width : 100%;
+		margin: 0 0 16px 0;
+		min-height: 0;
+	}
+	ul.product_list li p {
+		width : 100%;
+	}
+	ul.product_list li a img {
+		min-height: 0;
+		max-width: none;
+		max-height: none;
+		width : 100%;
+	}
+
+	div#voice article,
+	div#event article,
+	div#product article {
+		width : 100%;
+		min-height: 0;
+	}
+
+	div#voice aside,
+	div#event aside,
+	div#product aside {
+		width : 100%;
+		margin-left: 0;
+	}
+
+	ul.product_by_scene li,
+	ul.product_by_scene img,
+	ul.product_category_list li,
+	ul.product_category_list img {
+		width : 100%;
+	}
+	div.btn_event {
+		width : 100%;
+		font-size : 85%;
+		margin: 0;
+	}
+	div.btn_event a {
+		height: 36px;
+	}
+
+	#slider img {
+		margin: 0 auto;
+		max-height: 220px!important;
+		width: auto;
+}
+
+	/* 見学会とイベント */
+	div#event div.detail_date {
+		font-size  : 240%;
+		font-weight: bold;
+		line-height: 100%;
+		margin: 8px 0 0;
+	}
+
+	div#event div.detail_date img {
+		width : 24px!important;
+	}
+
+	div#event div.opening_time {
+		font-size   : 123%;
+		font-weight : bold;
+		margin      : 0 0 8px;
+	}
+	div#event ul.contact {
+		float: left;
+		margin  : 8px 0 0 0;
+		padding : 0 0 0 0;
+	}
+	div.balloon_event_form {
+		margin : 12px auto 8px;
+		width  : 280px;
+	}
+
+/* イベント参加予約フォーム
+----------------------------- */
+
+	div.entryform table {
+		margin    : 0 auto;
+		width     : 94%;
+		font-size : 100%;
+	}
+
+	div.entryform table th {
+		padding          : 4px 0 4px 4px;
+		width            : 32%;
+	}
+
+	div.entryform table th img {
+
+		float : right;
+		margin: 0 4px 0 0;
+	}
+
+	div.entryform table td {
+		background-color : #FFF;
+		padding          : 4px 0 4px 4px;
+	}
+
+	div.entryform table td input[type=text],
+	div.entryform table td textarea {
+		width  : 96%;
+		padding: 2px;
+	}
+
+	div.entryform table td input[type=text] {
+		height : 20px;
+	}
+
+	div.entryform div.btn input {
+		height   : 60px;
+		margin   : 12px auto;
+		width    : 280px;
+	}
+
+	div.entryform .w256 {
+		width: 160px !important;
+	}
+
+	div.entryform .w192 {
+		width: 128px !important;
+	}
+
+	div.entryform input[type=text] {
+		margin : 4px 0 0 0;
+	}
+
+	div.error {
+		font-size : 100%;
+		height    : none;
+		margin    : 4px 0 4px 0;
+		padding   : 0;
+		text-align: left;
+	}
+
+	div#event div.reserve_required {
+		border-radius         : 40px;
+		-moz-border-radius    : 40px;
+		-webkit-border-radius : 40px;
+		width  : 80px;
+		height : 80px;
+	}
+	div#event div.reserve_required > * {
+		font-size: 123%;
+	}
+
+	div#event ul.event_list li {
+		float      : none;
+		list-style : none;
+		margin     : 0 0 24px 0;
+		min-height : 200px;
+		/*width      : 100%;*/
+		border-bottom : 2px solid #CCC;
+
+	}
+
+	ul.event_list li p.title {
+		font-size : 123%;
+		margin    : 0;
+		width     : 80%;
+		line-height : 130%!important;
+	}
+
+	/* お客様の声（一覧） */
+	ul.voice_list li {
+		margin: 0 0 24px 0;
+	}
+
+	ul.voice_list li div.description {
+		font-size: 138%;
+	}
+
+	ul.voice_list li div.voice_summary {
+		float   : none;
+		padding : 8px;
+		width   : 100%;
+	}
+
+	ul.voice_list li img {
+
+	border-bottom-right-radius         : 8px;
+	-moz-border-bottom-right-radius    : 8px;
+	-webkit-border-bottom-right-radius : 8px;
+	-o-border-bottom-right-radius      : 8px;
+
+	border-bottom-left-radius         : 8px;
+	-moz-border-bottom-left-radius    : 8px;
+	-webkit-border-bottom-left-radius : 8px;
+	-o-border-bottom-left-radius      : 8px;
+
+	border-top-right-radius         : 0;
+	-moz-border-top-right-radius    : 0;
+	-webkit-border-top-right-radius : 0;
+	-o-border-top-right-radius      : 0;
+
+	border-top-left-radius         : 0;
+	-moz-border-top-left-radius    : 0;
+	-webkit-border-top-left-radius : 0;
+	-o-border-top-left-radius      : 0;
+
+		display: block;
+		margin: 0;
+		padding: 0;
+		height : auto;
+		width: 100%;
+	}
+
+	/* お客様の声（詳細） */
+	div#voice  {
+		margin : 8px 0 0 0;
+	}
+
+	div#voice div.descriptions {
+		font-size: 138%;
+		margin : 0 0 8px 0;
+	}
+
+	div#info div.info_img img,
+	div#voice div.voice_img img {
+		width  : 100%;
+	}
+
+	/* イベントカレンダー */
+	div#event_calendar_legend dl {
+		float   : none;
+		margin  : 0;
+		padding : 0 0 0 12px;
+	}
+
+	div#event_calendar_legend dt {
+		height      : 42px;
+	}
+	div#event_calendar_legend dd {
+		height      : 42px;
+		margin      : 0 12px 1px 0;
+		padding     : 0 0 0 146px;
+		line-height : 100%;
+		width       : calc(100% - 162px);;
+	}
+
+	div#event_calendar ul.month {
+		height : auto;
+	}
+
+	div#event_calendar ul.month li {
+
+		font-size : 93%;
+		width  : 60px;
+		margin : 0 6px 0 0;
+	}
+
+
+	div#event_calendar table.month_list th,
+	div#event_calendar table.month_block th,
+	div#event_calendar table.year th,
+	div#event_calendar table.month th,
+	div#event_calendar table.date th {
+		font-size: 100%;
+	}
+
+	div#event_calendar table.month_block td.date,
+	div#event_calendar table.month td.date {
+		font-size: 100%;
+	}
+
+	div#event_calendar table.date td a.strong {
+		font-size: 108%;
+	}
+
+	div#event_calendar_legend dd {
+		padding: 0 0 0 96px;
+		width: calc(100% - 108px);
+	}
+
+	div#event_calendar table.date td.icon {
+		width: 84px !important;
+	}
+
+	div#event_calendar div.event_type_icon {
+
+		font-size      : 93%;
+		width          : 80px;
+		height         : 22px;
+		border-radius         : 6px;
+		-moz-border-radius    : 6px;
+		-webkit-border-radius : 6px;
+		-o-border-radius      : 6px;
+		margin     : 0 0 0 0;
+	}
+
+div#event_calendar table.month_list td.day {
+	font-size: 100%;
+	width       : 22%;
+}
+	/* メルマガ */
+	div#mailmag div.new_construction,
+	div#mailmag div.reform {
+
+		width: 100%;
+		min-height : 100px;
+	}
+
+	div#mailmag div.reform {
+		margin : 24px 0 24px 0;
+	}
+
+	div#mailmag div.balloon_mm_form_new,
+	div#mailmag div.balloon_mm_form_reform {
+		padding: 12px 0 4px;
+		width : 100%;
+		font-size: 77%;
+	}
+
+	div#mailmag div.balloon_mm_form_new,
+	div#mailmag div.balloon_mm_form_reform {
+		margin : 12px 0 0 0;
+	}
+
+	div#mailmag div.balloon_mm_form_new span,
+	div#mailmag div.balloon_mm_form_reform span {
+		font-size: 100%;
+	}
+
+	div.btn_mm {
+		float  : none;
+		margin : 8px auto;
+		width  : 80%;
+	}
+
+		/* リンク集
+	--------------------------*/
+
+	div#link table {
+		margin: 12px 0 20px 0;
+	}
+
+	div#link table th {
+		width   : 30%;
+		padding : 0 0 12px 0;
+		vertical-align: top;
+	}
+
+	div#link table th img {
+		width   : 100%;
+	}
+
+
+	div#link table td {
+		width   : 50%;
+		padding : 0 0 12px 12px
+	}
+
+	div#link table td div {
+		font-size : 138%;
+		line-height: 120%;
+		margin: 0 0 4px 0;
+	}
+
+	div#link a img:hover{
+		opacity : .8;
+	}
+
+	div#link table td p {
+		margin : 0 0 0 0;
+		line-height : 140%;
+	}
+
+	ul.link {
+		list-style : none;
+		margin : 0;
+		padding: 0;
+	}
+
+	ul.link li {
+		float  : left;
+		width  : 46%;
+		height : auto;
+		margin : 0 4% 24px 0;
+	}
+
+	ul.link li img {
+		border : 1px solid #333;
+		margin: 0 0 2px 0;
+		width : 100%;
+	}
+
+	ul.link li a p {
+		font-size : 138%;
+		margin    : 0;
+		width   :100%;
+	}
+
+	ul.link li a p span {
+		font-size : 70%;
+		margin    : 0;
+	}
+
+	ul.link li p {
+		font-size : 116%;
+		margin    : 4px 0 0 0;
+		width     : 100%;
+	}
+
+
+		/* 家ができるまで
+	--------------------------*/
+
+	div#process div.summary {
+		float  : none;
+		margin : 4px 0 12px 0;
+		width  : 100%;
+	}
+
+
+	div#process div.images img {
+		margin: 0 0 12px 0;
+				width  : 100%;
+
+	}
+
+	div#process div.concepts h5 span {
+		display: inline;
+	}
+
+	div#process div.concepts {
+		margin: 0;
+	}
+
+	div#process div.concept {
+		float  : none;
+		margin : 0 0 0 0;
+		width  : 100%;
+	}
+
+	div#process div.const_diary {
+		margin: 8px 0 32px 0;
+	}
+
+	div#process div.const_diary a {
+		display: block;
+		float: none;
+		margin: 0 auto;
+	}
+	div#process div.const_diary p {
+		padding : 24px 0 0 0;
+	}
+
+
+	/* 一生おつきあい
+	--------------------------*/
+
+	div#afterservice div#warranty img,
+	div#afterservice div#maintenance img {
+		display : block;
+		float   : none;
+		margin  : 8px auto 0;
+		width   : 100%;
+	}
+
+	div#afterservice p {
+		width: 100%;
+	}
+
+	div#afterservice div#renovation p {
+		width: 100%;
+	}
+
+	div#afterservice div#renovation p.left span {
+		display : inline;
+	}
+
+	div#afterservice div#casbee p {
+		width: 100%;
+	}
+
+	div#afterservice div#casbee img {
+		margin : 0 0 12px 0;
+		width  : 100%;
+	}
+
+	div#afterservice div#casbee img.casbee_more_detail {
+		margin : 8px 0 12px 0;
+		width  : 100%;
+	}
+
+	div#afterservice div#casbee {
+		margin: 40px 0 24px;
+	}
+
+	div#afterservice div#ecoreno img {
+		width: 100%;
+	}
+
+	div#afterservice div#numerical_targets img {
+		width: 100%;
+	}
+
+	div#afterservice ul.casbee,
+	div#afterservice div.casbee_description {
+		width : 100%;
+	}
+
+
+
+
+
+
+	/* MUURAN
+	--------------------------*/
+
+	div#muuran ol.index {
+		font-size: 123.1%;
+		padding: 0 0 0 2em;
+	}
+
+	div#muuran div.introduce h3 {
+		font-size : 123.1%;
+		width : 136px;
+	}
+
+	div#muuran div.introduce p {
+		margin: 4px 0 0 140px;
+	}
+
+	div#muuran div.img_top {
+		margin  : 0 0 16px 4px;
+		width   : 94%;
+	}
+
+	div#muuran div.img_top img {
+		width   : 100%;
+	}
+
+
+	/* PRIVACY (プライバシーポリシー)
+	--------------------------------------------------------------- */
+
+	div.mainContents h1.privacy {
+		width     : 100%;
+	}
+
+	div#privacy {
+		width     : 100%;
+	}
+
+	/* FAQ
+	--------------------------*/
+	div.btn_2p {
+		display : inline-block;
+		float : none;
+		width  : 100%;
+		margin : 12px 1% 16px 1%;
+	}
+
+	/* スタッフ紹介（代表）スマホ
+	--------------------------*/
+
+	div.president_tablet {
+		display    : none;
+		visibility : hidden;
+	}
+
+	div.president_sp {
+		display    : block;
+		visibility : visible;
+		list-style : none;
+		margin   : 0 auto 24px auto;
+		padding  : 0;
+		position : relative;
+		width    : 300px;
+		height   : 725px;
+	}
+
+	div.president_sp img.photo {
+		position : absolute;
+		top      : 146px;
+		width    : 300px;
+	}
+
+	div.president_sp img.frame {
+		position : absolute;
+	}
+
+	div.president_sp p.position {
+		position : absolute;
+		top      : 0px;
+		margin      : 16px 0 0 18px;
+		font-size   : 108%!important;
+	}
+
+	div.president_sp p.name {
+		position    : absolute;
+		top         : 6px;
+		padding     : 0 18px;
+		font-size   : 182%!important;
+		font-weight : bold;
+	}
+
+	div.president_sp p.speciality {
+		position    : absolute;
+		top         : 58px;
+		padding     : 0 18px;
+		line-height : 128%!important;
+		font-size   : 108%!important;
+	}
+
+	div.president_sp p.comment {
+		position    : absolute;
+		top         : 374px;
+		margin      : 0 36px 0 48px;
+		padding     : 0 6px 0 0;
+		line-height : 160%!important;
+		font-size   : 108%!important;
+		height      : 566px;
+		overflow    : hidden;
+	}
+
+	/* スタッフ
+	--------------------------*/
+
+	div#staff ul.staff {
+		width : 300px;
+		margin: 0 auto 24px auto;
+	}
+
+	div#staff ul li {
+		float : none;
+		margin: 0 auto 24px auto;
+	}
+
+	ul.staff li.sp_staff p.comment {
+		position    : absolute;
+		top         : 374px;
+		margin      : 0 20px 0 48px;
+		padding     : 0 6px 0 0;
+		line-height : 160%!important;
+		font-size   : 108%!important;
+		height      : 164px;
+		overflow-y  : scroll;
+	}
+
+	ul.staff li.staff_sp {
+
+		display    : block;
+		visibility : visible;
+	}
+
+	/* はじめまして、徳武です
+	--------------------------*/
+
+	div#aboutus div#company_profile {
+		margin      : 50px 0 0 0;
+		width       : 100% ;
+		float       : none;
+	}
+
+	div#aboutus div#access {
+		margin      : 50px 0 0 0;
+		width       : 100% ;
+		float       : none;
+	}
+
+	div#aboutus div#our_history .content,
+	div#aboutus div#construction .content {
+		width           : 100% ;
+		float           : none;
+	}
+
+	div#aboutus div#housing .content {
+		width           : 100% ;
+		float           : none;
+	}
+
+	div#aboutus div#our_history img {
+		display         : block;
+		margin          : 8px auto 0;
+		width           : 100% ;
+	}
+
+	div#aboutus div#housing img {
+		display         : block;
+		margin          : 8px auto 0;
+		width           : 100% ;
+	}
+
+	div#aboutus div#construction img {
+		display         : block;
+		margin          : 8px auto 0;
+		width           : 100% ;
+	}
+
+
+	.btn_housing{
+		margin                : 30px 0 80px 0;
+	}
+
+	.btn_housing a {
+		width                 : 100%;
+		height                : 36px;
+		font-size             : 116%;
+	}
+
+	div#aboutus div#recruit ul {
+		margin          : 25px auto 40px auto;
+	}
+
+	div#aboutus div#recruit ul li{
+		margin          : 0 auto 10px auto;
+		width           : 100%;
+		float           : none;
+	}
+
+	div#aboutus div#recruit ul li.r{
+		margin          : 0 auto 10px auto;
+	}
+
+	.btn_modelhouse a {
+		margin                : 10px 0 0 0;
+		width                 : 100%;
+		height                : 36px;
+		font-size             : 116%;
+		float                 : none;
+	}
+
+	.btn_tel a,.btn_mail a {
+		margin                : 10px 0 0 0;
+		width                 : 60%;
+		height                : 36px;
+		font-size             : 116%;
+		float                 : none;
+	}
+
+	div#aboutus iframe {
+		width  :100%;
+		height :300px;
+	}
+
+
+	/* うれし徳武建設の家づくり
+	--------------------------*/
+
+	div#housing div#model_house .model1 .content,
+	div#housing div#model_house .model2 .content {
+		float: none;
+		width: 100%;
+	}
+
+
+	div#housing div#model_house .model1 img,
+	div#housing div#model_house .model2 img{
+		display : block;
+		margin  : 8px auto 0;
+		width   : 100%;
+	}
+
+	div#housing div#model_house .model2 .model2_p{
+		margin         : 20px auto 0;
+		width          : 100%;
+		line-height    : 10px;
+	}
+
+	div#housing div#model_house .model3 ul li{
+		float           : none;
+		margin          : 0;
+		padding         : 0;
+		width           : 100%
+	}
+
+	div#housing div#model_house .model3 ul li p{
+		float           : left;
+	}
+
+	div#housing div#model_house .model3 ul li p.comment{
+		margin          : 0 0 0 0;
+		padding         : 50px 0 0 0;
+		width           : 50%;
+	}
+
+	div#housing div#model_house .model3 ul li.wind p.comment{
+		margin          : 0 0 0 -60px;
+		padding         : 50px 0 0 0;
+		width           : 50%;
+	}
+
+div#housing div#model_house .model3 ul li.wind img {
+	margin          : 0 0 0 0px;
+	width           : 100%;
+}
+
+
+
+
+
+	.columns {
+		-webkit-columns: 1;
+		-moz-columns: 1;
+		-ms-columns: 1;
+		columns: 1;
+	}
+
+	div#housing div#omsolar ul.omsolar2 li{
+		float           : none;
+		width           : 100%;
+	}
+
+	div#housing ul.omsolar2 a {
+		pointer-events: none;
+	}
+
+	div#housing div#omsolar .omsolar2 li.om_01,
+	div#housing div#omsolar .omsolar2 li.om_02,
+	div#housing div#omsolar .omsolar2 li.om_03{
+		width           : 100%;
+	}
+
+	div#housing div#omsolar .omsolar2 li img {
+		display         : block;
+		margin          : 0 auto;
+	}
+
+	div#housing div#omsolar .omsolar3{
+		margin          : 30px 0 40px 0;
+		padding         : 0;
+	}
+
+	div#housing div#omsolar .omsolar3 p{
+		margin          : 0;
+		text-align      : center;
+	}
+
+	div#housing div#omsolar .omsolar3 p.om3_1{
+		margin          : 0 auto;
+		float           : none;
+	}
+
+	div.btn_present{
+		margin                : 30px 0 10px 0;
+	}
+
+	div.btn_present a {
+		width                 : 100%;
+		font-size             : 116%;
+	}
+
+	div#housing div#building-plan .plan1 .content,
+	div#housing div#building-plan .plan2 .content,
+	div#housing div#building-plan .plan3 .content,
+	div#housing div#building-plan .plan4 .content,
+	div#housing div#building-plan .plan5 .content {
+		float           : none;
+		width           : 100%;
+	}
+
+	div#housing div#building-plan .plan1 img,
+	div#housing div#building-plan .plan2 img,
+	div#housing div#building-plan .plan3 img,
+	div#housing div#building-plan .plan4 img,
+	div#housing div#building-plan .plan5 .housing_plan_05 img {
+		display   : block;
+		margin    : 8px auto;
+		width     : 100%
+	}
+
+	div#housing div#timber_material .material1 .content,
+	div#housing div#timber_material .material2 .content,
+	div#housing div#timber_material .material3 .content {
+		float           : none;
+		width           : 100%;
+	}
+
+
+	div#housing div#timber_material .material1 img,
+	div#housing div#timber_material .material2 img,
+	div#housing div#timber_material .material3 img{
+		display   : block;
+		margin    : 8px auto;
+		width     : 100%
+	}
+
+	div.btn_process a {
+		width                 : 100%;
+		height                : 36px;
+		font-size             : 116%;
+	}
+
+	div#housing div#subsidy .subsidy1 .content {
+		float           : none;
+		width           : 100%;
+	}
+
+	div#housing div#subsidy .subsidy1 img{
+		display         : block;
+		margin          : 8px auto;
+		width           : 100%;
+	}
+
+	div.btn_faq {
+		margin          : 20px 0 50px 0;
+	}
+
+	div.btn_faq a {
+		width           : 100%;
+		height          : 36px;
+		font-size       : 116%;
+	}
+
+}
+

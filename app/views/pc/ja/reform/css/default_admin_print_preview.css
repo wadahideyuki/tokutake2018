@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+  /**
+   * 管理ページ印刷プレビュー CSS
+   */
+
+body {
+
+	margin     : 12pt !important;
+}

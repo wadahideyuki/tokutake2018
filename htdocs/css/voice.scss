@@ -1,0 +1,150 @@
+@charset "UTF-8";
+@mixin mq($breakpoint: medium) {
+  @if $breakpoint == xsmall {
+    @media screen and (max-width: 320px) {
+      @content;
+    }
+  } @else if $breakpoint == small {
+    @media screen and (max-width: 600px) {
+      @content;
+    }
+  } @else if $breakpoint == medium {
+    @media screen and (max-width: 767px) {
+      @content;
+    }
+  } @else if $breakpoint == large {
+    @media screen and (max-width: 1024px) {
+      @content;
+    }
+  } @else if $breakpoint == xlarge {
+    @media screen and (max-width: 1280px) {
+        @content;
+    }
+  }
+}
+$res:640;//レスポンシブ計算用
+$per:100%;
+$vw:100vw;
+#voice {
+	&>h2{
+		    margin-bottom: 50px;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+		
+	@include mq{
+		    margin-bottom: 3%;
+		}
+	}
+}
+.voice_list{
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	padding-bottom: 40px;
+	> li{
+		width:30%;
+		margin: 20px 1.5%;
+		position: relative;
+		
+	@include mq{
+		margin: 0px
+		}
+		a{
+			display: block;
+			&:hover .voice_summary{
+			background: rgba(255,255,255,0.5);
+				color: #000;
+			}
+		}
+		.photo{
+			height: 270px;
+			display: flex;
+			justify-content: center;
+			width: 100%;
+			overflow: hidden;
+			padding-bottom: 10px;
+			img{
+				width: auto;
+			height: 300px;
+			}
+		}
+		.voice_summary{
+			position: absolute;
+			text-align: center;
+			left: 0px;
+			top: 0px;
+			width: 100%;
+			height: 100%;
+			background: rgba(0,0,0,.5);
+			transition: 0.5s;
+			color: #FFF;
+			.description{
+				margin: 90px 20px 20px 20px;
+				font-size: 1.8rem;
+				font-weight: bold;
+			}
+
+		}
+
+	}
+	@include mq{
+		padding-bottom: 5%;
+		> li{
+			width:100%;
+			margin-bottom: (10/320) * $vw;
+			.photo{
+				width: auto;
+				height: 50vw;
+				margin-bottom:0;
+				padding-bottom: 0;
+			}
+			a {
+				display: block;
+				img{
+				}
+				&:hover img{
+				}
+			}
+			p{
+				font-size: 1.0rem;
+			}
+			.voice_summary {
+				.description{
+				margin: 15% 3% 3% 3%;
+					font-size: 1.6rem;
+			}
+			}
+		}
+	}
+}
+.voiceDetail{
+	.voiceDetailTtl{
+		position: relative;
+		height: 450px;
+		overflow: hidden;
+		background: #000;
+	}
+	.voiceDetailTtl img{
+		width: 100%;
+		margin-top: -20%;
+		opacity: 0.6;
+	filter: blur(15px);
+  	animation: blur 1s ease 0s ;
+	}
+	.voiceDetailTtlInner{
+		position: absolute;
+		text-align: center;
+		
+	}
+}
+
+@keyframes blur{
+	0% {
+	filter: blur(0px);
+		opacity: 1;
+	}
+	100%{
+		opacity: 0.6;
+	filter: blur(15px);
+	}
+}

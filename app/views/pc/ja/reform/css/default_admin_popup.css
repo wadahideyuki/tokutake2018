@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+  /**
+   * 管理ページ ポップアップ画面 CSS
+   */
+
+/**
+//=========================================//
+//-------------共通レイアウト--------------//
+//=========================================//
+*/
+
+/*コンテンツエリア*/
+#content {
+
+    min-width       : 372px;
+    min-height      : 416px;
+		margin          : 0 16px 24px 16px;
+}
+
+#container {
+
+	background        : #FFFFFF;
+}
+
+#contentContainer {
+
+	padding-bottom   : 0;
+}
+
+/*ヘッダー*/
+#pageHeader {
+
+  background       : url(../images/sys/bg_th.png) repeat-x　0 -200px;
+  min-width        : 540px;
+  height           : 32px;
+}
+
+#pageHeader img {
+
+	display           : none;
+}
+
+div#pageTitle {
+
+	font-size         : 1.3em;
+}
+
+#footer {
+
+	background        : transparent url(../images/sys/bg_th.png) repeat-x scroll 0 -32px;
+	height            : 24px;
+	min-width         : 540px;
+}
+
+div.closeWindow {
+
+	text-align        : center;
+	margin            : 24px auto;
+
+}
+.hidden {
+
+	display : none;
+}

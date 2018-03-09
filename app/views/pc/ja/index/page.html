@@ -1,0 +1,350 @@
+{include file='../userHeader.tpl' _title='ページ一覧'
+_description='長野市で新築、長野県産材を使う木の家を建てる社員大工の地元工務店です。責任施工で笑顔あふれる幸せな家づくりを目指し丁寧につくります。須坂市・小布施町・千曲市でも新築、注文住宅、戸建て、木の家建てるなら社員大工の地元工務店、長野市のうれし徳武建設です。'
+_fixedTitle='みなさまの笑顔が私たちの生きがいです｜長野市の地元工務店'}
+
+
+<style>
+	.red{
+		background: red;
+	}
+#pageItiran{
+	padding: 30px;
+}
+#pageItiran h1{
+	padding-bottom: 30px;
+	font-size: 40px;
+	text-align: center;
+	font-weight: bold;
+}
+#pageItiran table{
+	width: 70%;
+	margin: 0 auto;
+	font-size: 14px;
+	line-height: 1.6;
+	word-break: break-all;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+#pageItiran table tr{
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+	#pageItiran table tr:first-child > *{
+		font-size: 1.2em;
+		font-weight: bold;
+	}
+#pageItiran tr > *{
+	padding: 3px;
+}
+#pageItiran tr > th{
+	width: 30%;
+}
+	#pageItiran .lower1 > th{
+		font-weight: bold;
+	}
+	#pageItiran .lower2 > th{
+		padding-left: 30px;
+	}
+#pageItiran td{
+	border-left: 1px dotted #ccc;
+}
+	#pageItiran td:nth-child(2){
+		width: 100px;
+	}
+a{
+	text-decoration: underline;
+	color: #000DFF;
+}
+	#pageItiran th a:hover{
+		color: #00693E;
+		text-decoration: none;
+	}
+
+@media screen and (max-width:767px){
+#pageItiran{
+	padding:10% 0;
+}
+#pageItiran h1{
+	padding-bottom: 5%;
+	font-size: 2.4rem;
+}
+#pageItiran table{
+	table-layout: fixed;
+	font-size: 1.2rem;
+	width: 70%;
+}
+#pageItiran tr > th{
+}
+	#pageItiran .lower1 > th{
+	}
+	#pageItiran .lower2 > th{
+		padding-left: 15px;
+	}
+#pageItiran td{
+}
+	#pageItiran td:nth-child(2){
+		width: auto;
+	}
+
+}
+</style>
+
+
+<div id="pageItiran">
+	<div class="inner">
+		<h1>ページ一覧</h1>
+		<table>
+			<tr>
+				<th>ページ</th>
+				<td>原稿</td>
+				<td>写真</td>
+				<td>確認</td>
+				<td>備考</td>
+			</tr>
+			<tr class="lower1">
+				<th><a target="_blank" href="/">■トップ</a></th>
+				<td>-</td>
+				<td>必要</td>
+				<td><a href="{$appPath}/" target="_blank">見る</a></td>
+				<td>メインスライドの内容を決める</td>
+			</tr>
+			<tr class="lower1">
+				<th><a target="_blank" href="/">■商品ラインナップ</a></th>
+				<td>-</td>
+				<td>-</td>
+				<td><a target="_blank" href="{$appPath}/lineup/">見る</a></td>
+				<td></td>
+			</tr>
+			<tr class="lower2">
+				<th><a target="_blank" href="/">杜の家</a></th>
+				<td>2/15</td>
+				<td>必要</td>
+				<td><a target="_blank" href="{$appPath}/lineup/morinoie.html">見る</a></td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr class="lower2">
+				<th><a target="_blank" href="/">0宣言の家、</a></th>
+				<td>2/14</td>
+				<td>必要</td>
+				<td><a href="/lineup/zero.html">見る</a></td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr class="lower2">
+				<th><a target="_blank" href="/">CasaCrescendo</a></th>
+				<td>必要</td>
+				<td>必要</td>
+				<td>まだ</td>
+				<td>要デザイン</td>
+			</tr>
+			<tr class="lower1">
+				<th><a target="_blank" href="/">■施工事例</a></th>
+				<td>-</td>
+				<td>-</td>
+				<td><a href="{$appPath}/product/" target="_blank">見る</a></td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr class="lower2">
+				<th><a target="_blank" href="/">詳細×24Ｐ</a></th>
+				<td>-</td>
+				<td>-</td>
+				<td><a href="http://test.tokutake-kensetsu.co.jp/product/detail/?id=3" target="_blank">見る</a></td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr class="lower1">
+				<th><a target="_blank" href="/">■うれし徳武のいえづくり</a></th>
+				<td>-</td>
+				<td>-</td>
+				<td><a href="{$appPath}/housing/" target="_blank">見る</a></td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr class="lower2">
+				<th><a target="_blank" href="/">1設計手法について</a></th>
+				<td>必要</td>
+				<td>必要</td>
+				<td>まだ</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr class="lower2">
+				<th><a target="_blank" href="/">2.耐震構造について</a></th>
+				<td>2/2</td>
+				<td>必要</td>
+				<td><a target="_blank" href="{$appPath}/housing/taisin.html">見る</a></td>
+				<td></td>
+			</tr>
+			<tr class="lower2">
+				<th><a target="_blank" href="/">3.素材について</a></th>
+				<td>2/6</td>
+				<td>必要</td>
+				<td><a href="{$appPath}/housing/sozai.html" target="_blank">見る</a></td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr class="lower2">
+				<th><a target="_blank" href="/">4.OMソーラーについて </a></th>
+				<td>2/22</td>
+				<td>-</td>
+				<td><a href="/housing/om.html" target="_blank">見る</a></td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr class="lower2">
+				<th><a target="_blank" href="/">5.施工について</a></th>
+				<td>必要</td>
+				<td>必要</td>
+				<td><a href="/housing/siko.html" target="_blank">見る</a></td>
+				<td></td>
+			</tr>
+			<tr class="lower2">
+				<th><a target="_blank" href="/">6.保証について</a></th>
+				<td>3/6</td>
+				<td>必要</td>
+				<td><a href="/housing/hosyo.html" target="_blank">見る</a></td>
+				<td></td>
+			</tr>
+			<tr class="lower2">
+				<th><a target="_blank" href="/">7.一生お付き合い</a></th>
+				<td>3/7</td>
+				<td>必要</td>
+				<td><a href="/housing/otukiai.html" target="_blank">見る</a></td>
+				<td></td>
+			</tr>
+			<tr class="lower2">
+				<th><a target="_blank" href="/">8.補助金について</a></th>
+				<td>必要</td>
+				<td>必要</td>
+				<td>まだ</td>
+				<td></td>
+			</tr>
+			<tr class="lower2">
+				<th><a target="_blank" href="/">9.注文住宅について</a></th>
+				<td>2/7</td>
+				<td>必要</td>
+				<td><a target="_blank" href="{$appPath}/housing/tyumon.html">見る</a></td>
+				<td></td>
+			</tr>
+			<tr class="lower1">
+				<th><a target="_blank" href="/">■見学会・セミナー</a></th>
+				<td>-</td>
+				<td>-</td>
+				<td><a target="_blank" href="{$appPath}/event/">見る</a></td>
+				<td></td>
+			</tr>
+			<tr class="lower2">
+			  <th><a href="/">見学会・セミナー詳細</a></th>
+			  <td>-</td>
+			  <td>-</td>
+			  <td><a target="_blank" href="http://test.tokutake-kensetsu.co.jp/event/detail/?id=151">見る</a></td>
+			  <td>&nbsp;</td>
+		  </tr>
+			<tr class="lower1">
+				<th><a target="_blank" href="/reform/">■リフォーム</a></th>
+				<td>2/7</td>
+				<td>-</td>
+				<td><a target="_blank" href="http://test.tokutake-kensetsu.co.jp/reform/">見る</a></td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr class="lower1">
+				<th><a target="_blank" href="/">■店舗デザイン</a></th>
+				<td>必要</td>
+				<td>必要</td>
+				<td>まだ</td>
+				<td>要デザイン</td>
+			</tr>
+			<tr class="lower1">
+				<th><a target="_blank" href="/">■会社情報</a></th>
+				<td>-</td>
+				<td>-</td>
+				<td><a href="{$appPath}/company/" target="_blank">見る</a></td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr class="lower2">
+				<th><a target="_blank" href="/">60年の歴史</a></th>
+				<td>-</td>
+				<td>必要</td>
+				<td><a href="{$appPath}/company/history.html" target="_blank">見る</a></td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr class="lower2">
+				<th><a target="_blank" href="/">メンバー紹介</a></th>
+				<td>-</td>
+				<td>-</td>
+				<td><a href="{$appPath}/company/staff.html" target="_blank">見る</a></td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr class="lower2">
+				<th><a target="_blank" href="/">求人情報</a></th>
+				<td>-</td>
+				<td>-</td>
+				<td><a href="/company/recruit.html" target="_blank">見る</a></td>
+				<td></td>
+			</tr>
+			<tr class="lower1">
+			  <th><a href="/" target="_blank">■メルマガ</a></th>
+			  <td>-</td>
+			  <td>-</td>
+			  <td><a href="/mailmagazine/" target="_blank">見る</a></td>
+			  <td>&nbsp;</td>
+		  </tr>
+			<tr class="lower1">
+				<th><a target="_blank" href="/">■お問い合わせ</a></th>
+				<td>-</td>
+				<td>-</td>
+				<td><a href="http://test.tokutake-kensetsu.co.jp/mail/form/?id=inquiry" target="_blank">見る</a></td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr class="lower1">
+				<th><a target="_blank" href="/">■ブログ</a></th>
+				<td rowspan="3">&nbsp;</td>
+				<td rowspan="3">&nbsp;</td>
+				<td rowspan="3"><a href="http://blog.wadakoubou.com" target="_blank">見る</a></td>
+			  <td rowspan="3">&nbsp;</td>
+			</tr>
+			<tr class="lower2">
+				<th><a href="/">会長ブログ</a></th>
+			</tr>
+			<tr class="lower2">
+				<th><a href="/">メンテブログ</a></th>
+			</tr>
+			<tr class="lower1">
+				<th><a target="_blank" href="/">■お客様の声</a></th>
+				<td>-</td>
+				<td>-</td>
+				<td><a target="_blank" href="{$appPath}/voice/listup/">見る</a></td>
+				<td>SP要調整</td>
+			</tr>
+			<tr class="lower1">
+				<th><a target="_blank" href="/">■よくあるご質問</a></th>
+				<td>-</td>
+				<td>-</td>
+				<td><a target="_blank" href="{$appPath}/faq/">見る</a></td>
+				<td></td>
+			</tr>
+			<tr class="lower1">
+				<th><a target="_blank" href="/">■家ができるまで</a></th>
+				<td>-</td>
+				<td>-</td>
+				<td><a target="_blank" href="{$appPath}/process.html">見る</a></td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr class="lower1">
+			  <th><a href="/" target="_blank">■リンク集</a></th>
+			  <td>-</td>
+			  <td>-</td>
+			  <td><a href="/link.html" target="_blank">見る</a></td>
+			  <td></td>
+		  </tr>
+			<tr class="lower1">
+			  <th><a href="/" target="_blank">■プライバシーポリシー</a></th>
+			  <td>-</td>
+			  <td>-</td>
+			  <td><a href="http://test.tokutake-kensetsu.co.jp/privacy.html" target="_blank">見る</a></td>
+			  <td></td>
+		  </tr>
+		</table>
+
+
+
+	</div>
+</div>
+
+
+
+

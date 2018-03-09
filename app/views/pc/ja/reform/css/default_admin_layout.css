@@ -1,0 +1,3610 @@
+@charset "UTF-8";
+
+  /**
+   * 管理ページ CSS
+   *
+   */
+
+/**
+//=========================================//
+//-------------ベーシック設定--------------//
+//=========================================//
+*/
+
+body {
+
+	font-size  : 84%;
+	margin     : 0px;
+	background : #CECECE url(../images/sys/bg_body.png) repeat;
+	text-align : center;
+}
+
+div.clear-both {
+
+	clear : both;
+}
+
+.nowrap {
+
+	white-space : nowrap;
+}
+
+/*リンク色*/
+a {
+
+	color           : #00F;
+	text-decoration : none;
+}
+
+/*オンマウスリンク色*/
+a:visited {
+
+	color           : #990066;
+	text-decoration : none;
+}
+
+/*オンマウスリンク色*/
+a:hover{
+
+	color           : #F00;
+	text-decoration : underline
+}
+
+span.detail,
+a.detail {
+
+	background : url("../images/sys/detail.png") no-repeat;
+	padding    : 1px 4px 2px 20px;
+}
+
+span.file,
+a.file {
+
+	background : url("../images/sys/report.png") no-repeat;
+	padding    : 1px 4px 2px 20px;
+}
+
+span.print,
+a.print {
+
+	background : url("../images/sys/print.png") no-repeat;
+	padding    : 1px 4px 2px 20px;
+}
+
+span.edit,
+a.edit {
+
+	background : url("../images/sys/page_white_edit.png") no-repeat;
+	padding    : 1px 4px 2px 20px;
+}
+
+span.copy,
+a.copy {
+
+	background : url("../images/sys/page_white_copy.png") no-repeat;
+	padding    : 1px 4px 2px 20px;
+}
+
+span.entrylist,
+a.entrylist {
+
+	background : url("../images/sys/report.png") no-repeat;
+	padding    : 1px 4px 2px 20px;
+}
+
+
+span.estimate,
+a.estimate {
+
+	background : url("../images/sys/calculator_edit.png") no-repeat;
+	padding    : 1px 4px 2px 20px;
+}
+
+span.delete,
+a.delete {
+
+	background : url("../images/sys/bin_empty.png") no-repeat;
+	padding    : 1px 4px 2px 20px;
+}
+
+span.pdf,
+a.pdf {
+
+	background : url("../images/sys/pdf.png") no-repeat;
+	padding    : 1px 4px 2px 20px;
+}
+
+span.html,
+a.html {
+
+	background : url("../images/sys/report.png") no-repeat;
+	padding    : 1px 4px 2px 20px;
+}
+
+span.form,
+a.form {
+
+	background : url("../images/sys/form.png") no-repeat;
+	padding    : 1px 4px 2px 20px;
+}
+
+span.disabled {
+
+	filter     : alpha(opacity=32);
+	-moz-opacity : 0.32;
+	opacity    : 0.32;
+}
+
+* html a.delete {
+
+	padding-right : 16px;
+}
+* html span.delete {
+
+	padding-right : 12px;
+}
+
+span.logout,
+a.logout {
+
+	background : url("../images/sys/key_go.png") no-repeat;
+	padding    : 1px 4px 2px 20px;
+}
+
+a.external {
+
+	background  : url("../images/sys/external.png") no-repeat 2px 3px;
+	padding     : 1px 4px 2px 16px;
+	display     : inline-block;
+}
+
+a.link {
+
+	background  : url("../images/sys/external.png") no-repeat 2px 3px;
+	padding     : 1px 4px 2px 16px;
+	display     : inline-block;
+}
+
+.hidden {
+
+	display    : none;
+	visibility : hidden;
+}
+
+/**
+//=========================================//
+//-------------共通レイアウト--------------//
+//=========================================//
+*/
+
+/*全体コンテナ*/
+#container {
+
+	background   : #FFF url(../images/sys/sidebar_bg.png) repeat-y scroll left;
+	/*background : #FFF url(../images/sys/sidebar_bg2.png) repeat-y scroll left;*/
+/*color        : #362928;*/
+	color        : #333;
+	margin       : 0px auto;
+	text-align   : justify;
+	width        : 100%;
+}
+
+/*サイドバーコンテナ*/
+#sidebarContainer {
+
+	float         : left;
+	text-align    : left;
+	padding       : 12px 0 0 0;
+	width         : 167px;
+	/*
+min-height    : 416px;
+*/
+	background    : #EEE url(../images/sys/sidebar_top.png) no-repeat top left;
+  /*background : transparent url(../images/sys/sidebar_top2.png) no-repeat top left;*/
+}
+
+/*メインコンテナ*/
+#contentContainer {
+
+	float          : right;
+	padding-bottom : 38px;
+	text-align     : left;
+	width          : 100%;
+	margin-left    : -167px;
+}
+
+/*コンテンツエリア*/
+#content {
+
+	min-width  : 572px;
+	min-height : 380px;
+	margin     : 0 16px 32px 184px;
+}
+
+/*ヘッダー*/
+#pageHeader {
+
+	background          : url(../images/sys/bg_th.png) repeat-x 0 -160px;
+	height              : 28px;
+	list-style-image    : none;
+	list-style-position : outside;
+	list-style-type     : none;
+	text-align          : left;
+	min-width           : 740px;
+}
+
+/**
+//=========================================//
+//-----------サブメニュータブ--------------//
+//=========================================//
+*/
+
+#subTabs,
+#tabs {
+
+	width         : 100%;
+	height        : 100%;
+	margin        : 0 0 12px 0;
+	line-height   : normal;
+	border-bottom : solid 1px #AAA;
+	position      : relative;
+}
+/*
+#subTabs {
+
+	border-bottom : solid 1px #BCD2E6;
+	margin        : 0 0 10px 0;
+	height        : 31px;
+}
+*/
+
+#subTabs ul,
+#tabs ul {
+
+	float      : left;
+	margin     : 0 0 0 0;
+	padding    : 28px 10px 0 20px;
+	list-style : none;
+	width      : -moz-max-content;
+/*
+	position   : absolute;
+	bottom     : 0px;
+*/
+}
+
+#subTabs ul {
+
+	padding : 10px 10px 0 40px;
+}
+
+#subTabs li,
+#tabs li {
+
+	display : inline;
+	margin  : 0;
+	padding : 0;
+}
+
+#tabs a {
+
+	float           : left;
+	background      : url(../images/sys/tableftB.gif) no-repeat left top;
+	margin          : 0;
+	padding         : 0 0 0 4px;
+	text-decoration : none;
+	cursor          : hand;
+}
+
+#tabs a span {
+
+	float          : left;
+	display        : block;
+	background     : url(../images/sys/tabrightB.gif) no-repeat right top;
+	padding        : 5px 15px 4px 6px;
+	color          : #6F6F6F;
+	letter-spacing : 0.1em;
+}
+
+#subTabs a {
+
+	float           : left;
+	background      : url(../images/sys/tableft1.gif) no-repeat left top;
+	margin          : 0;
+	padding         : 0 0 0 4px;
+	text-decoration : none;
+	cursor          : hand;
+}
+
+#subTabs a span {
+
+	float          : left;
+	display        : block;
+	background     : url(../images/sys/tabright1.gif) no-repeat right top;
+	padding        : 5px 15px 4px 6px;
+	color          : #666;
+	letter-spacing : 0.1em;
+}
+
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+#tabs a span {float:none;}
+/* End IE5-Mac hack */
+
+#subTabs li.active a span,
+#tabs li.active a span {
+
+	color       : #333;
+	font-weight : bold;
+}
+
+#subTabs a:hover span,
+#tabs a:hover span {
+
+	color : #FF0000;
+}
+
+
+#subTabs li.active a,
+#tabs li.active a {
+
+	background-position : 0% -42px;
+}
+
+#subTabs li.active a:hover,
+#tabs li.active a:hover {
+
+	background-position : 0% -42px;
+}
+
+#subTabs a:hover,
+#tabs a:hover {
+
+	background-position : 0% -42px;
+}
+
+#subTabs li.active span,
+#subTabs a:hover span,
+#tabs li.active span,
+#tabs a:hover span {
+
+	background-position : 100% -42px;
+}
+
+#subTabs h3,
+#tabs h3 {
+
+	float          : right;
+	line-height    : 120%;
+	padding        : 0 2px 0 0;
+	margin         : 12px 0 -24px 0;
+	text-align     : right;
+	/*color          : #FFF;*/
+	/*color          : #999\9;*/
+	color          : #909090;
+	font-size      : 28px;
+	font-weight    : bold;
+	font-family    : Verdana;
+	letter-spacing : 0.2em;
+	/*text-shadow    : 0 0 5px #000080;*/
+}
+
+* html #subTabs h3,
+* html #tabs h3 {
+
+	margin : 16px 0 0 0;
+	color  : #999;
+}
+
+*:first-child+html #subTabs h3,
+*:first-child+html #tabs h3 {
+
+	margin : 16px 0 0 0;
+	color  : #999\9;
+}
+
+#subTabs h4 {
+
+	float          : right;
+	line-height    : 100%;
+	padding        : 10px 12px 0 0;
+	text-align     : right;
+	color          : #4a87bd;
+	font-size      : 1.2em;
+	font-weight    : bold;
+	font-family    : Verdana;
+	white-space    : nowrap;
+	letter-spacing : 0.1em;
+}
+
+/**
+//=========================================//
+//----------------コントロール-------------//
+//=========================================//
+*/
+
+div.controls {
+
+	margin : 0 0 12px 0;
+}
+
+div.controls p.note {
+
+	color  : #666;
+	margin : 4px 0 8px 0;
+}
+
+
+
+
+
+
+
+/**
+//=========================================//
+//-----------------パンくず----------------//
+//=========================================//
+*/
+
+ul.footPath {
+
+	float      : left;
+	margin     : 0;
+	padding    : 8px 8px 2px 0;
+	list-style : none;
+}
+
+ul.footPath li {
+
+	font-size    : 1.0em;
+	background   : url("../images/sys/footpath.png") no-repeat scroll 0 5px transparent;
+	display      : block;
+	float        : left;
+	height       : 16px;
+	margin       : 2px 10px 2px 0;
+	padding      : 2px 0 0 12px;
+	white-space  : nowrap;
+}
+
+ul.footPath li.active {
+
+	background   : url("../images/sys/footpath.png") no-repeat scroll 0 5px transparent;
+	font-weight  : bold;
+	color        : #333 !important;
+}
+
+ul.footPath li.active a {
+
+	color        : #333 !important;
+}
+
+/*---右寄せリンク群---*/
+div.right_link {
+
+	float       : right;
+	margin      : 0px;
+	padding     : 14px 0px 2px 8px;
+	white-space : nowrap;
+}
+
+div.export_link {
+
+	float       : right;
+	margin      : 0px;
+	padding     : 0 0 2px 8px;
+	white-space : nowrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+//=========================================//
+//-----------------カテゴリ----------------//
+//=========================================//
+*/
+
+#forum_categories,
+#categories {
+
+	margin        : 8px 0 12px 0;
+}
+
+#forum_categories ul,
+#categories ul {
+
+	margin     : 0;
+	padding    : 10px 10px 0 20px;
+	list-style : none;
+}
+
+#forum_categories li,
+#categories li {
+
+	font-size    : 1.1em;
+	background   : url("../images/sys/folder.png") no-repeat scroll 0 0 transparent;
+	display      : block;
+	float        : left;
+	height       : 18px;
+	margin       : 2px 10px;
+	padding      : 2px 0 0 20px;
+	white-space  : nowrap;
+}
+
+#forum_categories li.active,
+#categories li.active {
+
+	background   : url("../images/sys/folder_open.png") no-repeat scroll 0 0 transparent;
+	font-weight  : bold;
+}
+
+/*フォーラムカテゴリ*/
+#forum_categories li {
+
+	background   : url("../images/sys/application_cascade.png") no-repeat scroll 0 0 transparent;
+}
+
+#forum_categories li.active {
+
+	background   : url("../images/sys/application_cascade.png") no-repeat scroll 0 0 transparent;
+	text-decoration : underline;
+}
+
+/* サブカテゴリ
+ * --------------------------------------------------------
+ * */
+
+#sub_categories {
+
+	margin        : 8px 48px 12px 48px;
+	border        : #333 dotted 1px;
+	display : inline-block;
+}
+
+#sub_categories ul {
+
+	margin     : 0;
+	padding    : 8px;
+	list-style : none;
+}
+
+#sub_categories li {
+
+	font-size    : 1.0em;
+	background   : url("../images/sys/footpath.png") no-repeat scroll 0 5px transparent;
+	display      : block;
+	float        : left;
+	height       : 16px;
+	margin       : 2px 10px;
+	padding      : 2px 0 0 12px;
+	white-space  : nowrap;
+}
+
+#sub_categories li.active {
+
+	background   : url("../images/sys/footpath.png") no-repeat scroll 0 5px transparent;
+	font-weight  : bold;
+	color        : #333 !important;
+}
+
+#sub_categories li.active a {
+
+	color        : #333 !important;
+}
+
+div.add_file {
+
+	background     : url("../images/sys/add.png") no-repeat scroll 0 0 transparent;
+	height         : 24px;
+	margin         : 12px 0 4px 0;
+	padding        : 2px 0 0 22px;
+	vertical-align : text-bottom;
+}
+
+img.file_icon {
+
+	margin : 0 4px 6px 4px!important;
+}
+
+/**
+//=========================================//
+//--------------ポップアップ---------------//
+//=========================================//
+*/
+
+/*全体コンテナ*/
+#popupContainer {
+
+	background : #FFFFFF;
+	/*
+color      : #362928;
+*/
+	color      : #333;
+	margin     : 0px auto;
+	text-align : justify;
+	width      : 100%;
+}
+
+/*ヘッダー*/
+#popupHeader {
+
+	background-color : #0066FF;
+  /*background    : #FFF url(../images/sys/header.jpg);*/
+	height           : 60px;
+	text-align       : left;
+}
+
+/*ページヘッダタイトル*/
+div#popupHeaderTitle {
+
+	color       : #FFF;
+	font-size   : 1.0em;
+	text-align  : right;
+	line-height : 160%;
+	padding     : 6px 20px 3px 0px ;
+}
+
+/*コンテンツエリア*/
+#popupContent {
+
+	margin-left  : 16px;
+	margin-right : 16px;
+	min-width    : 460px;
+}
+
+#popupFooter {
+
+	font-family      : Verdana;
+	font-size        : 12px;
+	background-color : #0066FF;
+	margin-top       : 15px;
+	text-align       : center;
+	padding          : 10px;
+	color            : #FFF;
+	height           : 80px;
+	clear            : both;
+}
+
+/**
+//=========================================//
+//--------------ユーザー共通---------------//
+//=========================================//
+*/
+
+/*ページタイトル*/
+h1 {
+
+	color       : #333;
+	text-indent : 1.5em;
+	font-size   : 18px;
+	font-weight : bold;
+	line-height : 100%;
+	height      : 24px;
+	padding     : 2px 0px 2px 0px;
+	margin      : 16px 0px 12px 0px;
+}
+h1 span {
+
+	visibility : hidden;
+}
+
+/**
+//=========================================//
+//-----------------ヘッダー----------------//
+//=========================================//
+*/
+
+/*ページヘッダタイトル*/
+div#pageTitle {
+
+	line-height    : 100%;
+	padding        : 6px 20px 0px 0px;
+	text-align     : right;
+	color          : #FFF;
+	font-size      : 14px;
+	font-weight    : bold;
+	font-family    : Verdana;
+	letter-spacing : 0em ;
+/*
+	text-shadow    : 0 0 1px #FFF;
+*/
+}
+
+/*サブタイトル*/
+span.subTitle {
+
+	color          : #FFF;
+	font-size      : 14px;
+	font-weight    : bold;
+	font-family    : Verdana;
+	letter-spacing : 0em ;
+}
+
+/*AZ_TODO:重複*/
+div.pageHeaderTitle,
+#pageHeaderTitle {
+
+	color          : #666;
+	font-weight    : bold;
+	text-align     : left;
+	letter-spacing : 0.5em;
+	border-left    : 8px solid #CCC;
+	border-bottom  : 1px solid #CCC;
+	border-top     : 1px solid #FFF;
+	border-right   : 1px solid #FFF;
+	padding        : 2px 16px 2px 12px;
+	margin         : 12px 0px 12px 0px;
+	float          : left;
+}
+
+div.searchCond {
+
+	color : #333;
+}
+
+#pageHeader img {
+
+	float   : left;
+	padding : 0px 0px 0px 0px;
+}
+
+
+/**
+//=========================================//
+//----------------ログイン-----------------//
+//=========================================//
+*/
+
+div.loginForm {
+
+	margin     : 24px 0 0 0;
+	width      : 100%;
+	height     : 320px;
+	background : url(../images/sys/login_bg.jpg) no-repeat bottom left;
+}
+
+div.loginForm div.fieldTitle {
+
+	background  : url("../images/sys/task_todo.png") no-repeat scroll 0px 3px;
+	text-indent : 1em;
+	margin      : 4px 0;
+}
+
+div.loginForm table {
+
+	border-radius         : 4px;
+	-moz-border-radius    : 4px;
+	-webkit-border-radius : 4px;
+
+	box-shadow         : 0 0 8px rgba(128,128,128,.5);
+	-moz-box-shadow    : 0 0 8px rgba(128,128,128,.5);
+	-webkit-box-shadow : 0 0 8px rgba(128,128,128,.5);
+
+	width      : 248px;
+	border     : 1px solid #CCC;
+	background : #FFF;
+	margin     : 0 auto 0 auto ;
+}
+
+div.loginForm tr {
+
+
+	color : #333;
+}
+
+div.loginForm th,
+div.loginForm td {
+
+	vertical-align : middle;
+	padding        : 4px 12px;
+}
+
+div.loginForm th {
+
+	font-weight      : bold;
+	width            : 80px;
+	padding          : 4px;
+	white-space      : nowrap;
+	background-color : #EAEAEA;
+	text-align       : left;
+	vertical-align   : top;
+}
+
+div.loginForm th.topHead {
+
+	-moz-border-radius-topright : 4px;
+	-moz-border-radius-topleft  : 4px;
+	border-top-left-radius      : 4px;
+	border-top-right-radius     : 4px;
+	width          : 380px;
+	background     : #CCC url(../images/sys/bg_th.png) repeat-x 0 -200px;
+	color          : #FFFFFF;
+	font-weight    : bold;
+	letter-spacing : 0.6em;
+	padding        : 8px 4px;
+	text-align     : center;
+	text-shadow    : 1px 1px 0 #13169B;
+}
+
+div.loginForm th.sideHead {
+
+	background : #CCC url(../images/sys/side_head.png) repeat-y;
+	text-align : left;
+	padding    : 12px 4px;
+	width      : 100px;
+}
+
+div.loginForm th.bottomHead {
+
+	-moz-border-radius-bottomright: 4px;
+	-moz-border-radius-bottomleft : 4px;
+	border-bottom-left-radius     : 4px;
+	border-bottom-right-radius    : 4px;
+
+	width      : 100%;
+	background : #CCC url(../images/sys/bg_th.png) repeat-x 0 -20px;
+	text-align : center;
+	padding    : 12px 0px;
+}
+
+div.loginForm td {
+
+	background-color : #F9F9F9;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+
+	div.loginForm input {
+
+		line-height : 100%;
+	}
+}
+
+div.loginForm input.textBox {
+
+	width : 192px;
+}
+
+div.loginForm input.disabled {
+
+	width            : 160px;
+	margin           : 1px 0px;
+	padding          : 2px;
+	background-color : #EEE;
+	border           : 1px solid #7F9DB9;
+}
+
+/*ログインボタン*/
+div.loginForm input.btn {
+
+	width   : 100px;
+	height  : 28px;
+	cursor  : pointer;
+}
+
+div.loginMsg {
+
+	width      : 360px;
+	text-align : left;
+	color      : #666;
+	border     : 1px solid #FFF;
+	margin     : 1px 0px;
+	padding    : 0px;
+}
+
+div.logout {
+
+	text-align : center;
+	margin     : 16px 0px;
+}
+
+div.loginForm div.radio {
+
+	margin      : 8px 0px;
+	line-height : 140%;
+	color       : #666;
+}
+
+div.loginForm div.radio input,
+div.loginForm div.radio label {
+
+	margin         : 3px 0px;
+	cursor         : pointer;
+	vertical-align : middle;
+	white-space    : nowrap;
+}
+
+div.loginNotice {
+
+	width            : 360px;
+	font-size        : 1.1em;
+	text-align       : center;
+	border           : 1px solid #00F;
+	padding          : 4px 0px;
+	margin           : 4px 0px;
+	color            : #00F;
+	background-color : #EEF;
+	clear            : both;
+}
+
+/*
+div.loginError {
+
+	width            : 238px;
+	font-size        : 1.1em;
+	text-align       : center;
+	border           : 1px solid #F00;
+	padding          : 4px 0px;
+	margin           : 12px auto 2px auto;
+	color            : #F00;
+	background-color : #FEE;
+}
+*/
+
+div.loginError {
+
+	background  : url(../images/sys/error_icon.png) no-repeat scroll 0 3px;
+	padding          : 4px 0px 4px 24px;
+	margin           : 4px auto;
+	color            : #F00;
+}
+
+/**
+//=========================================//
+//------------新ログインフォーム-----------//
+//=========================================//
+*/
+
+div.loginForm form {
+
+	float  : right;
+	width  : 240px;
+	margin : 0 8px 0 16px;
+}
+
+/*ログインフォーム注意書き*/
+div.loginForm ul {
+
+	color      : #666;
+	list-style : none;
+	margin     : 0 240px 0 4px;
+	padding    : 8px 0;
+}
+
+div.loginForm li {
+
+	line-height : 128%;
+	list-style  : none outside none;
+	margin      : 0 12px 0 10px;
+	text-indent : -1em;
+}
+
+/**
+//=========================================//
+//----------------トップ-------------------//
+//=========================================//
+*/
+
+div.systemStatus {
+
+	clear : both;
+}
+
+div.systemStatus ul {
+
+	margin : 12px 0px 12px 20px;
+	width  : 520px;
+}
+
+div.systemStatus li {
+
+	color      : #666;
+	margin     : 2px 0px;
+	list-style : circle;
+}
+
+div.systemStatus li.attention,
+div.systemStatus li.attention a {
+
+	color           : #F00;
+	font-weight     : bold;
+	text-decoration : none;
+}
+
+div.systemStatus li.attention a:hover {
+
+	text-decoration : underline
+}
+
+/**
+//=========================================//
+//---------------コンテンツ----------------//
+//=========================================//
+*/
+
+div.pageContents {
+
+	clear       : both;
+	text-align  : left;
+	line-height : 120%;
+	color       : #666;
+	padding     : 0px 0px 12px 0px;
+}
+
+div.pageContents pre {
+
+	border      : 1px solid #CCC;
+	margin      : 8px 0px;
+	padding     : 4px;
+	line-height : 110%;
+	width       : 99%;
+	height      : 460px;
+	overflow-x  : scroll;
+	overflow-y  : scroll;
+}
+
+div.pageContents p {
+
+	margin      : 8px 0px;
+	line-height : 120%;
+}
+
+div.pageContents iframe {
+
+	margin      : 8px 0px;
+	line-height : 120%;
+	border      : 1px solid #CCC;
+	height      : 480px;
+	width       : 780px;
+}
+
+/*下部説明書き*/
+div.helpDescription,
+#helpDescription {
+
+	margin                : 12px 0;
+	width                 : 100%;s
+	clear                 : both;
+}
+
+div.helpSpace {
+
+	background-color      : #FFFFEE;
+	color                 : #4C4C4C;
+	border-radius         : 4px;
+	-moz-border-radius    : 4px;
+	-webkit-border-radius : 4px;
+	border                : 1px solid #999;
+	padding               : 8px;
+	margin                : 18px 0 12px 0;
+	clear                 : both;
+	position              : inherit;
+}
+
+div.helpSpace h4 {
+
+	margin                : -18px 0 4px 10px;
+	border                : 1px solid #CCC;
+	border-radius         : 3px;
+	-moz-border-radius    : 3px;
+	-webkit-border-radius : 3px;
+	width                 : 160px;
+	background-color      : #fff;
+	padding               : 2px 6px 2px 12px;
+	font-weight           : normal;
+	font-size             : 0.9em;
+	color                 : #333;
+}
+
+div.warnings {
+
+	background-color      : #ffecec;
+	color                 : #FF0000;
+}
+
+div.attentions {
+
+	background-color      : #ffff80;
+	color                 : #666;
+}
+
+div.helpDescription li,
+#helpDescription li {
+
+	text-indent : -1em;
+	list-style  : none;
+	line-height : 128%;
+	margin      : 0px 12px 0px 10px;
+}
+
+div.helpDescription li img,
+#helpDescription li img {
+
+	margin : 0px 4px 2px 2px;
+}
+
+ul.note {
+
+	margin  : 24px 0 0 0;
+	padding : 4px 8px 4px 4px;
+}
+
+ul.note li {
+
+	color       : #3C3C3C;
+	text-indent : -1em;
+	list-style  : none;
+	line-height : 128%;
+	margin      : 0px 12px 0px 10px;
+}
+
+/*デバッグ説明書き*/
+#debugDescription {
+
+	border-radius         : 4px;
+	-moz-border-radius    : 4px;
+	-webkit-border-radius : 4px;
+	background-color      : #ccc;
+	color                 : #666;
+	text-align            : left;
+	border                : 1px solid #CCCCCC;
+	margin                : 32px 12px 12px 12px;
+	padding               : 0 0 32px 0;
+	clear                 : both;
+}
+
+#debugDescription div {
+
+	line-height           : 120%;
+}
+
+div.debugSpace {
+
+	padding : 8px;
+}
+
+#debugDescription li {
+
+	font-size   : 0.9em;
+	list-style  : circle;
+	line-height : 128%;
+	margin      : 4px 12px 4px 10px;
+}
+
+#debugDescription li img {
+
+	margin : 0px 4px 2px 2px;
+}
+
+
+
+
+/**
+//=========================================//
+//-------------サイドメニュー--------------//
+//=========================================//
+*/
+
+/*サイドメニューの項目名*/
+div.adminMenuTitle {
+
+	font-weight    : normal;
+	color          : #666;
+	letter-spacing : 0.2em;
+	padding        : 0px 0px 4px 14px;
+	margin         : 12px 0px 6px 0px;
+	border-bottom  : 1px solid #999;
+}
+
+div.menuBlock {
+
+/*
+	border : 1px solid #CCCCCC;
+	margin : 8px 4px;
+*/
+}
+
+/*サイドメニューのログインユーザ名*/
+div.loginUser {
+
+	font-weight : normal;
+	color       : #666;
+	margin      : 0px 6px 10px 10px;
+	padding     : 4px 0px;
+}
+
+
+#navcontainer {
+
+	font-size : 12px;
+	width     : 167px;
+	padding   : 0px 0px 0px 0px;
+}
+
+#navcontainer ul {
+
+	list-style : none;
+	margin     : 0px 0px 8px 0px;
+	padding    : 0px;
+}
+
+#navcontainer li {
+
+	text-indent : 0.8em;
+	font-size   : 12px;
+	list-style  : none
+}
+
+/*IE7*/
+/*
+*:first-child+html #navcontainer li {
+
+	margin         : 0px -1em 0px 0px;
+
+}
+*/
+
+#navcontainer li img {
+
+	margin         : 0px 4px 0px 0px;
+	vertical-align : middle;
+}
+
+#navcontainer h2 {
+
+	display         : block;
+	padding         : 0px 0px 4px 8px;
+	margin          : 12px 0px 6px 0px;
+	/*text-decoration : underline;*/
+	font-weight     : normal;
+	color           : #3C3C3C;
+	border-bottom   : dotted 1px #999;
+}
+
+#navcontainer a {
+
+	display         : block;
+	color           : #333;
+	text-decoration : none;
+	padding         : 4px 0px 1px 4px;
+	margin          : 0px;
+}
+
+*:first-child+html #navcontainer a {
+
+	display         : block;
+	color           : #333;
+	text-decoration : none;
+	padding         : 6px 0px 2px 6px;
+	margin          : 0px;
+}
+
+#navcontainer a:hover {
+
+	/*color          : #FFF;
+	background-color : #2485EF;*/
+	background-color : #CCC;
+/*
+	background-image : url(../images/sys/edit.png);
+*/
+}
+
+*:first-child+html #navcontainer a:hover {
+
+	/*color          : #FFF;*/
+	background-color : #CCC;
+}
+
+#navcontainer li.active a {
+
+	color      : #FFF;
+	background : url(../images/sys/bg_th.png) repeat-x 0 -200px;
+}
+
+*:first-child+html #navcontainer li.active a:hover {
+
+	/*color          : #FFF;*/
+	background-color : #2485EF;
+}
+
+#navcontainer div.loginout a {
+
+	text-indent : 0.2em;
+	margin      : 4px 0px 6px 8px;
+	padding     : 6px  0px 6px 18px;
+	font-size   : 12px;
+	background  : url(../images/sys/logout.png) no-repeat left;
+}
+
+#navcontainer div.loginout a:hover {
+
+	color          : #F00;
+	background     : url(../images/sys/login.png) no-repeat left;
+		/*text-shadow : #CCC -1px -1px 1px;*/
+}
+
+span.listMark {
+
+	color : #999;
+}
+
+#footer {
+
+	font-family      : Verdana;
+	font-size        : 12px;
+	background-color : #0066FF;
+	background       : url(../images/sys/bg_th.png) repeat-x 0 -160px;
+	margin-top       : 14px;
+	text-align       : center;
+	padding          : 6px 0px 0px 0px;
+	line-height      : 100%;
+	color            : #FFF;
+	height           : 20px;
+	min-width        : 740px;
+	clear            : both;
+/*
+	position         : absolute;
+	bottom           : 0px;
+	right            : 0px;
+	width            : 100%;
+*/
+}
+
+#footer div.pageTop {
+
+	margin         : -42px 2px 0 0;
+	line-height    : 100%;
+	letter-spacing : 0.1em;
+	position       : absolute;
+	right          : 18px;
+}
+
+
+/**
+//=========================================//
+//-----------情報登録フォーム--------------//
+//=========================================//
+*/
+
+div.editForm h5 {
+
+	color          : #3c3c3c;
+	font-weight    : bold;
+	text-align     : left;
+	letter-spacing : 0.5em;
+	display        : inline-block;
+	border-left    : 8px solid #CCC;
+	border-bottom  : 1px solid #CCC;
+	padding        : 2px 16px 2px 12px;
+	margin         : 12px 0px 12px 0px;
+}
+
+div.editForm {
+
+	overflow   : auto;
+	overflow-y : hidden;
+	clear      : both;
+	margin     : 12px 0;
+}
+
+*:first-child+html div.editForm {
+
+	padding    : 0px 0px 12px 0px;
+}
+
+div.addPageLink {
+
+	margin     : 0;
+}
+
+div.editForm table {
+
+	-webkit-border-radius : 4px;
+	-moz-border-radius    : 4px;
+	border-radius         : 4px;
+	width                 : 100%;
+	border                : 1px solid #AAA;
+	background-color      : #FFF;
+	margin                : 8px 0px;
+	clear                 : both;
+}
+
+div.editForm th,
+div.editForm td {
+
+	/*
+padding : 3px 5px 3px 3px;
+*/
+	padding : 0.2em 6px 0.2em 3px;
+}
+
+div.editForm td.vaTop {
+
+	vertical-align : top;
+}
+
+div.editForm th.ctr,
+div.editForm td.ctr {
+
+	text-align : center;
+}
+
+div.editForm th.price,
+div.editForm td.price,
+div.editForm th.qty,
+div.editForm td.qty,
+div.editForm th.price input,
+div.editForm td.price input,
+div.editForm input.price,
+div.editForm th.qty input,
+div.editForm td.qty input {
+
+	text-align : right;
+}
+
+
+div.editForm td.hd {
+
+	white-space : nowrap;
+}
+
+div.editForm th a {
+
+	text-align : center;
+	color      : #FFF;
+}
+
+div.editForm th a:hover {
+
+	text-align : center;
+	color      : #ffff00;
+}
+
+div.editForm td {
+
+	background-color : #F6F6F6;
+	/*vertical-align  : top;*/
+}
+
+div.editForm tr.error {
+
+	vertical-align : top;
+}
+
+/*tinymce用*/
+td.mce table {
+
+	width  : 50%;
+	margin : 0px;
+	border : 0px;
+}
+
+/*データが無い場合*/
+div.editForm td.nodata {
+
+	background-color : #F9F9F9;
+	padding          : 36px 16px;
+}
+
+div.editForm td.nowrap_ctr {
+
+	text-align  : center;
+	white-space : nowrap;
+}
+
+div.editForm p.note {
+
+	clear       : both;
+	color       : #3C3C3C;
+	line-height : 110%;
+	margin      : 2px 0px;
+	padding     : 0px 0px 0px 12px;
+	text-indent : -1em;
+}
+
+span.note {
+
+	color       : #4C4C4C;
+}
+
+div.editForm p.leftNote {
+
+	float       : left;
+	color       : #666;
+	line-height : 110%;
+	margin      : 6px 0px;
+	padding     : 0px 0px 0px 12px;
+	text-indent : -1em;
+}
+
+div.editForm ul.note {
+
+	color       : #666;
+	list-style  : none;
+}
+
+div.editForm ul.note li {
+
+	line-height : 128%;
+	list-style  : none;
+	margin      : 0 0 0 10px;
+	text-indent : -1em;
+}
+
+div.editForm dl.note {
+
+	font-size   : 12px;
+	clear       : both;
+	color       : #666;
+	line-height : 110%;
+	margin      : 2px 0px;
+	padding     : 0px 0px 2px 12px;
+}
+
+div.editForm dl.note dt {
+
+	clear     : both;
+	float     : left;
+	font-size : 12px;
+	margin    : 0;
+	padding   : 0;
+	width     : 100px;
+}
+
+div.editForm dl.note dd {
+
+	font-size : 12px;
+	margin    : 0;
+	padding   : 0 8px 2px 100px;
+}
+
+
+div.editForm dl.note2 {
+
+	font-size   : 12px;
+	clear       : both;
+	color       : #666;
+	line-height : 110%;
+	margin      : 8px 0px;
+	padding     : 0px 0px 2px 12px;
+}
+
+div.editForm dl.note2 dt {
+
+	clear     : both;
+	float     : left;
+	font-size : 12px;
+	margin    : 0;
+	padding   : 6px 0 0 0;
+	width     : 64px;
+	heght     : 32px;
+}
+
+div.editForm dl.note2 dd {
+
+	font-size : 12px;
+	margin    : 0;
+	padding   : 0;
+	heght     : 32px;
+}
+
+div.editForm dl.form {
+
+	font-size   : 12px;
+	clear       : both;
+	color       : #666;
+	line-height : 110%;
+}
+
+div.editForm dl.form dt {
+
+	clear     : both;
+	float     : left;
+	margin    : 0;
+	padding   : 6px 0 0 0;
+	width     : 96px;
+	min-heght     : 32px;
+}
+
+div.editForm dl.form dd {
+
+	margin    : 0;
+	padding   : 0;
+	min-heght : 32px;
+}
+
+
+div.editForm th.admin,
+div.editForm th.sideHead {
+
+	color            : #333;
+	font-weight      : normal;
+	text-align       : left;
+	padding          : 4px;
+	/*
+white-space      : nowrap;
+*/
+	background-color : #EAEAEA;
+	vertical-align   : top;
+}
+
+div.editForm th.sideHead {
+
+	background  : #E9E9E9 url(../images/sys/task_todo.png) no-repeat 4px 7px;
+	width       : 160px;
+/*
+	max-width   : 160px;
+
+*/	padding     : 4px 2px 4px 16px;
+	line-height : 120%;
+	color       : #404040;
+	font-weight : bold;
+}
+
+div.editForm th.input {
+
+	background       : none;
+	background-color : #E9E9E9;
+	vertical-align   : top;
+}
+
+
+div.order th,
+div.estimate th,
+div.issue th,
+div.customer th,
+div.purchase th {
+
+	width       : 84px;
+}
+
+div.order th.sideHead,
+div.estimate th.sideHead,
+div.issue th.sideHead,
+div.customer th.sideHead,
+div.purchase th.sideHead {
+
+	width       : 86px;
+}
+
+div.editForm th {
+
+	padding           : 4px 6px 4px 6px;
+	color             : #4C4C4C;;
+	background-color  : #EFEFEF;
+	white-space       : nowrap;
+	font-weight       : bold;
+}
+
+div.editForm td.item {
+
+	background-color  : #EFEFEF;
+	white-space       : nowrap;
+	padding           : 4px 2px 4px 4px;
+	line-height       : 120%;
+}
+
+
+div.editForm th.admin {
+
+	background-color : #FEE2DE;
+}
+
+tr.topHead th,
+div.editForm th.topHeadAdmin,
+div.editForm th.topHead {
+
+	background       : #CCC url(../images/sys/bg_th.png) repeat-x 0 -160px;
+	color            : #FFF;
+	font-weight      : normal;
+	text-align       : center;
+	background-color : #999;
+	padding          : 6px 4px;
+	text-shadow      : 1px 1px 0 #13169B;
+	vertical-align   : middle;
+}
+
+tr.high th {
+
+	padding : 4px;
+}
+
+th.topright {
+
+	border-top-right-radius     : 4px;
+	-moz-border-radius-topright : 4px;
+}
+
+th.topleft {
+
+	border-top-left-radius     : 4px;
+	-moz-border-radius-topleft : 4px;
+}
+
+th.top {
+
+	border-top-right-radius     : 4px;
+	border-top-left-radius      : 4px;
+	-moz-border-radius-topright : 4px;
+	-moz-border-radius-topleft  : 4px;
+	text-align                  : left !important;
+	font-size   : 1.1em;
+	font-weight : bold !important;
+	letter-spacing : 0.4em;
+}
+
+div.editForm th.topHeadAdmin {
+
+	background-color : #FF6633;
+}
+
+input[type=text],
+input[type=password],
+select,
+textarea {
+
+	border                : 1px solid #B9B9B9;
+	transition            : border linear .2s,box-shadow linear .2s;
+	-moz-transition       : border linear .2s,-moz-box-shadow linear .2s;
+	-webkit-transition    : border linear .2s,-webkit-box-shadow linear .2s;
+	border-radius         : 3px 3px 3px 3px;
+	-moz-border-radius    : 3px 3px 3px 3px;
+	-webkit-border-radius : 3px 3px 3px 3px;
+	padding               : 2px;
+	line-height           : 100%\9;
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=radio]:focus,
+input[type=checkbox]:focus,
+textarea:focus,
+select:focus {
+
+	outline            : none;
+	border-color       : rgb(100,128,255)!important;
+	box-shadow         : 0 0 8px rgba(50,50,200,0.5);
+	-moz-box-shadow    : 0 0 8px rgba(82,168,236,0.5);
+	-webkit-box-shadow : 0 0 8px rgba(82,168,236,0.5);
+}
+
+
+div.editForm select {
+
+	margin  : 1px 0px;
+	padding : 1px;
+}
+
+div.editForm input {
+
+	margin  : 1px 0 2px 0;
+	padding : 2px;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+
+	div.editForm input {
+
+		line-height : 100%;
+	}
+}
+
+div.editForm textarea {
+
+	padding : 2px;
+	width   : 98%;
+	height  : 12em;
+}
+
+* html div.editForm textarea {
+
+	width : 96%;
+}
+
+div.editForm textarea.caption {
+
+	height : 3em;
+}
+
+div.editForm tr.odd_static td,
+div.editForm tr.even_static td,
+div.editForm tr.odd td,
+div.editForm tr.even td {
+
+	line-height : 120%;
+}
+
+div.editForm tr.odd_static td,
+div.editForm tr.odd td {
+
+	background-color : #F6F6F6;
+}
+
+div.editForm tr.focus td {
+
+	border : 1px solid #008040;
+}
+
+div.editForm tr.even_static td ,
+div.editForm tr.even td {
+
+	background-color : #E9E9E9;
+}
+
+div.editForm tr.add td {
+
+	background-color : #FFFFFF;
+	border-top       : #CCC 1px solid;
+}
+
+div.editForm tr.odd:hover td,
+div.editForm tr.even:hover td {
+
+	background-color : #CFCFCF;
+}
+
+div.err input,
+div.err select,
+div.err textarea {
+
+	border           : 1px solid #F00 !important;
+	background-color : #FEE;
+	margin           : 1px 0px;
+	padding          : 1px;
+}
+
+div.caution input,
+div.caution select,
+div.caution textarea {
+
+	border           : 1px solid #F00 !important;
+	background-color : #FEE;
+/*
+	border           : 1px solid #CC9933 !important;
+	background-color : #FFC;
+*/
+	margin           : 1px 0px;
+	padding          : 1px;
+}
+
+
+div.editForm input.roworder {
+
+	margin-top       : 0;
+	margin-bottom    : 0;
+}
+
+div.editForm input.searchBtn,
+div.err input.searchBtn {
+
+	color      : #666;
+	border     : none;
+	background : url(../images/sys/search.png) no-repeat left;
+	margin     : 1px 4px;
+	padding    : 0px 0px 0px 20px;
+	width      : 48px;
+	height     : 20px;
+	cursor     : pointer;
+}
+
+div.editForm input.zip {
+
+	width : 64px;
+}
+
+div.editForm input.w100p {
+
+	width : 98%;
+}
+/*IE6*/
+* html div.editForm input.w100p {
+
+	width : 96%;
+}
+
+div.editForm input.p96 {
+
+	width : 96%;
+}
+.w8 {
+	width : 8px !important;
+}
+.w10 {
+	width : 10px !important;
+}
+.w16 {
+	width : 16px !important;
+}
+.w20 {
+	width : 20px !important;
+}
+.w30 {
+	width : 30px !important;
+}
+.w32 {
+	width : 32px !important;
+}
+.w40 {
+	width : 40px !important;
+}
+.w50 {
+	width : 50px !important;
+}
+.w64 {
+	width : 64px !important;
+}
+.w70 {
+	width : 70px !important;
+}
+.w72 {
+	width : 72px !important;
+}
+.w80 {
+	width : 80px !important;
+}
+.w90 {
+	width : 90px !important;
+}
+.w96 {
+	width : 96px !important;
+}
+.w100 {
+	width : 100px !important;
+}
+.w110 {
+	width : 110px !important;
+}
+.w120 {
+	width : 120px !important;
+}
+.w128 {
+	width : 128px !important;
+}
+.w130 {
+	width : 130px !important;
+}
+.w140 {
+	width : 140px !important;
+}
+.w150 {
+	width : 150px !important;
+}
+.w160 {
+	width : 160px !important;
+}
+.w170 {
+	width : 170px !important;
+}
+.w180 {
+	width : 180px !important;
+}
+.w192 {
+	width : 192px !important;
+}
+.w200 {
+	width : 200px !important;
+}
+.w210 {
+	width : 210px !important;
+}
+.w220 {
+	width : 220px !important;
+}
+.w230 {
+	width : 230px !important;
+}
+.w240 {
+	width : 240px !important;
+}
+.w250 {
+	width : 250px !important;
+}
+.w256 {
+	width : 256px !important;
+}
+.w260 {
+	width : 260px !important;
+}
+.w270 {
+	width : 270px !important;
+}
+.w280 {
+	width : 280px !important;
+}
+.w290 {
+	width : 290px !important;
+}
+.w300 {
+	width : 300px !important;
+}
+.w310 {
+	width : 310px !important;
+}
+.w320 {
+	width : 320px !important;
+}
+.w330 {
+	width : 330px !important;
+}
+.w340 {
+	width : 340px !important;
+}
+.w350 {
+	width : 350px !important;
+}
+.w360 {
+	width : 360px !important;
+}
+.w370 {
+	width : 370px !important;
+}
+.w380 {
+	width : 380px !important;
+}
+.w384 {
+	width : 384px !important;
+}
+.w390 {
+	width : 390px !important;
+}
+.w400 {
+	width : 400px !important;
+}
+.w410 {
+	width : 410px !important;
+}
+.w420 {
+	width : 420px !important;
+}
+.w430 {
+	width : 430px !important;
+}
+.w440 {
+	width : 440px !important;
+}
+.w450 {
+	width : 450px !important;
+}
+.w460 {
+	width : 460px !important;
+}
+.w470 {
+	width : 470px !important;
+}
+.w480 {
+	width : 480px !important;
+}
+.w490 {
+	width : 490px !important;
+}
+.w500 {
+	width : 500px !important;
+}
+
+div.editForm img.icon {
+
+	margin         : 2px 4px;
+	vertical-align : middle;
+}
+
+div.editForm div.fileup {
+
+	margin : 8px 0px 2px;
+}
+
+div.editForm #fileUp img,
+div.editForm img.icon {
+
+	margin         : 0 4px;
+}
+
+/*
+div.editForm #fileUp input {
+
+	margin         : 4px;
+}
+
+*/
+div.editForm div.radio {
+
+	margin : 3px 0px;
+}
+
+div.editForm div.radio input {
+
+	margin         : 3px 3px 6px 3px;
+	cursor         : pointer;
+	vertical-align : middle;
+}
+
+html:not(:target) div.editForm div.radio label {
+
+	white-space : nowrap;
+}
+html:not([lang*=""]) div.editForm div.radio label {
+
+	white-space  : nowrap;
+	margin-right : 1.5em;
+}
+
+/*IE6*/
+* html div.editForm div.radio input {
+
+	white-space : normal;
+}
+
+/*
+ * Submitボタン行
+ */
+div.editForm th.bottomHead {
+
+	border-bottom-left-radius         : 4px;
+	border-bottom-right-radius        : 4px;
+	-moz-border-radius-bottomleft     : 4px;
+	-moz-border-radius-bottomright    : 4px;
+	-webkit-border-radius-bottomleft  : 4px;
+	-webkit-border-radius-bottomright : 4px;
+	background                        : #CCC url(../images/sys/bg_th.png) repeat-x 0 0;
+	color                             : #FFF;
+	font-weight                       : normal;
+	text-align                        : center;
+	background-color                  : #999;
+	padding                           : 0 4px;
+}
+
+div.editForm form {
+
+	margin : 0px;
+}
+
+div.editForm input.file {
+
+	height  : 20px;
+	margin  : 0px;
+	padding : 2px;
+}
+
+label {
+
+	cursor : pointer;
+}
+
+label.selectAll {
+
+	display          : block;
+	background-color : #EAEAEA;
+	margin           : 0px;
+	padding          : 0px;
+}
+
+div.finishMsg {
+
+	margin  : 0px;
+	padding : 16px;
+}
+
+div.formConfirm {
+
+	margin      : 12px 0 0 0;
+	color       : #666;
+	line-height : 120%;
+	clear       : both;
+}
+
+
+
+
+
+/*インナーテーブル*/
+
+div.editForm table.inner {
+
+	border : none;
+	margin : 0 0 0 0;
+	border-collapse : collapse;
+}
+
+div.editForm table.inner td,
+div.editForm table.inner tr {
+
+	border : none;
+	margin : 0 0 0 0;
+}
+
+div.editForm table.inner td {
+
+	border-bottom : 1px solid #FFF;
+	white-space   : nowrap;
+	padding       : 1px 2px;
+}
+div.editForm table.inner td.bottom {
+
+	border-bottom : none;
+}
+
+/*横並びDIV*/
+td.parallel div,
+div.parallel,
+div.parallel div,
+td.parallelBox div,
+div.parallelBox,
+div.parallelBox div {
+
+	float : left;
+	margin : 8px 8px 4px 0;
+}
+
+
+/**
+//=========================================//
+//-------------ステータスサイン------------//
+//=========================================//
+*/
+
+span.active,
+span.inactive,
+span.bofore,
+span.after,
+span.stop {
+
+	display : block;
+	width   : 56px;
+	padding : 4px 2px;
+}
+/*---アクティブ---*/
+span.active {
+
+	color            : #0000ff;
+	background-color : #b5e6ff;
+	border           : #0000ff solid 1px;
+}
+/*---インアクティブ---*/
+span.inactive {
+
+	color            : #ff0000;
+	background-color : #ffc8c8;
+	border           : #ff0000 solid 1px;
+}
+/*---以前---*/
+span.bofore {
+
+	color            : #008000;
+	background-color : #bbffbb;
+	border           : #008000 solid 1px;
+}
+/*---以後---*/
+span.after {
+	color            : #333;
+	background-color : #CCC;
+	border           : #333 solid 1px;
+}
+/*---停止---*/
+span.stop {
+
+	color            : #333;
+	background-color : #ffff80;
+	border           : #848400 solid 1px;
+}
+
+/**
+//=========================================//
+//-----------------------------------------//
+//=========================================//
+*/
+
+div.editorDescription {
+
+	font-size   : 0.92em;
+	color       : #666;
+	line-height : 120%;
+	margin      : 4px 0px;
+	padding     : 0px;
+}
+
+div.pastYear {
+
+	font-size  : 0.92em;
+	text-align : right;
+	margin     : 0px 26px 0px 0px;
+}
+
+div.pastYear span.current {
+
+	font-weight : bold;
+}
+
+/*---中央寄せボタン群---*/
+div.center_btn {
+
+	text-align  : center;
+	margin      : 8px 0 4px;
+	padding     : 0px;
+	white-space : nowrap;
+}
+
+/*---右寄せボタン群---*/
+form.right_btn,
+div.right_btn {
+
+	float       : right;
+	margin      : 8px 0px 4px 8px;
+	padding     : 0px;
+	white-space : nowrap;
+}
+/*---左寄せボタン群---*/
+form.left_btn,
+div.left_btn {
+
+	float       : left;
+	margin      : 8px 0px 4px 2px;
+	padding     : 0px;
+	white-space : nowrap;
+}
+form.left_btn,
+span.total {
+
+	font-size   : 1.9em;
+	font-weight : bold;
+	color       : #909090;
+}
+
+/*---画像登録フォーム---*/
+div.imageForm {
+
+	border-bottom : 1px dotted #CCC;
+	padding       : 3px 0px 3px 0px;
+}
+
+div.imageForm img {
+
+	border           : 1px solid #CCC;
+	background-color : #FFF;
+	margin           : 2px 4px 2px 0;
+	padding          : 2px;
+}
+
+
+/*---必須---*/
+div.editForm span.required {
+
+	color       : #F00;
+	font-size   : 0.8em;
+	font-weight : normal;
+}
+
+span.required {
+
+	color          : #FF0000;
+	font-size      : 12px;
+	margin         : 0px 2px;
+	vertical-align : top;
+}
+
+/*---幅---*/
+.w32px {
+	width : 32px;
+}
+.w64px {
+	width : 64px;
+}
+.w128px {
+	width : 128px;
+}
+.w192px {
+	width : 192px;
+}
+.w256px {
+	width : 256px;
+}
+.w320px {
+	width : 320px;
+}
+
+/**
+//=========================================//
+//-------------フォームエラー--------------//
+//=========================================//
+*/
+
+div.parallel div.err,
+td.parallel div.err,
+td.parallel div.notErr {
+
+	float  : left;
+	margin : 0px 6px 0px 0px;
+}
+
+div.parallel input,
+div.parallel textarea,
+div.parallel div,
+td.parallel input,
+td.parallel textarea,
+td.parallel select {
+
+	float  : left;
+	margin : 0px 6px 0px 0px;
+}
+div.parallel p,
+td.parallel p {
+
+	clear : left;
+}
+
+
+div.err .err_str {
+	color       : #F00;
+	line-height : 120%;
+}
+
+div.caution .caution_str {
+	color       : #996600;
+	line-height : 120%;
+	display     : none;
+}
+
+.ext-mb-content {
+
+	text-align: left !important;
+}
+
+div.error {
+
+	background  : #FFEEEE url(../images/sys/error_icon.png) no-repeat scroll 150px 3px;
+	border      : 1px solid #FF0000;
+	color       : #FF0000;
+	margin      : 4px 0px;
+	padding     : 4px 0px;
+	text-align  : left;
+	text-indent : 176px;
+	height      : 14px;
+	-moz-border-radius    : 4px;
+	-webkit-border-radius : 4px;
+	border-radius : 4px;
+		clear       : both;
+}
+
+/*IE7*/
+*:first-child+html div.error {
+
+	padding : 6px 0px 3px 0px;
+}
+
+*:first-child+html div.msg_errorbox,
+*:first-child+html div.msg_warning,
+*:first-child+html div.msg_prompt,
+*:first-child+html div.msg_success {
+
+	padding : 6px 0px 3px 0px;
+}
+
+div.msg_errorbox,
+div.msg_warning,
+div.msg_prompt,
+div.msg_success {
+
+	margin      : 4px 0px;
+	padding     : 4px 0px;
+	text-align  : left;
+	text-indent : 176px;
+	height      : 14px;
+	-moz-border-radius    : 4px;
+	-webkit-border-radius : 4px;
+	border-radius : 4px;
+		clear       : both;
+}
+
+div.msg_errorbox {
+
+	background  : #FFEEEE url(../images/sys/error_icon.png) no-repeat scroll 150px 3px;
+	border      : 1px solid #FF0000;
+	color       : #FF0000;
+}
+
+div.msg_warning {
+
+	background  : #ffff99 url(../images/sys/warning.png) no-repeat scroll 150px 3px;
+	border      : 1px solid #c5a524;
+	color       : #333;
+}
+div.msg_prompt {
+
+	background  : #ffff99 url(../images/sys/message.png) no-repeat scroll 150px 3px;
+	border      : 1px solid #c5a524;
+	color       : #333;
+}
+div.msg_success {
+
+	background  : #DFFFDF url(../images/sys/true.png) no-repeat scroll 150px 3px;
+	border      : 1px solid #9FCF9F;
+	color       : #005F00;
+}
+
+
+
+
+
+
+div.alert {
+
+	text-align  : left;
+	border      : 1px solid #00F;
+	padding     : 4px 0px;
+	margin      : 4px 0px;
+	color       : #F00;
+	background  : #d9ecff;
+	text-indent : 1em;
+	clear       : both;
+}
+
+div.alert a {
+
+	color           : #F00;
+	text-decoration : underline;
+}
+
+div.notice {
+
+	width            : 100%;
+	text-align       : center;
+	border           : 1px solid #00F;
+	padding          : 4px 0px;
+	margin           : 4px 0px;
+	color            : #00F;
+	background-color : #EEF;
+	clear            : both;
+}
+/**
+//=========================================//
+//----------------ページング---------------//
+//=========================================//
+*/
+
+div.paging {
+
+	width       : 100%;
+	line-height : 120%;
+	height      : 1em;
+	margin      : 2px 0px 2px 0px ;
+	padding     : 2px 0px;
+	clear       : both;
+}
+div.page_navi {
+
+	float : right;
+}
+div.page_total {
+
+	float       : left;
+	margin      : 0 0 0 4px;
+}
+
+/**
+//=========================================//
+//----------------詳細表示-----------------//
+//=========================================//
+*/
+
+/*---ページトップへ---*/
+div.gotoPageTop {
+
+	text-align : right;
+	margin     : 12px 2px 2px 0px;
+	padding    : 2px 0px;
+}
+
+div.document {
+
+	margin : 8px 0px 32px 0px ;
+}
+
+div.document div.title {
+
+	width            : 98%;
+	text-align       : left;
+	font-size        : 1.2em;
+	color            : #333;
+	background-color : #EAEAEA;
+	border           : 1px solid #CCC;
+	margin           : 8px 0px;
+	padding          : 4px 0px 4px 8px;
+}
+
+div.document div.date_division {
+
+	color      : #333;
+	text-align : right;
+}
+
+div.document div.documentBody {
+
+	font-size   : 1.1em;
+	line-height : 1.6em;
+	color       : #666;
+	margin      : 16px 0px;
+}
+
+div.document div.file {
+
+	color : #333;
+}
+
+div.msgPage {
+
+	margin  : 8px 0px;
+	height  : 160px;
+	padding : 4px 0px 4px 8px;
+}
+
+div.noticeForAdmin {
+
+	line-height : 1.2em;
+	color       : #666;
+	margin      : 16px 0px;
+}
+
+/**
+//=========================================//
+//------------------Developer--------------//
+//=========================================//
+*/
+
+#debugContainer {
+
+	background-color : #FFFFEE;
+	color            : #666;
+	border           : 1px solid #CCCCCC;
+	margin           : 4px 0px;
+	width            : 99%;
+}
+
+
+#debugContainer li,
+#debugContainer li{
+
+	font-size   : 12px;
+	text-indent : -1em;
+	list-style  : none;
+	line-height : 120%;
+	margin      : 0px 12px 0px 10px;
+}
+
+#debugContainer pre{
+
+	font-size   : 12px;
+	line-height : 110%;
+}
+
+div.tplname {
+
+	text-align : right;
+	margin     : 4px 20px;
+	color      : #999;
+}
+
+/**
+//=========================================//
+//----------------更新情報-----------------//
+//=========================================//
+*/
+
+div#topInfo div.topInfoTitle {
+
+	color          : #2266AA;
+	background     : url(../images/user/h1_info_list.png) repeat-x scroll left bottom;
+	letter-spacing : 0.5em;
+	font-weight    : bold;
+	height         : 18px;
+	padding        : 2px 4px 2px 6px;
+	margin         : 12px 0px 0px 0px;
+}
+
+div.topInfoTitle div.title {
+
+	margin : 2px 0px 0px 0px;
+	float  : left;
+}
+
+div.topInfoTitle div.icon {
+
+	float          : right;
+	margin         : 0px 0px 0px 0px;
+	font-weight    : normal;
+	letter-spacing : 0.2em;
+	line-height    : 100%;
+	padding        : 0;
+}
+
+div.topInfoTitle div.icon img {
+
+	margin         : 0px 0px 0px 0px;
+	vertical-align : text-bottom;
+}
+
+div#topInfo {
+
+	margin : 0px;
+}
+
+div#topInfo table {
+
+	width           : 100%;
+	margin          : 8px 0px;
+	border-collapse : collapse;
+}
+
+div#topInfo td {
+
+	border-bottom  : 1px dotted #CCC;
+	padding        : 4px 0px;
+	vertical-align : top;
+	text-align     : left;
+}
+
+div#topInfo table td.image{
+
+	width      : 120px;
+	text-align : right;
+}
+
+div#topInfo h3 {
+
+	background  : url(../images/user/b_arrow.gif) no-repeat left top;
+	font-weight : bold;
+	padding     : 0px 0px 0px 16px;
+	line-height : 128%;
+}
+
+div#topInfo span.date {
+
+	color       : #666;
+	font-weight : normal;
+}
+
+div#topInfo div.description {
+
+	color       : #484848;
+	line-height : 128%;
+	margin      : 6px 0px;
+}
+
+/**
+//=========================================//
+//----------------その他-------------------//
+//=========================================//
+*/
+
+dl.security {
+
+}
+dl.security dt {
+
+	font-weight : bold;
+	margin      : 4px;
+}
+dl.security dd {
+
+	width       : 480px;
+	text-indent : -0.5em;
+	padding     : 0px 0px 0px 24px;
+	margin      : 4px 4px 12px 4px;
+}
+ul.pageMenu {
+
+	width      : 480px;
+	margin     : 24px 4px 4px 24px;
+	list-style : circle;
+}
+ul.pageMenu li {
+
+	line-height : 110%;
+	margin      : 6px 24px;
+}
+
+div#content h2 {
+
+	border-left    : 5px solid #CCC;
+	border-bottom  : 1px solid #CCC;
+	color          : #666;
+	text-indent    : 0.5em;
+	letter-spacing : 0.5em;
+	font-size      : 14px;
+	font-weight    : bold;
+	line-height    : 100%;
+	height         : 16px;
+	padding        : 2px 0px 2px 0px;
+	margin         : 8px 0px 12px 0px;
+}
+
+div#content p.n2ote2 {
+
+	color       : #484848;
+	line-height : 120%;
+	padding     : 0px;
+	margin      : 8px 0px 8px 12px;
+}
+
+form.create_btn {
+	margin-left : 16px;
+}
+
+
+div.vote {
+	margin           : 2em 5em 2em 5em;
+	padding          : 1em 1em 1em 1em;
+	border           : 1px solid #CCC;
+	background-color : #EFEFEF;
+}
+
+span.topicTitle {
+
+	font-size   : 14px;
+	font-weight : bold;
+}
+
+div.previewLink {
+
+	/*
+background : url(../images/sys/form.gif) no-repeat left top;
+*/
+	float      : right;
+	margin     : 0 6px 0 0;
+	padding    : 1px 0 0 22px;
+	height     : 20px;
+}
+
+/*IE6*/
+* html div.previewLink {
+
+	padding : 2px 0 0 22px;
+}
+
+div.previewLink img {
+
+	vertical-align : sub;
+}
+
+* html div.previewLink img {
+
+	vertical-align : middle;
+}
+
+.ime-inactive {
+
+	ime-mode : inactive;
+}
+
+.ime-active {
+
+	ime-mode : active;
+}
+
+/**
+//=========================================//
+//---------------都道府県選択--------------//
+//=========================================//
+*/
+
+select#state optgroup {
+
+	font-style  : normal;
+	font-weight : bold;
+	color       : #666;
+	padding     : 4px 0px 2px 2px;
+	border-top  : 1px dotted #666;
+}
+
+select#state option {
+
+	font-style  : normal;
+	font-weight : normal;
+	color       : #333;
+	padding     : 0px 0px 0px 16px;
+}
+
+div.class-select {
+
+	padding       : 6px 0;
+	border-bottom : 1px solid #CCC;
+}
+
+div.class-select h6 {
+
+	margin : 2px 0 4px 0;
+}
+
+
+.left {
+
+	text-align : left;
+}
+
+.right {
+
+	text-align : right;
+}
+
+.center {
+
+	text-align : center;
+}
+
+/**
+//=========================================//
+//-------------ボタンデザイン--------------//
+//=========================================//
+*/
+
+input.btn {
+
+	margin  : 1px 4px;
+}
+
+div.editForm input.sbtn {
+
+	margin  : 1px 3px;
+	padding : 1px 2px;
+}
+
+/*ボタン*/
+div.editForm input.subBtn {
+
+	margin  : 1px 0px;
+	padding : 1px 2px;
+}
+
+/*表組みの外のボタン*/
+div.btn {
+
+	text-align : center;
+	margin     : 24px;
+}
+
+div.alignLeft {
+
+	text-align : left;
+}
+
+div.btn div.linkBtn,
+div.btn input {
+
+	margin  : 12px 0px;
+	padding : 4px 0px !important;
+	width   : 160px;
+}
+
+html > body div.btn div.linkBtn,
+html > body button_,
+html > body input[type=button],
+html > body input[type=submit] {
+
+	background-color : #999 !important;
+	font-size        : 1.0em;
+	line-height      : 140%;
+	min-height       : 20px;
+	padding          : 1px 3px;
+}
+
+html:first-child input[type=submit] {
+
+	padding          : 4px;
+}
+
+/*
+ * Submitボタン
+ */
+html > body div.editForm th.bottomHead input {
+
+	margin           : 10px 4px;
+	padding          : 4px 0px;
+	width            : 240px;
+	font-size        : 1.1em;
+}
+
+html > body div.loginForm th.bottomHead input {
+
+	width            : 128px;
+	font-size        : 1.1em;
+}
+
+html > body div.btn div.linkBtn {
+
+	padding         : 0 0 0 0;
+}
+
+html > body div.btn div.linkBtn a {
+
+	color           : white;
+	display         : block;
+	text-decoration : none;
+	padding         : 3px 0 0 0;
+	margin          : 0 0 0 0;
+}
+
+html > body div.btn div.linkBtn,
+html > body button_,
+html > body input[type=button],
+html > body input[type=submit] {
+
+	cursor                  : pointer;
+	display                 : inline-block;
+	border-width            : 1px;
+	border-style            : solid;
+	border-color            : #ccc #444 #111 #444;
+	border-color            : rgba(255,255,255,0.7) rgba(0,0,0,0.3) rgba(0,0,0,0.6) rgba(0,0,0,0.3);
+	color                   : white;
+	text-shadow             : rgba(0,0,0,0.45) 0 -1px 0;
+
+	-webkit-box-shadow      : rgba(0,0,0,128,0.75) 0px 0px 3px;
+	-moz-box-shadow         : rgba(0,0,0,0.75) 0px 0px 3px;
+	box-shadow              : rgba(0,0,0,0.75) 0px 0px 3px;
+
+	background              :      -o-linear-gradient(top, rgba(220,220,220,0.6), rgba(100,100,100,0.2) 50%, rgba(0,0,0,0.21) 50%, rgba(0, 0, 0, 0.20));
+	background              :    -moz-linear-gradient(top, rgba(220,220,220,0.6), rgba(100,100,100,0.2) 50%, rgba(0,0,0,0.21) 50%, rgba(0, 0, 0, 0.20));
+	background              : -webkit-linear-gradient(top, rgba(220,220,220,0.6), rgba(100,100,100,0.2) 50%, rgba(0,0,0,0.21) 50%, rgba(0, 0, 0, 0.20));
+	background              :         linear-gradient(top, rgba(220,220,220,0.6), rgba(100,100,100,0.2) 50%, rgba(0,0,0,0.21) 50%, rgba(0, 0, 0, 0.20));
+
+	filter                  : progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#99dcdcdc', endColorstr='#33000000');
+	-webkit-background-clip : padding-box;
+
+	-webkit-border-radius   : 4px;
+	-moz-border-radius      : 4px;
+	border-radius           : 4px;
+
+	margin                  : 0 12px 0 0;
+}
+
+html > body div.btn div.linkBtn:hover,
+html > body button_:hover,
+html > body input[type=button]:hover,
+html > body input[type=submit]:hover {
+
+	border-top-color        : rgba(255,255,255,0.65);
+	-webkit-box-shadow      : rgba(0,0,0,0.75) 0px 0px 3px;
+	-moz-box-shadow         : rgba(0,0,0,0.75) 0px 0px 3px;
+	box-shadow              : rgba(0,0,0,0.75) 0px 0px 3px;
+	background              : transparent      -o-linear-gradient(top, rgba(255,255,255,0.6), rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.01) 50%, transparent);
+	background              : transparent    -moz-linear-gradient(top, rgba(255,255,255,0.6), rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.01) 50%, transparent);
+	background              : transparent -webkit-linear-gradient(top, rgba(255,255,255,0.6), rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.01) 50%, transparent);
+	background              : transparent         linear-gradient(top, rgba(255,255,255,0.6), rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.01) 50%, transparent);
+	filter                  : progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#80FFFFFF', endColorstr='#00FFFFFF');
+	-webkit-background-clip : padding-box;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+
+	html > body input[type=button]:hover,
+	html > body input[type=submit]:hover {
+
+		border-top-color        : rgba(255,255,255,0.65);
+		box-shadow              : rgba(255,255,255,0.25) 0px 0px 3px 3px;
+		background              : transparent         linear-gradient(top, rgba(255,255,255,0.6), rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.01) 50%, transparent);
+	}
+}
+
+html > body button_:active,
+html > body input[type=buttom]:active,
+html > body input[type=submit]:active {
+
+	border-top-color        : rgba(255,255,255,0.2);
+	border-left-color       : rgba(0,0,0,0.4);
+
+	background              : -webkit-gradient(linear, left top, left bottom,
+	                                           from(rgba(180,180,180,0.6)),
+                                             color-stop(0.5, rgba(80,80,80,0.6)),
+                                             color-stop(0.5, rgba(40,40,40,0.6)),
+                                             to(rgba(20, 20, 20, 0.5)));
+	background              : -moz-linear-gradient(top, rgba(180,180,180,0.6),
+                                                      rgba(80,80,80,0.2) 50%,
+                                                      rgba(0, 0, 0, 0.21) 50%,
+                                                      rgba(0, 0, 0, 0.20));
+
+	filter                  : progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#80969696', endColorstr='#59000000');
+	-webkit-box-shadow      : inset 0 0 2px rgba(0,0,0,0.75), rgba(0,0,0,0.75) 0px 0px 3px;
+	-moz-box-shadow         : inset 0 0 2px rgba(0,0,0,0.75), rgba(0,0,0,0.75) 0px 0px 3px;
+	box-shadow              : inset 0 0 2px rgba(0,0,0,0.75), rgba(0,0,0,0.75) 0px 0px 3px;
+	-webkit-background-clip : padding-box;
+}
+
+html > body button_:focus,
+html > body input[type=buttom]:focus,
+html > body input[type=submit]:focus {
+
+	color              : #FF0000;
+	-webkit-box-shadow : rgba(256,32,32,0.9) 0px 0px 8px !important;
+	-moz-box-shadow    : rgba(256,32,32,0.9) 0px 0px 8px !important;
+	box-shadow         : rgba(256,32,32,0.9) 0px 0px 8px !important;
+	filter             : progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#80969696', endColorstr='#59000000');
+}
+
+html > body button_[disabled=disabled],
+html > body input[disabled=disabled],
+html > body input[disabled=disabled]:hover,
+html > body input[disabled=disabled]:active {
+
+	cursor                  : not-allowed;
+	background-color        : #e1e1e1 !important;
+	border-width            : 1px;
+	border-style            : solid;
+	border-color            : #ccc #444 #111 #444;
+	border-color            : rgba(255,255,255,0.7) rgba(0,0,0,0.3) rgba(0,0,0,0.6) rgba(0,0,0,0.3);
+	color                   : #FFF;
+	text-shadow             : rgba(0,0,0,0.45) 0 -1px 0;
+	-webkit-box-shadow      : rgba(180,180,180,0.75) 0px 0px 3px;
+	-moz-box-shadow         : rgba(180,180,180,0.75) 0px 0px 3px;
+	box-shadow              : rgba(180,180,180,0.75) 0px 0px 3px;
+	-webkit-border-radius   : 4px;
+	-moz-border-radius      : 4px;
+	border-radius           : 4px;
+	background              : transparent -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.6)), color-stop(0.5, rgba(255,255,255,0.15)), color-stop(0.5, rgba(255,255,255,0.01)), to(transparent));
+	background              : transparent -moz-linear-gradient(top, rgba(255,255,255,0.6), rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.01) 50%, transparent);
+	filter                  : progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#80FFFFFF', endColorstr='#00FFFFFF');
+	-webkit-background-clip : padding-box;
+}
+
+/*モダンブラウザのみ*/
+body:nth-of-type(1) div.editForm th.bottomHead input,
+body:nth-of-type(1) div.loginForm th.bottomHead input {
+
+	background-color : transparent !important;
+}
+
+
+/*IE6*/
+* html div.editForm th.bottomHead input {
+
+	margin           : 12px;
+	padding          : 4px 0px;
+	font-size        : 1.1em;
+	width            : 160px;
+}
+
+ul.li_download {
+
+	margin       : 12px 0;
+}
+ul.li_download li {
+
+	list-style   : none;
+	margin       : 0 30px 0 8px;
+	line-height  : 20px;
+}
+
+ul.li_download span {
+
+	color       : #666;
+	font-size   : 0.88em;
+	display     : inline-block;
+	margin-left : 6px
+}
+
+div.hd {
+
+	margin   : 24px 0 0 0;
+	padding  : 0 0 4px 0;
+	border-bottom  : 1px solid #ccc;
+}
+
+
+div.hd h4 {
+
+	color       : #666;
+	font-size   : 1.1em;
+	font-weight : bold;
+	text-indent : 0.8em;
+	float       : left;
+}
+
+div.hd span.note {
+
+	color       : #666;
+	font-size   : 1.0em;
+	text-indent : 0.8em;
+	display     : inline-block;
+}
+
+p.description {
+
+	margin   : 24px 0 24px 24px;
+	padding  : 0 0 4px 0;
+	float       : left;
+}
+
+#sidebarContainer div.menu_fix {
+
+	position : fixed;
+	top      : 6px;
+	/*
+bottom :12px;
+*/
+}
+
+#sidebarContainer div.menu_bottom {
+
+	position : fixed;
+	bottom   :0px;
+}
+
+
+/*
+#footer div.pageTop {
+
+	position   : fixed;
+	bottom     : 0px;
+	right      : 0px;
+	padding    : 2px 0px 2px 6px;
+	background : rgba(44,44,200,0.84);
+	border-left: #666 solid 1px;
+	border-top : #666 solid 1px;
+	border-top-left-radius     : 4px;
+	-moz-border-radius-topleft : 4px;
+
+	-webkit-box-shadow         : rgba(0,0,0,0.75) 0px 0px 9px;
+	-moz-box-shadow            : rgba(0,0,0,0.75) 0px 0px 9px;
+	box-shadow                 : rgba(0,0,0,0.75) 0px 0px 9px;
+}
+*/
+
+/**
+//=========================================//
+//---------------トップページ--------------//
+//=========================================//
+*/
+
+.mainMenuBlock h3 {
+
+	color          : #3C3C3C;
+	font-weight    : bold;
+	text-align     : left;
+	letter-spacing : 0.5em;
+	display        : inline-block;
+	border-left    : 8px solid #CCC;
+	border-bottom  : 1px solid #CCC;
+	padding        : 2px 16px 2px 12px;
+	margin         : 12px 0px 12px 0px;
+	font-size      : 1.1em;
+}
+
+h3.classic {
+
+	color          : #666;
+	font-weight    : bold;
+	text-align     : left;
+	letter-spacing : 0.5em;
+	border-left    : 8px solid #CCC;
+	border-bottom  : 1px solid #CCC;
+	border-top     : 1px solid #FFF;
+	border-right   : 1px solid #FFF;
+	padding        : 2px 16px 2px 12px;
+	margin         : 12px 0px 12px 0px;
+	float          : left;
+}
+
+
+.mainMenuBlock {
+
+	width  : 98%;
+	float  : left;
+	margin : 0 12px 12px 0;
+}
+
+.half {
+
+	width : 92%;
+}
+
+.mainMenuBlock h4 {
+
+	color          : #666;
+	margin         : 12px 0 8px 4px;
+}
+
+.mainMenuBlock table {
+
+	border                : 1px solid #ccc;
+	-webkit-border-radius : 4px;
+	-moz-border-radius    : 4px;
+	border-radius         : 4px;
+}
+
+.mainMenuBlock th {
+
+	color          : #666;
+	font-size      : 1.1em;
+	font-weight    : bold;
+	padding        : 12px 4px;
+	width          : 128px;
+	vertical-align : top;
+	border-bottom  : 1px dashed #ccc;
+}
+
+.mainMenuBlock td {
+
+	padding       : 4px;
+	border-bottom : 1px dashed #ccc;
+}
+
+.mainMenuBlock tr.bottom th,
+.mainMenuBlock tr.bottom td{
+
+	border-bottom : none;
+}
+
+
+.mainMenuBlock div.disabled,
+.mainMenuBlock a {
+
+	color      : #333;
+	display    : block;
+	float      : left;
+	width      : 160px;
+	padding    : 4px;
+	margin     : 4px;
+	text-align : center;
+	border     : 1px solid #999;
+
+	-webkit-border-radius   : 4px;
+	-moz-border-radius      : 4px;
+	border-radius           : 4px;
+	-webkit-box-shadow      : rgba(0,0,0,0.2) 0px 0px 2px;
+	-moz-box-shadow         : rgba(0,0,0,0.2) 0px 0px 2px;
+	box-shadow              : rgba(0,0,0,0.2) 0px 0px 2px;
+	background              : -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,1)), color-stop(0.5, rgba(200,200,200,0.2)), color-stop(0.5, rgba(255,255,255,0.4)), to(rgba(255, 255, 255, 0.20)));
+	background              : -moz-linear-gradient(top, rgba(255,255,255,1), rgba(200,200,200,0.2) 50%, rgba(255,255,255,0.40) 50%, rgba(255, 255, 255, 0.20));
+	filter                  : progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#99dcdcdc', endColorstr='#33000000');
+	-webkit-background-clip : padding-box;
+	/*background        : url(../images/sys/clear.gif);IE対策*/
+}
+
+/*IEのみ*/
+.mainMenuBlock div.disabled,
+.mainMenuBlock a {
+
+	 background-image        : /url(../images/sys/clear.gif);
+	 background-image        : url(../images/sys/clear.gif)\9;
+	 background-image/*\**/  : url(../images/sys/clear.gif)\9;
+}
+
+.mainMenuBlock div.disabled img,
+.mainMenuBlock a  img {
+
+	margin : 0 4px 0 0;
+}
+
+.mainMenuBlock td.master a {
+
+	width      : 134px;
+}
+
+.mainMenuBlock a:hover {
+
+	text-decoration    : none;
+	-webkit-box-shadow : rgba(128,96,236,0.9) 0px 0px 4px;
+	-moz-box-shadow    : rgba(128,96,255,0.9) 0px 0px 4px;
+	box-shadow         : rgba(128,96,236,0.9) 0px 0px 4px;
+	background         : -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,1)), color-stop(0.5, rgba(200,200,200,0.4)), color-stop(0.5, rgba(255,255,255,0.4)), to(rgba(255, 255, 255, 0.20)));
+	background         : -moz-linear-gradient(top, rgba(255,255,255,1), rgba(200,200,200,0.4) 50%, rgba(255,255,255,0.40) 50%, rgba(255, 255, 255, 0.20));
+	filter             : progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#99dcdcdc', endColorstr='#33000000');
+}
+
+.mainMenuBlock a:active {
+
+	color              : #F00;
+	text-decoration    : none;
+
+	text-shadow        : rgba(255,0,0,0.9) 0px 0px 6px;
+	-webkit-box-shadow : rgba(255,0,0,0.9) 0px 0px 6px;
+	-moz-box-shadow    : rgba(255,0,0,0.9) 0px 0px 6px;
+
+	-webkit-box-shadow : rgba(256,32,32,0.9) 0px 0px 8px;
+	-moz-box-shadow    : rgba(256,32,32,0.9) 0px 0px 8px;
+	box-shadow         : rgba(256,32,32,0.9) 0px 0px 8px;
+	background         : -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,1)), color-stop(0.5, rgba(200,200,200,0.4)), color-stop(0.5, rgba(255,255,255,0.4)), to(rgba(255, 255, 255, 0.20)));
+	background         : -moz-linear-gradient(top, rgba(255,255,255,1), rgba(200,200,200,0.8) 50%, rgba(200,200,200,0.40) 50%, rgba(200, 200, 200, 0.20));
+	filter             : progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#99dcdcdc', endColorstr='#33000000');
+}
+
+.mainMenuBlock div.disabled,
+.mainMenuBlock a.disabled {
+	color              : #ccc;
+	border             : 1px solid #f0f0f0;
+	text-decoration    : none;
+	cursor             : not-allowed;
+
+	-webkit-box-shadow      : rgba(0,0,0,0.1) 0px 0px 2px;
+	-moz-box-shadow         : rgba(0,0,0,0.1) 0px 0px 2px;
+	box-shadow              : rgba(0,0,0,0.1) 0px 0px 2px;
+
+	background              : -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,1)), color-stop(0.5, rgba(200,200,200,0.2)), color-stop(0.5, rgba(255,255,255,0.4)), to(rgba(255, 255, 255, 0.20)));
+	background              : -moz-linear-gradient(top, rgba(255,255,255,1), rgba(200,200,200,0.2) 50%, rgba(255,255,255,0.40) 50%, rgba(255, 255, 255, 0.20));
+	filter                  : progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#99dcdcdc', endColorstr='#33000000');
+}
+
+
+.disabled {
+    opacity: 0.32;
+		cursor : not-allowed;
+}
+
+#navcontainer div.note {
+
+	line-height : 120%;
+	border-top  : #999 1px solid;
+	color       : #3C3C3C;
+	margin      : 8px;
+	padding     : 8px 2px 2px 2px;
+}
+
+#navcontainer div.note p {
+
+	font-size   : 0.96em;
+	line-height : 120%;
+}
+
+#navcontainer div.note h2 {
+
+	font-size   : 12px;
+	margin      : 4px 4px 4px 0;
+	font-weight : normal;
+}
+
+
+#navcontainer h3 {
+
+	font-size   : 12px;
+	margin      : 4px 4px 4px 0;
+	font-weight : normal;
+}
+
+#navcontainer ul.info {
+
+	margin     : 0 0 0 12px;
+}
+
+#navcontainer ul.info li {
+
+	list-style  : circle;
+	text-indent : -0em;
+	margin      : 0 0 0 0;
+}
+
+#navcontainer ul.info a {
+
+	margin      : 0 0 0 0;
+	padding     : 2px 0;
+	line-height : 110%;
+}
+
+#navcontainer ul.info a:hover {
+
+	color            : #F00;
+	text-decoration  : underline;
+	background-color : transparent;
+	margin           : 0 0 0 0;
+}
+
+
+
+
+div.editForm table.alignLeft {
+
+	clear : none;
+	float : left;
+	width : auto;
+	margin : 0 8px 8px 0;
+}
+
+div.editForm .formBlock {
+
+	clear  : both;
+	margin : 0;
+}
+
+div.editForm .fieldBlock {
+
+	margin : 0 0 2px 0;
+}
+
+
+/**
+//=========================================//
+//---------------Ext JSパーツ用------------//
+//=========================================//
+*/
+
+/*コンボボックスで左の上下のみ*/
+.extSelect {
+
+/*input[type=text]*/
+	border-radius         : 3px 0px 0px 3px !important;
+	-moz-border-radius    : 3px 0px 0px 3px !important;
+	-webkit-border-radius : 3px 0px 0px 3px !important;
+	margin                : 0 !important;
+}
+
+.x-combo-list-inner {
+
+	text-align : left;
+}
+
+.x-form-text,
+textarea.x-form-field {
+
+	background-image : none !important;
+}
+
+.search-item {
+
+	clear : both;
+}
+
+.x-form-field {
+
+	margin                : 0 !important;
+}
+
+div.x-form-field-trigger-wrap input.x-form-field {
+
+	font : none !important;
+	border-radius         : 3px 0px 0px 3px !important;
+	-moz-border-radius    : 3px 0px 0px 3px !important;
+	-webkit-border-radius : 3px 0px 0px 3px !important;
+	margin                : 0 !important;
+}
+
+
+.search-item h3 span {
+
+	color : #666;
+}
+
+
+
+
+div.addRow {
+
+	background     : url("../images/sys/add.png") no-repeat scroll 0 0 transparent;
+	float          : left;
+	height         : 20px;
+	margin         : 4px 8px 0 12px;
+	padding        : 2px 12px 0 22px;
+	vertical-align : baseline;
+}
+
+.fleft {
+
+	float : left;
+}
+
+div#ui-datepicker-div {
+	
+		box-shadow         : 0 0 8px rgba(128,128,128,.6);
+}
+
+/**
+//=========================================//
+//-------------------その他----------------//
+//=========================================//
+*/
+
+div.caption_img_cover {
+
+	bottom: 8%;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 0 0 0 30%;
+	position: absolute;
+	text-align: right;
+	text-shadow: 0 -1px 1px #666, -1px 0 1px #666, 1px 0 1px #666;
+	vertical-align: bottom;
+	width: 64%;
+	line-height : 140%;
+	z-index: 2000;
+	font-family: "メイリオ","Meiryo","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","ＭＳ Ｐゴシック","Osaka",sans-serif;
+}

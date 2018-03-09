@@ -1,0 +1,120 @@
+#dialog {
+
+	box-shadow         : 0 0 16px rgba(0,0,0,.5);
+	-moz-box-shadow    : 0 0 16px rgba(0,0,0,.5);
+	-webkit-box-shadow : 0 0 16px rgba(0,0,0,.5);
+	margin-top    : 10px;
+/*
+ background    : #fff;
+ padding       : 10px;
+ */
+ position      : absolute;
+ width         : 320px;
+ z-index       : 200;
+}
+
+* html #dialog {
+
+ background    : #fff;
+ padding       : 10px;
+}
+
+
+#dialog-close {
+ background    : url(images/dialog_close.gif) no-repeat;
+ cursor        : pointer;
+ float         : right;
+ height        : 11px;
+ margin        : 3px 3px 0 0;
+ width         : 11px;
+}
+
+#dialog-close-btn {
+ background-color : #FFF;
+ border        : #666 solid 1px;
+ cursor        : pointer;
+ font-size     : 12px;
+ padding       : 4px;
+ width         : 64px;
+ margin        : 160px auto 0 auto;
+}
+
+
+#dialog-content {
+ color         : #666666;
+ display       : block;
+ font-size     : 12px;
+ height        : 160px;
+ padding       : 6px;
+ text-align    : left;
+ line-height   : 128%;
+}
+#dialog-header {
+ display       : block;
+ font-size     : 14px;
+ font-weight   : bold;
+ height        : 14px;
+ padding       : 3px 6px 7px;
+ position      : relative;
+/*width         : 411px;*/
+}
+#dialog-mask {
+ background    : #FFF;
+ filter        : alpha(opacity=75);
+ left          : 0;
+ min-height    : 100%;
+ opacity       : .75;
+ position      : absolute;
+ top           : 0;
+ width         : 100%;
+ z-index       : 100;
+}
+#dialog-title {
+ float         : left;
+ white-space   : nowrap;
+}
+.errorbox {
+ background    : #fff url(images/error_bg.jpg) bottom right no-repeat;
+ border        : 1px solid #924949;
+ border-top    : none;
+}
+.errorboxheader {
+ background    : url(images/error_header.gif) repeat-x;
+ border        : 1px solid #924949;
+ border-bottom : none;
+ color         : #6f2c2c;
+}
+.prompt {
+ background    : #fff url(images/prompt_bg.jpg) bottom right no-repeat;
+ border        : 1px solid #4f6d81;
+ border-top    : none;
+}
+.promptheader {
+ background    : url(images/prompt_header.gif) repeat-x;
+ border        : 1px solid #4f6d81;
+ border-bottom : none;
+ color         : #355468;
+}
+.success {
+ background    : #fff url(images/success_bg.jpg) bottom right no-repeat;
+ border        : 1px solid #60a174;
+ border-top    : none;
+}
+.successheader {
+ background    : url(images/success_header.gif) repeat-x;
+ border        : 1px solid #60a174;
+ border-bottom : none;
+ color         : #3c7f51;
+}
+.warning {
+ background    : #fff url(images/warning_bg.jpg) bottom right no-repeat;
+ border        : 1px solid #c5a524;
+ border-top    : none;
+}
+.warningheader {
+ background    : url(images/warning_header.gif) repeat-x;
+ border        : 1px solid #c5a524;
+ border-bottom : none;
+ color         : #957c17;
+}
+

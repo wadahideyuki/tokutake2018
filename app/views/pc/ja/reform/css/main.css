@@ -1,0 +1,4324 @@
+@charset "UTF-8";
+
+/* リンク色・フォントサイズ
+--------------------------------------------------------------- */
+
+/*
+10px	77%
+11px	85%
+12px	93%
+13px	100%
+14px	108%
+15px	116%
+16px	123.1%
+17px	131%
+18px	138.5%
+19px	146.5%
+20px	153.9%
+21px	161.6%
+22px	167%
+23px	174%
+24px	182%
+25px	189%
+26px	197%
+*/
+
+.cf:before,
+.cf:after {
+	content:"";
+	display:table;
+}
+.cf:after {
+	clear:both;
+}
+.cf {
+	zoom:1;
+}
+
+a:link,
+a:visited {
+
+	color           : #333333;
+	text-decoration : none;
+}
+a:hover {
+
+	color           : #54BDC4;
+	text-decoration : none;
+}
+a:active {
+
+	color : #000;
+}
+
+p {
+	line-height: 120%;
+}
+
+.pc {
+	display    : block;
+	visibility : visible;
+}
+
+.sp {
+	display    : none;
+	visibility : hidden;
+}
+
+a.tel {
+	color : #000;
+}
+
+  /* BODY (アウトライン)
+  --------------------------------------------------------------- */
+
+body {
+
+	-webkit-text-size-adjust : 100%;
+	font-family: "メイリオ","Meiryo","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","ＭＳ Ｐゴシック","Osaka",sans-serif;
+	/*font-size: 84%;*/
+}
+
+/* 全体幅 */
+header,
+div.container,
+footer {
+
+	min-width    : 960px;
+	max-width    : 960px;
+	margin       : 0px auto 0px auto;
+}
+
+nav {
+
+	max-width    : 960px;
+	margin       : 0px auto 0px auto;
+}
+
+div.header_wrapper {
+
+	width      : 100%;
+	position   : 0;
+	background : transparent url(../img/bg_header.png) repeat-x;
+}
+
+div.footer_wrapper {
+
+	width      : 100%;
+	background : transparent url(../img/bg_footer.jpg) repeat-x;
+}
+
+
+/* HEADER (ヘッダー)
+--------------------------------------------------------------- */
+
+header {
+
+	min-height : 82px;
+}
+
+header div.catch_phrase {
+
+	display    : block;
+	padding    : 12px 0 0 0;
+	font-size  : 85%;
+	text-align : left;
+	letter-spacing : 0.04em;
+}
+
+header div.catch_phrase span {
+	white-space : nowrap;
+}
+
+
+header a.logo {
+
+	display : block;
+	float   : left;
+	margin  : 4px 0 0 0;
+}
+
+header a.logo img {
+	width: 266px;
+}
+
+header a.logo h1 {
+
+	margin  : 0 0 0 0;
+	padding : 0 0 0 0;
+	display : block;
+}
+
+header ul {
+
+	display    : inline-block;
+	float      : right;
+	margin     : -8px 0 0 0;
+	list-style : none;
+	padding    : 0;
+}
+
+header li {
+
+	float   : right;
+	margin  : 0;
+	padding : 0;
+	height  : 49px;
+}
+
+header li img {
+
+	width : 100%;
+}
+
+h1.homepage {
+	margin: 0;
+}
+
+/* TOP (トップページ)
+--------------------------------------------------------------- */
+
+div#top {
+
+	margin : 0 0 42px 0;
+}
+
+/*画像*/
+div#top aside {
+
+		margin-left : -326px;
+		width       : 100%;
+		float       : right;
+}
+
+div#top section {
+	margin-left : 324px;
+	max-width   : 636px;
+	float       : none;
+	/*
+	width   : 628px;
+	height  : 628px;
+
+	border : solid 1px #F00;
+	background-color: #CCC;
+	*/
+}
+
+/*ヘッドライン*/
+div#top article {
+	float  : left;
+	width  : 320px;
+}
+
+div.top_slider {
+
+	width   : 100%;
+	border  : none;
+	padding : 0;
+}
+
+div.top_slider ol.flex-control-nav {
+
+	bottom     : 18px;
+	z-index    : 1000;
+}
+
+div.top_slider .flex-control-paging li a {
+
+	background: none repeat scroll 0 0 rgba(255, 255, 255, 0.6);
+}
+
+div.top_slider .flex-control-paging li a.flex-active {
+
+	background: none repeat scroll 0 0 rgba(255, 255, 255, 1.0);
+}
+
+div.top_slider .flex-direction-nav {
+
+	display    : none;
+	visibility : hidden;
+}
+
+ul.slides {
+	height: auto;
+}
+
+div.top_caption {
+
+	position   : absolute;
+	bottom     : 8%;
+	z-index    : 2000;
+	color      : #FFF;
+	font-weight: bold;
+	font-size  : 18px;
+	width      : 64%;
+	margin     : 0 0 0 30%;
+	text-align : right;
+	text-shadow: 0 -1px 1px #666, -1px 0 1px #666, 1px 0 1px #666;
+	line-height: 140%;
+	vertical-align : bottom;
+}
+
+#contents_grid {
+
+	margin : 0 0 0 0;
+}
+
+#contents_grid div.box {
+
+	float  : left;
+	width  : 30%;
+	border : 1px solid #CCC;
+	margin : 0 44px 24px 0;
+
+	border-radius         : 8px;
+	-moz-border-radius    : 8px;
+	-webkit-border-radius : 8px;
+
+	box-shadow         : 2px 2px 4px rgba(128,128,128,.3);
+	-moz-box-shadow    : 2px 2px 4px rgba(128,128,128,.3);
+	-webkit-box-shadow : 2px 2px 4px rgba(128,128,128,.3);
+}
+
+#contents_grid div.box a.img img {
+
+	width : 100%;
+
+	border-top-right-radius  : 6px;
+	border-top-left-radius   : 6px;
+
+	-moz-border-radius-topright: 6px;
+	-moz-border-radius-topleft : 6px;
+
+	-webkit-border-top-right-radius : 6px;
+	-webkit-border-top-left-radius  : 6px;
+}
+
+
+
+
+
+
+
+
+
+
+
+#contents_grid div.right {
+
+	margin : 0 0 18px 0;
+}
+
+#contents_grid div.box_menu {
+
+	height  : 100px;
+	margin  : 6px 0 4px 0;
+	padding : 0 0 0 0;
+	position: relative;
+	overflow: hidden;
+}
+
+#contents_grid div.box_menu ul {
+
+	font-size : 108%;
+	margin    : 0 0 0 0;
+	padding   : 0 24px 0 24px;
+}
+
+#contents_grid div.box_menu li {
+	margin      : 0 0 0 0;
+	padding     : 0 0 0 0;
+	line-height : 128%;
+}
+
+#contents_grid div.box_menu ul.faq {
+	width : 80%;
+}
+
+#contents_grid div.box_menu ul.faq li {
+	margin : 0 0 0 0;
+	float  : left;
+	width  : 50%;
+}
+
+#contents_grid div.box_menu img.icon {
+
+	position : absolute;
+	right    : 4px;
+	bottom   : 4px;
+	width    : 94px;
+	height   : 94px;
+	z-index  : -1000;
+}
+
+a:hover img._imgover {
+	opacity : .8;
+}
+
+
+
+
+
+div.headlines {
+
+	margin : 0 16px 16px 0;
+
+	border-radius         : 12px;
+	-moz-border-radius    : 12px;
+	-webkit-border-radius : 12px;
+
+	background : url("../img/cork_board02.jpg") repeat;
+	padding    : 4px 8px 2px 8px;
+}
+
+div.headlines div.board {
+
+	background-color   : #FFF;
+	margin             : 10px 0 8px 0;
+	position           : inherit;
+	box-shadow         : 2px 2px 4px rgba(64,64,64,.8);
+	-moz-box-shadow    : 2px 2px 4px rgba(64,64,64,.8);
+	-webkit-box-shadow : 2px 2px 4px rgba(64,64,64,.8);
+	padding            : -21px 12px 0 12px;
+}
+
+div.headlines div.hd {
+
+	padding          : 2px 6px 2px 12px;
+	margin           : -8px 10px 0 10px;
+	border-radius         : 4px;
+	-moz-border-radius    : 4px;
+	-webkit-border-radius : 4px;
+	position         : absolute;
+	width            : 240px;
+}
+
+div.headlines div.hd span {
+
+	font-family: sans-serif;
+}
+
+div.headlines div.hd h3 {
+
+	float  : left;
+	color  : #FFF;
+	margin : 0;
+	padding     : 2px 0 0 0;
+	letter-spacing : 0.1em;
+	font-size   : 116%;
+	line-height : 140%;
+}
+
+div.headlines div.hd a {
+
+	float       : right;
+	color       : #FFF;
+	font-size   : 116%;
+	line-height : 100%;
+	margin      : 4px 0 0 0;
+}
+
+div.headlines div.hd a:hover {
+
+	color       : #666;
+}
+
+div.headlines dl {
+
+	margin    : 10px 0 0 0;
+	padding   : 32px 12px 10px 12px;
+}
+
+div.headlines dt,
+div.headlines dd {
+
+	margin      : 0 0 0 0;
+	line-height : 110%;
+}
+
+div.headlines dd {
+
+	margin  : 0 8px 8px 0;
+	padding : 2px 0;
+	display : block;
+	border-bottom : 1px solid #CCC;
+}
+
+div.headlines dd a:link {
+	border-bottom : none;
+}
+
+#event_list {
+	border : 4px solid #F2B26A;
+}
+
+#event_calendar_digest {
+	border : 4px solid #8AC454;
+}
+
+#event_list div.hd {
+	background-color : #F5A500;
+}
+
+#event_calendar_digest div.hd {
+	background-color : #8AC454;
+}
+
+
+div#news {
+
+	border     : 2px solid #CCC;
+	margin     : 0 16px 16px 0;
+	border-radius         : 8px;
+	-moz-border-radius    : 8px;
+	-webkit-border-radius : 8px;
+	padding    : 0 0 2px 8px;
+	background : transparent url(../img/bg_news.png) repeat-x 0 -76px;
+
+}
+
+div#news h3 {
+
+	margin  : 0;
+	padding : 0;
+	color: #FFF;
+}
+
+div#news dl {
+
+	margin       : 0 0 0 0;
+	padding      : 10px 0 4px 0;
+	max-height   : 122px;
+	overflow-y   : scroll;
+}
+
+div#news dt, div#news dd {
+
+	margin      : 0 0 0 0;
+	line-height : 100%;
+}
+
+div#news dd {
+
+	padding : 2px 0;
+	margin  : 0 8px 8px 0;
+	display : block;
+	border-bottom : 1px solid #CCC;
+}
+
+div#news dd a:link {
+
+	border-bottom: none;
+}
+
+
+div#mailmagazine {
+
+	border     : 2px solid #CCC;
+	margin     : 0 16px 12px 0;
+	border-radius         : 8px;
+	-moz-border-radius    : 8px;
+	-webkit-border-radius : 8px;
+	padding    : 0;
+	overflow   : hidden;
+}
+
+div#mailmagazine a img {
+
+	display : block;
+	margin  : 0 auto 4px auto;
+}
+
+div#mailmagazine a:link {
+
+	border-bottom : none;
+}
+
+
+
+/* NAVIGATION (グローバルメニュー/)
+--------------------------------------------------------------- */
+
+nav {
+
+	height : 42px;
+	width  : 960px;
+}
+
+nav ul {
+
+	list-style-type : none;
+	overflow        : hidden;
+	margin          : 0px 0px 0px 0px;
+	padding         : 0px 0px 0px 0px;
+}
+
+nav li {
+
+	white-space     : nowrap;
+	list-style-type : none;
+	float           : left;
+	margin          : 0px 0px 0px 0px;
+	padding         : 0px 0px 0px 0px;
+	height          : 42px;
+}
+
+nav span {
+
+	display    : none;
+	visibility : hidden;
+}
+
+/* スマホ用（PC/タブレットでは非表示） */
+div.nav_btn {
+	display    : none;
+	visibility : hidden;
+}
+div.nav_btn img {
+	margin : 4px 0 0 0;
+}
+
+
+/* BC_NAVI (パンくずリスト)
+--------------------------------------------------------------- */
+
+ul#bc_navi {
+
+	color       : #333333;
+	margin      : 0;
+	padding     : 0;
+	line-height : 120%;
+	font-size   : 108%;
+}
+
+ul#bc_navi li {
+
+	background  : url("../img/arrow_bcnavi.jpg") no-repeat scroll 8px 0px;
+	display     : inline-block;
+	padding     : 0 0 0 32px;
+	margin      : 0 0 4px 0;
+}
+
+ul#bc_navi li.top {
+
+	background  : none repeat scroll 0 0 rgba(0, 0, 0, 0);
+	padding     : 0;
+	text-indent : 0;
+}
+
+
+div.path {
+
+	width  : 90%;
+	margin : 15px auto 0px auto;
+	border : 1px solid #000;
+}
+
+div.path ul {
+
+	list-style-type : none;
+	margin          : 0px 0px 0px 0px;
+}
+
+div.path ul li {
+
+	line-height     : 1.4;
+	font-size       : 0.8em;
+	list-style-type : none;
+	color           : #000000;
+	float           : left;
+	margin          : 0px 5px 0px 0px;
+}
+
+div.path ul li a {
+
+	text-decoration : none;
+}
+
+
+/* MAIN AREA (メインエリア)
+--------------------------------------------------------------- */
+
+div.container {
+
+	position       : relative;
+	text-align     : left;
+	top            : 0px;
+	vertical-align : top;
+	padding        : 0 0 72px 0;
+	margin         : 0px auto  0px auto;
+}
+
+div.mainContents {
+
+	margin     : 0;
+	padding    : 20px 0 0 0;
+	min-height : 60px;
+}
+
+div.mainContents h1 {
+
+	color          : #333;
+	margin         : 8px 0;
+	padding        : 0 0 0 0;
+	font-size      : 262%;
+	letter-spacing : 0.1em;
+	line-height    : 140%;
+}
+
+div.mainContents h1 span {
+
+	color     : #666;
+	font-size : 22px;
+	margin    : 0 0 0 12px;
+}
+
+
+div.mainContents h1 img {
+
+	width  : 100%;
+	margin : 1em 0 0 0;
+}
+div.mainContents h2 {
+
+	font-size : 1.1em;
+	margin    : 24px 0 12px 0;
+	padding   : 0 4px 4px 4px;
+	display   : inline-block;
+
+}
+
+div.mainContents h3 {
+
+	margin         : 2em 0 0 0;
+	padding        : 0 0 0 0;
+	color          : #333;
+	letter-spacing : 0.2em;
+}
+
+div.container div.sideContents {
+
+	text-align : center;
+	float      : left;
+	width      : 160px;
+	padding    : 1.0em 0 0 0;
+}
+
+/*IE6*/
+* html div.container div.sideContents {
+
+	width : 142px;
+}
+
+div.sideContents ul.menu {
+
+	text-align      : left;
+	list-style-type : none;
+	margin          : 0px 0px 0px 0px;
+	padding         : 0px 0px 0px 1.5em;
+}
+
+div.sideContents ul.menu li {
+
+	list-style-type : none;
+	font-weight     : bold;
+	margin          : 0px 0px 8px 0px;
+	border-bottom   : 1px solid #CCC;
+}
+
+div.sideContents ul.menu li a {
+
+	color           : #360 !important;
+	position        : relative;
+	top             : 0px;
+	width           : 100%;
+	height          : 30px;
+	overflow        : hidden;
+	display         : block;
+	padding         : 0px 0px 0px 1.3em;
+	margin          : 0px 0px 0px 0px;
+	text-decoration : none;
+	background      : transparent url(../img/lm_menu.png) no-repeat 0px 3px;
+}
+
+div.sideContents ul.menu li a.dl {
+
+	position        : relative;
+	width           : 100%;
+	height          : 45px;
+	display         : block;
+	padding         : 0 0 0 0;
+	margin          : 0 0 12px 4px;
+	text-decoration : none;
+	background      : none !important;
+}
+
+div.sideContents ul.menu li a:hover {
+
+	color      : #5A41AF !important;
+	background : transparent url(../img/lm_menu_on.png) no-repeat 0px 3px;
+}
+
+div.sideContents ul.menu li.active a {
+
+	color           : #333;
+	text-decoration : none;
+	background      : transparent url(../img/lm_menu_active.png) no-repeat 0px 3px;
+}
+
+div.sideContents ul.menu li a.active {
+
+	color : #333 !important;
+}
+
+
+
+div.sideContents ul.submenu {
+
+	text-align      : left;
+	list-style-type : none;
+	margin          : -4px 0px 0px 0px;
+	padding         : 0px 0px 0px 8px;
+}
+
+div.sideContents ul.submenu li {
+
+	list-style-type : none;
+	font-weight     : bold;
+	margin          : 6px 0px 6px 0px;
+	padding         : 0 0 0 0;
+	border          : none;
+}
+
+div.sideContents ul.submenu li a {
+
+	color           : #336600!important;
+	position        : relative;
+	top             : 0px;
+	width           : 100%;
+	height          : auto;
+	line-height     : 120%;
+	overflow        : visible;
+	display         : block;
+	padding         : 0px 0px 0px 16px;
+	margin          : 0px 0px 0px 0px;
+	font-size       : 0.8em;
+	font-weight     : normal;
+	text-decoration : none;
+	text-indent     : 0;
+	background      : transparent url(../img/bullet_white.png) no-repeat 0px 0px !important;
+}
+
+div.sideContents ul.submenu li a:hover {
+
+	color      : #5A41AF !important;
+	background : transparent url(../img/bullet_purple.png) no-repeat 0px 0px !important;
+}
+
+div.sideContents ul.submenu li.active a {
+
+	color           : #333 !important;
+	font-weight     : bold;
+	text-decoration : none;
+	background      : transparent url(../img/bullet_black.png) no-repeat 0px 0px !important;
+}
+
+article {
+
+	width      : 46%;
+	float      : left;
+	text-align : left;
+}
+
+aside {
+
+	margin-left : 50%;
+}
+
+li.flex-active-slide p {
+
+	margin : 2px 0 4px 0;
+}
+
+
+/* PRODUCT - 施工事例（一覧）
+--------------------------------------------------------------- */
+
+div#product article {
+
+	min-height : 500px;
+	width      : 29%;
+}
+
+div#product aside {
+
+margin-left: 33%;
+}
+
+/* 各アイコン説明 */
+div.features {
+
+	margin    :  0 0 32px 0;
+}
+
+ul.feature {
+
+	margin    : 26px 0 0 0;
+	padding   : 0 0 0 0;
+	max-width : 900px;
+}
+
+ul.second {
+
+	margin    : 0 0 0 0;
+}
+
+ul.feature li {
+
+	list-style : none;
+	float      : left;
+	margin     : 0 26px 14px 0;
+}
+
+ul.feature li img {
+
+	margin     : 0 6px 0 0;
+	vertical-align: middle;
+}
+
+/* カテゴリリンク */
+ul.product_category_list {
+
+	margin  : 28px 0 0 0;
+	padding : 0 0 0 0;
+}
+
+ul.product_category_list li {
+
+	float      : left;
+	list-style : none;
+	margin     : 0 30px 32px 0;
+}
+
+ul.product_category_list li.right {
+
+	margin     : 0 0 32px 0;
+}
+
+ul.product_category_list li a.img {
+
+	width      : 300px;
+	height     : 280px;
+}
+
+ul.product_by_scene {
+
+	margin  : 28px 0 0;
+	padding : 0;
+}
+
+ul.product_by_scene li {
+
+	float      : left;
+	list-style : outside none none;
+	margin     : 0 30px 32px 0;
+}
+
+ul.product_by_scene li.right {
+
+	margin : 0 0 32px;
+}
+
+ul.product_by_scene img {
+
+	width         : 300px;
+	border-radius : 20px;
+}
+
+ul.product_by_scene li div {
+
+	width     : 300px;
+	font-size : 153.9%;
+}
+#scene h2 {
+	color: #333;
+	font-size: 197%;
+	letter-spacing: 0.1em;
+	line-height: 140%;
+	margin: 8px 0;
+	padding: 0;
+}
+
+/* 詳細リンク */
+ul.product_list {
+
+	margin  : 32px 0 0 0;
+	padding : 0 0 0 0;
+}
+
+ul.product_list li {
+
+	float      : left;
+	list-style : none;
+	margin     : 0 60px 0 0;
+	width      : 280px;
+	min-height : 392px;
+}
+
+ul.product_list li.right {
+
+	margin     : 0 0 0 0;
+}
+
+ul.product_list li a.img {
+
+	float      : left;
+	list-style : none;
+}
+
+ul.product_list li img {
+
+	display    : block;
+	margin     : 0 0 4px 0;
+	max-width  : 280px;
+	max-height : 280px;
+}
+
+ul.product_list li p {
+
+	font-size : 138%;
+	margin    : 12px 0 0 4px;
+	width     : 280px;
+}
+
+ul.product_list li p.name {
+
+	margin          : 8px 0 0 4px;
+	font-size       : 93%;
+	text-decoration : underline;;
+}
+
+ul.product_list div.feature {
+
+	margin    : 12px 0;
+}
+
+ul.product_list div.feature img {
+
+	float  : left;
+	margin : 0 4px 4px 0;
+}
+
+
+
+/* PRODUCT - 施工事例（詳細）
+--------------------------------------------------------------- */
+
+div#product article h2 {
+
+	width         : 100%;
+	font-size     : 138%;
+	line-height   : 100%;
+	margin        : 0 0 12px 0;
+	padding       : 10px 0;
+	border-top    : 2px solid #999;
+	border-bottom : 2px solid #999;
+}
+
+div.product_spec {
+
+	margin      : 0 0 8px 0;
+	line-height : 170%;
+}
+
+div.feature {
+
+	margin : 0 0 28px 0;
+}
+
+div#product p {
+	line-height : 160%;
+}
+
+div#product p.title {
+	line-height : 120%;
+}
+
+div#product ul.slides p {
+	line-height : 100%;
+	font-size   : 116%;
+	margin      : 8px 0 0 0;
+}
+
+div.btn_event {
+	width  : 450px;
+	margin : 28px auto 8px auto;
+}
+
+div.btn_event a {
+	display : block;
+	background-color : #54BFC6;
+	height : 45px;
+	color  : #FFF;
+	line-height : 240%;
+	font-size  : 154%;
+	font-weight  : bold;
+	text-align : center;
+	border-radius         : 8px;
+	-moz-border-radius    : 8px;
+	-webkit-border-radius : 8px;
+	-o-border-radius      : 8px;
+}
+
+div.btn_event img {
+	margin : 0 8px 0 0;
+}
+
+div.btn_event a:hover {
+	opacity : .8;
+}
+
+
+/* 詳細テーブル
+----------------------------- */
+
+div#product article table {
+
+	color          : #333;
+	font-size      : 0.9em;
+	width          : 100%;
+	margin         : 8px 0 0 0;
+	padding        : 6px;
+	border         : 1px solid #CCC;
+	letter-spacing : 0.08em;
+}
+
+div#product article table tr,
+div#product article table th,
+div#product article table td {
+
+	padding : 6px;
+	border  : 1px solid #CCC;
+}
+
+div#product article table th {
+
+	font-weight : bold;
+}
+
+/* ページ送り */
+ul.page {
+
+	text-align : center;
+	margin     : 32px auto 24px auto;
+	padding    : 0;
+	height     : 22px;
+}
+
+ul.page li {
+
+	display : inline-block;
+	margin  : 0 16px;
+}
+
+ul.page li.next {
+
+	padding-right : 20px;
+	padding-left  : 4px;
+	background    : url("../img/arrow_next.png") no-repeat right;
+	font-size     : 108%;
+}
+ul.page li.next a {
+
+	border-bottom : 1px dashed #00A0E9;
+	line-height   : 120%;
+	padding       : 0 0 0 0;
+}
+ul.page li.next a:hover {
+
+	opacity : .8;
+}
+ul.page li.next span {
+
+	color   : #999;
+	opacity : .4;
+}
+
+
+
+ul.page li.prev {
+
+	padding-left : 20px;
+	padding-right: 4px;
+	background   : url("../img/arrow_prev.png") no-repeat left;
+	font-size    : 108%;
+}
+ul.page li.prev a {
+
+	border-bottom: 1px dashed #333;
+	line-height  : 120%;
+	padding : 0 0 0 0;
+}
+ul.page li.prev a:hover {
+
+	opacity : .8;
+}
+ul.page li.prev span {
+
+	color   : #666;
+	opacity : .4;
+}
+
+
+
+
+
+/* EVENT - イベント
+--------------------------------------------------------------- */
+
+div#event article {
+
+	min-height : 500px;
+	width      : 37%;
+}
+
+div#event aside {
+
+	margin-left: 41%;
+}
+
+div#event aside img{
+	display   : block;
+	margin    : 0 auto;
+	max-width : 100%;
+	max-height: 760px;
+}
+
+/* 見学会とイベント一覧
+-------------------------- */
+
+ul.event_list {
+
+	margin  : 24px -72px 0 0;
+	padding : 0 0 0 0;
+}
+
+ul.event_list li {
+
+	float      : left;
+	list-style : none;
+	margin     : 0 56px 0 0;
+	width      : 286px;
+	min-height : 400px;
+}
+
+ul.event_list li div.date {
+
+	margin      : 0;
+	font-size   : 220%;
+	font-weight : bold;
+}
+
+ul.event_list li div.date img {
+
+	vertical-align : baseline;
+}
+
+ul.event_list a img.index {
+
+	max-height: 240px;
+	max-width : 100%;
+	margin    : 0 0 0 0;
+}
+
+ul.event_list a:hover img.index {
+
+	opacity : .8;
+}
+
+ul.event_list div.date img {
+
+	margin  : 0 0 0 2px;
+}
+
+ul.event_list li p.title {
+	margin      : 0;
+	font-size   : 123%;
+}
+
+/* 見学会とイベント詳細
+-------------------------- */
+
+div#event div.date_time {
+	float : left;
+}
+
+div#event div.detail_date {
+	margin      : 36px 0 0 0;
+	font-size   : 480%;
+	font-weight : bold;
+	line-height : 100%;
+}
+
+div#event div.detail_date_txt {
+	margin      : 36px 0 0 0;
+	font-size   : 262%;
+	font-weight : bold;
+	line-height : 100%;
+}
+
+
+div#event div.event_title_wrapper {
+
+	margin      : 10px 0 36px 0;
+}
+
+div#event h1.event_title {
+
+	font-size   : 280%;
+	font-weight : bold;
+	color       : #F39800;
+	line-height : 120%;
+	width       : 70%;
+		float     : left;
+}
+
+div#event div.opening_time {
+	margin      : 0 0 8px 0;
+	font-size   : 167%;
+	font-weight : bold;
+}
+
+div#event ul.contact {
+	margin  : 46px 0 0 0;
+	padding : 0 0 0 24px;
+	float   : left;
+}
+
+div#event ul.contact li {
+	display     : inline-block;
+	margin      : 0 4px 0 0;
+	padding     : 0;
+}
+
+div#event div.reserve_required {
+	border     : 2px solid #8AC454;
+	margin     : 0;
+	border-radius         : 52px;
+	-moz-border-radius    : 52px;
+	-webkit-border-radius : 52px;
+	width  : 104px;
+	height : 104px;
+	display: table;
+	text-align : center;
+	color  : #8AC454;
+	font-weight: bold;
+}
+
+div#event div.reserve_required > * {
+	display        : table-cell;
+	vertical-align : middle;
+	font-size      : 154%;
+}
+
+div.balloon_mm_form_new,
+div.balloon_mm_form_reform,
+div.balloon_event_form {
+	text-align: center;
+	margin: 28px auto 8px;
+	width: 380px;
+}
+
+div.balloon_mm_form_new div,
+div.balloon_mm_form_reform div,
+div.balloon_event_form div {
+	background-color      : #8AC454;
+	border-radius         : 8px;
+	-moz-border-radius    : 8px;
+	-webkit-border-radius : 8px;
+	color                 : #fff;
+	font-size             : 154%;
+	line-height           : 100%;
+	padding               : 12px 0 4px 0;
+}
+
+div.balloon_mm_form_new span,
+div.balloon_mm_form_reform span,
+div.balloon_event_form span {
+	display   : block;
+	font-size : 70%;
+	padding   : 6px 0;
+}
+
+div.balloon_event_form p.present {
+
+	color     : #F00;
+	font-size : 123%;
+}
+
+
+/* イベント開催要項テーブル
+----------------------------- */
+
+div#event article table {
+
+	color          : #333;
+	font-size      : 0.9em;
+	width          : 100%;
+	margin         : 8px 0 0 0;
+	padding        : 6px;
+	border         : 1px solid #CCC;
+	letter-spacing : 0.08em;
+}
+
+div#event article table tr,
+div#event article table th,
+div#event article table td {
+
+	padding : 6px;
+	border  : 1px solid #CCC;
+}
+
+div#event article table th {
+
+	font-weight : bold;
+}
+
+div#event p {
+	line-height : 180%;
+}
+
+div#event p.caption {
+
+	width  : 90%;
+	margin : 2px 0 12px 0;
+		line-height : 120%;
+}
+
+/* イベント参加予約フォーム
+----------------------------- */
+
+div.entryform table {
+	margin    : 0 auto;
+	width     : 94%;
+	font-size : 138.5%;
+	border    : 1px solid #000;
+	text-align: left;
+}
+
+div.entryform table th {
+	background-color : #FFF598;
+	padding          : 24px 0 20px 25px;
+	font-weight      : normal;
+	width            : 30%;
+	vertical-align   : top;
+	border           : 1px solid #000;
+	text-align       : left;
+}
+
+div.entryform table th img {
+
+	float : right;
+	margin: 0 8px 0 0;
+}
+
+div.entryform table td {
+	background-color : #FFF;
+	padding          : 24px 0 20px 34px;
+	vertical-align   : top;
+	border           : 1px solid #333;
+}
+
+div.entryform table td input[type=text],
+div.entryform table td textarea {
+	border  : 1px solid #00A0E9;
+	width   : 92%;
+	padding : 2px 4px;
+}
+
+div.entryform table td select {
+		border  : 1px solid #00A0E9;
+}
+
+div.entryform table td input[type=text],
+div.entryform table td select {
+
+	height : 30px;
+}
+
+div.entryform td textarea {
+
+	font-size : 93%;
+	height : 7em;
+}
+
+div.entryform .radio input {
+	margin         : 0 8px 0 0;
+}
+
+div.entryform .radio label {
+
+	margin         : 0px 16px 0px 0;
+	cursor         : pointer;
+	vertical-align : middle;
+	white-space    : nowrap;
+}
+
+div.form_notice {
+	margin     : 8px auto;
+	width      : 94%;
+	text-align : left;
+}
+
+div.email_notice {
+
+	border     : 1px solid #F00;
+	padding    : 0 1em;
+	margin     : 8px auto;
+	width      : 94%;
+	width      : -webkit-calc(100% - 2em);
+	width      : -moz-calc(100% - 2em);
+	width      : calc(100% - 2em);
+	text-align : left;
+}
+
+
+div.entryform div.btn {
+
+	text-align : center;
+}
+
+div.entryform div.btn input {
+
+	background-color      : #8AC454;
+	border-radius         : 4px;
+	-moz-border-radius    : 4px;
+	-webkit-border-radius : 4px;
+	-o-border-radius      : 4px;
+	color                 : #fff;
+	font-size             : 182%;
+	font-weight           : bold;
+	width  : 350px;
+	height : 80px;
+	border : none;
+	margin : 36px auto
+}
+
+div.entryform div.btn input:hover {
+
+	opacity : .8;
+	/*background-color      : #9DD661;*/
+}
+
+div.err input,
+div.err select,
+div.err textarea {
+
+	border           : 1px solid #F00 !important;
+	background-color : #FEE;
+	margin           : 1px 0px;
+	padding          : 1px;
+}
+
+div.err p {
+
+	margin           : 1px 0px;
+	padding          : 1px;
+	color            : #F00;
+}
+
+div.error {
+
+	color       : #FF0000;
+	margin      : 4px 0 24px 0;
+	padding     : 4px 0px;
+	text-align  : center;
+	height      : 14px;
+	font-size   : 154%;
+}
+
+
+/* イベントカレンダー
+-------------------------- */
+
+div#event_calendar table {
+
+	border-collapse : collapse;
+}
+
+div#event_calendar div.list_calendar {
+
+	border : #647B87 solid 1px;
+	margin : 2px 0 12px 0;
+	width       : 194px;
+	text-align  : center;
+	line-height : 200%
+}
+
+div#event_calendar div.list_calendar a {
+
+	padding : 2px 0 0 0;
+	width   : 194px;
+	display : block;
+	font-size  : 123.1%;
+	font-weight: bold;
+	background-color: #a27658;
+	color      : #ffffff;
+}
+
+div#event_calendar div.list_calendar a:hover {
+
+	background-color: #BF9B83;
+}
+
+div#event_calendar div.month_navi {
+
+	margin : 24px 0 12px 0;
+	font-size  : 182%;
+	font-weight: bold;
+}
+
+div#event_calendar div.year_month {
+
+	display    : inline-block;
+	text-align : center;
+	width      : 58%;
+	margin     : 0 auto;
+}
+
+div#event_calendar div.prev_month {
+
+	display    : inline-block;
+	width      : 20%;
+	padding    : 0 0 0 0;
+	float      : left;
+	text-align : left;
+}
+div#event_calendar div.next_month {
+
+	display    : inline-block;
+	width      : 20%;
+	padding    : 0 0 0 0;
+	float      : right;
+	text-align : right;
+}
+
+div#event_calendar table.month_list,
+div#event_calendar table.month_block,
+div#event_calendar table.year {
+
+	border : #647B87 solid 1px;
+	width  : 100%;
+	margin : 0 0 28px 0;
+}
+
+div#event_calendar table.month_block tbody {
+
+	width  : 100%;
+}
+
+
+div#event_calendar table.month_block td,
+div#event_calendar table.month_block th,
+div#event_calendar table.year td,
+div#event_calendar table.year th,
+div#event_calendar table.month td,
+div#event_calendar table.month th,
+div#event_calendar table.date td,
+div#event_calendar table.date th {
+
+	padding       : 0 0 0 0;
+	border-bottom : #647B87 solid 1px;
+	border-right  : #647B87 solid 1px;
+}
+
+div#event_calendar table.month_block td.other_month div,
+div#event_calendar table.month_block td.other_month ul {
+
+	opacity: 0.25;
+}
+
+div#event_calendar table.month_block td:first-child:before {
+  display: block;
+  float: left;
+  height: 100px;
+  content: "";
+}
+
+div#event_calendar table.month_block td,
+div#event_calendar table.month_block th {
+
+	vertical-align : top;
+	padding        : 2px 4px ;
+	width          : 14.2%;
+}
+
+div#event_calendar table.month_block td div.date {
+
+	font-size   : 108%;
+	font-weight : bold;
+}
+
+
+div#event_calendar table.date td a {
+	font-size     : 108%;
+}
+
+div#event_calendar table.date td a.strong {
+	font-size   : 154%;
+	font-weight : bold;
+}
+
+
+div#event_calendar table.date td.icon {
+	width : 130px!important;
+}
+
+/* カレンダーブロック/リスト */
+div#event_calendar table.month_list td.sat,
+div#event_calendar table.month_block td.sat {
+
+	background-color : #f2faff;
+}
+
+div#event_calendar table.month_list td a.strong {
+
+	font-size   : 123.1%;
+	font-weight : bold;
+
+}
+
+div#event_calendar table.month_block td a.strong {
+
+	/*font-size   : 108%;*/
+	font-weight : bold;
+}
+
+div#event_calendar table.month_list td.sun,
+div#event_calendar table.month_list td.hol,
+div#event_calendar table.month_block td.sun,
+div#event_calendar table.month_block td.hol {
+
+	background-color : #fff7f7;
+}
+
+div#event_calendar table.month_list th.sun,
+div#event_calendar table.month_block th.sun {
+
+	color: #930404;
+}
+
+div#event_calendar table.month_list th.sat,
+div#event_calendar table.month_block th.sat {
+
+	color: #0000dd;
+}
+
+div#event_calendar table.month_list th,
+div#event_calendar table.month_block th,
+div#event_calendar table.year th,
+div#event_calendar table.month th,
+div#event_calendar table.date th {
+
+	background-color : #FFEBE1;
+	font-size: 154%;
+	text-align: center;
+}
+
+div#event_calendar table.month_list ul,
+div#event_calendar table.month_block ul {
+
+	margin     : 6px 0 0 0;
+	padding    : 0 0 0 0;
+	list-style : none;
+}
+
+div#event_calendar table.month_list li,
+div#event_calendar table.month_block li {
+
+	line-height : 120%;
+	padding     : 0 0 0 16px;
+	margin      : 0 0 6px 0;
+	background  : url("../img/clover.png") no-repeat left top;
+}
+
+div#event_calendar table.month_list li {
+
+	background  : url("../img/clover.png") no-repeat left top;
+}
+
+div#event_calendar table.year th.month {
+
+	padding: 0 0 0 6px;
+}
+
+div#event_calendar table.date th.day {
+
+	background-color : #FFF8E2;
+}
+
+div#event_calendar table.month th.date,
+div#event_calendar table.month td.date {
+
+	padding: 0 0 0 6px;
+}
+
+div#event_calendar table.month_list tr td.event_name {
+
+	padding : 4px;
+}
+
+div#event_calendar table.month_list tr th,
+div#event_calendar table.month_list tr td {
+
+	border-bottom : #647B87 solid 1px;
+	border-right  : #647B87 solid 1px;
+}
+
+div#event_calendar table.month_list tr td.day {
+
+	background-color : #fff8e2;
+}
+
+div#event_calendar table.month_list tr.sat td {
+
+	color : #0000dd;
+	background-color : #f2faff;
+}
+
+div#event_calendar table.month_list tr.sun td {
+
+	color: #930404;
+	background-color : #fff7f7;
+}
+
+div#event_calendar table.month_list td.day {
+
+	width       : 14%;
+	padding     : 4px;
+	font-size   : 123%;
+	font-weight : bold;
+}
+
+div#event_calendar table.month td.date {
+
+	background-color : #FFF8E2;
+	font-size        : 123%;
+	font-weight      : bold;
+}
+
+div#event_calendar table.year td.right_end,
+div#event_calendar table.year th.right_end,
+div#event_calendar table.month td.right_end,
+div#event_calendar table.month th.right_end,
+div#event_calendar table.date td.right_end,
+div#event_calendar table.date th.right_end {
+
+	border-right  : none;
+}
+
+div#event_calendar table.year td.bottom_end,
+div#event_calendar table.year th.bottom_end,
+div#event_calendar table.month td.bottom_end,
+div#event_calendar table.month th.bottom_end,
+div#event_calendar table.date td.bottom_end,
+div#event_calendar table.date th.bottom_end {
+
+	border-bottom : none;
+}
+
+div#event_calendar table.month,
+div#event_calendar table.date {
+
+	width  : 100%;
+	padding: 40px;
+}
+
+div#event_calendar table.date  td {
+	padding: 6px;
+}
+
+div.event_calendar_note {
+
+	margin    : 24px 0 8px 0;
+	font-size : 108%;
+}
+
+div#event_calendar_legend {
+
+	border                : #647B87 solid 1px;
+	border-radius         : 4px;
+	-moz-border-radius    : 4px;
+	-webkit-border-radius : 4px;
+	-o-border-radius      : 4px;
+	padding               : 12px 0;
+	font-weight           : bold;
+}
+
+div#event_calendar div.summary {
+	float   : left;
+	display : table;
+	width   : 23%;
+}
+
+div#event_calendar div.summary div {
+	display        : table;
+	vertical-align : middle;
+	text-align      : center;
+	width           : 150px;
+	height          : 40px;
+	margin          : 38px auto 0 auto;
+	padding         : 22px 0;
+	color           : #FFF;
+	background-color: #647B87;
+	font-size       : 138%;
+	border-radius         : 8px;
+	-moz-border-radius    : 8px;
+	-webkit-border-radius : 8px;
+	-o-border-radius      : 8px;
+}
+
+div#event_calendar div.summary div > * {
+	display        : table-cell;
+	vertical-align : middle;
+}
+
+div#event_calendar_legend dl {
+
+	width  : 77%;
+	float  : left;
+	margin : 0;
+}
+div#event_calendar_legend dt {
+
+	float  : left;
+	margin : 0 0 1px 0;
+	height  : 34px;
+}
+
+
+div#event_calendar_legend dd {
+	padding : 8px 0 0 146px;
+	margin  : 0 0 1px 0;
+	height  : 26px;
+}
+
+div#event_calendar div.event_type_icon {
+
+	display        : table;
+	vertical-align : middle;
+	font-size      : 138.5%;
+	width          : 130px;
+	height         : 30px;
+	background-color      : #ccc;
+	border-radius         : 6px;
+	-moz-border-radius    : 6px;
+	-webkit-border-radius : 6px;
+	-o-border-radius      : 6px;
+	text-align : center;
+	color      : #FFF;
+	font-weight: bold;
+	margin     : 0 0 4px 0;
+}
+
+div#event_calendar div.event_type_icon > * {
+	display        : table-cell;
+	vertical-align : middle;
+
+}
+
+div#event_calendar div.event_type_1 {
+	background-color: #A394C6;
+}
+div#event_calendar div.event_type_2 {
+	background-color: #EFA0AA;
+	letter-spacing  : 0.8em;
+	text-indent     : 0.8em;
+}
+div#event_calendar div.event_type_3 {
+	background-color: #F39800;
+}
+div#event_calendar div.event_type_4 {
+	background-color: #00B3D6;
+}
+div#event_calendar div.event_type_5 {
+	background-color: #96BD0F;
+}
+
+
+div#event_calendar div.gratice {
+	display : table;
+	background-color : #E4635C;
+	padding    : 0 24px;
+	margin     : 28px auto 12px auto;
+	height     : 56px;
+	max-width  : 640px;
+	width      : 90%;
+	color      : #FFF;
+	text-align : center;
+	font-size  : 167%;
+	font-weight: bold;
+	border-radius         : 28px;
+	-moz-border-radius    : 28px;
+	-webkit-border-radius : 28px;
+	-o-border-radius      : 28px;
+}
+
+div#event_calendar div.gratice > * {
+	display        : table-cell;
+	vertical-align : middle;
+}
+
+div#event_calendar div.year {
+	float       : left;
+	font-size   : 154%;
+	margin      : 12px 0;
+	width       : 100px;
+	font-weight : bold;
+}
+
+div#event_calendar ul.month {
+	float     : left;
+	padding   : 0 0 0 0;
+	margin    : 12px 0;
+	font-size : 154%;
+	font-weight : bold;
+	border-left : #000 solid 1px;
+	width     : 86%;
+}
+
+div#event_calendar ul.month li {
+	float        : left;
+	display      : table;
+	list-style   : none;
+	text-align   : center;
+	width        : 56px;
+	height       : 33px;
+	margin       : 0;
+	padding      : 0;
+	border-right : #000 solid 1px;
+}
+
+div#event_calendar ul.month li a {
+	display        : table-cell;
+	vertical-align : middle;
+}
+
+div#event_calendar ul.month li a:hover {
+	background-color: #e7f5f6;
+	color           : #333;
+}
+
+
+
+
+/* voice - お客様の声
+--------------------------------------------------------------- */
+
+
+/* お客様の声一覧
+-------------------------- */
+
+div#voice article {
+	min-height : 500px;
+	width      : 50%;
+}
+
+div#voice aside {
+	margin-left: 56%;
+}
+
+div#info,
+div#voice,
+div#process {
+	margin : 36px 0 0 0;
+}
+
+/* 詳細リンク */
+ul.voice_list {
+
+	margin  : 0;
+	padding : 0;
+}
+
+ul.voice_list li {
+
+	list-style : none;
+	margin     : 0 0 54px 0;
+	width      : 100%;
+	border                : 1px solid #CCC;
+	border-radius         : 8px;
+	-moz-border-radius    : 8px;
+	-webkit-border-radius : 8px;
+}
+
+ul.voice_list li div.voice_summary {
+
+	float  : left;
+	width  : 50%;
+	padding: 20px 0 0 36px;
+}
+
+ul.voice_list li div.description {
+
+	font-size : 182%;
+	color     : #333;
+}
+
+ul.voice_list li div.completion {
+
+	margin : 4px 0;
+	padding: 0;
+}
+
+ul.voice_list li img {
+
+	float      : right;
+	display    : block;
+	margin     : 0;
+	padding    : 0;
+	border     : none;
+	/*width      : 44%;*/
+	height     : 226px;
+	border-top-right-radius         : 7px;
+	-moz-border-top-right-radius    : 7px;
+	-webkit-border-top-right-radius : 7px;
+	-o-border-top-right-radius      : 7px;
+	border-bottom-right-radius         : 8px;
+	-moz-border-bottom-right-radius    : 8px;
+	-webkit-border-bottom-right-radius : 8px;
+	-o-border-bottom-right-radius      : 8px;
+}
+
+div#voice p {
+	line-height : 160%;
+}
+
+ul.voice_list li h2 {
+
+	font-size     : 123%;
+	margin        : 16px 0 12px 0;
+	padding       : 5px 4px;
+	border-top    : 1px solid #333;
+	border-bottom : 1px solid #333;
+}
+
+div#voice ul.voice_list li h2 span {
+	margin    : 0 0 0 12px;
+	font-size : 77%;
+}
+
+div#voice div.imgCenter {
+	margin: 0 0 0 0;
+}
+
+div#voice div.portrait {
+	float : left;
+	width : 48%;
+	margin: 0 0 0 0;
+}
+
+div#voice div.landscape {
+
+}
+
+
+
+/* お客様の声（詳細）/NEWS（詳細）
+-------------------------- */
+
+div#info div.descriptions,
+div#voice div.descriptions {
+
+	font-size     : 182%;
+	margin        : 0 0 28px 0;
+	padding       : 0;
+	line-height   : 164%;
+}
+
+div#info article h2 {
+
+	width         : 100%;
+	font-size     : 123%;
+	margin        : 0 0 12px 0;
+	padding       : 4px 0;
+	color         : #999;
+}
+
+div#voice article h2 {
+
+	width         : 100%;
+	font-size     : 123%;
+	margin        : 0 0 12px 0;
+	padding       : 4px 0;
+	border-top    : 1px solid #CCC;
+	border-bottom : 1px solid #CCC;
+}
+
+div#info article h2 span,
+div#voice article h2 span {
+
+	display       : inline-block;
+	margin-left   : 16px;
+	font-size     : 77%;
+	font-weight   : normal;
+}
+
+div#info div.document {
+
+	font-size   : 138.5%;
+	line-height : 164%;
+	margin      : 0 0 28px;
+	padding     : 0;
+}
+
+div#voice div.document {
+
+	margin : 24px 0 0 0;
+}
+
+/* お客様の声詳細ページ画像 / NEWS詳細ページ画像
+----------------------------- */
+
+div#info aside img,
+div#voice aside img {
+
+	width   : 100%;
+	margin  : 0 0 0 0;
+}
+
+div#info p.caption,
+div#voice p.caption {
+
+	width  : 90%;
+	margin : 2px 0 12px 0;
+}
+
+
+/* スライド(施工事例)
+--------------------------*/
+
+#carousel li {
+
+	margin-right : 5px;
+	overflow: hidden;
+}
+
+#carousel img {
+
+	display : block;
+	/*opacity : 1;*/
+	cursor  : pointer;
+	max-height: 100%;
+}
+
+#carousel img:hover {
+
+	opacity : 0.6;
+}
+
+#carousel .flex-active-slide img {
+
+	opacity : 0.6;
+	cursor  : default;
+}
+
+/* 資料請求・お問い合わせ
+--------------------------*/
+
+div#inquiry_form table {
+
+	width : 100%;
+}
+
+div#inquiry_form table th {
+
+	background-color : #FCF7DE;
+}
+
+div#inquiry_form div.btn input {
+	margin : 20px auto;
+	background-color: #F8B62D;
+}
+
+div#inquiry_form div.btn input:hover {
+	/*background-color: #f9c46d;*/
+}
+
+div#inquiry_form span.hint {
+	color: #06831A;
+}
+
+div.modelhouse {
+	color     : #54BFC6;
+	font-size : 131%;
+}
+
+div.inquiry_phone {
+	margin : 32px auto;
+	text-align: center;
+}
+
+/* メルマガ発信中！
+--------------------------*/
+
+div.mainContents h1 span.new_construction {
+
+	color         : #00A0E9;
+	font-size     : 100%;
+	letter-spacing: 0.1em;
+	line-height   : 140%;
+}
+
+div.mainContents h1 span.reform {
+
+	color         : #F5A500;
+	font-size     : 100%;
+	letter-spacing: 0.1em;
+	line-height   : 140%;
+}
+
+span.new_construction {
+
+	color : #00A0E9;
+}
+
+span.reform {
+
+	color : #F5A500;
+}
+
+div#mailmag img.gimon_huan,
+div#mailmag img.gimon_huan_sp {
+	margin : 12px auto 12px auto;
+	width  : 100%;
+	max-width  : 903px;
+}
+
+div#mailmag p {
+	font-size   : 123%;
+	line-height : 160%;
+	margin      : 24px 0 32px 0;
+}
+
+div#mailmag p span {
+	font-size: 123%;
+	font-weight: bold;
+}
+
+div#mailmag div.new_construction,
+div#mailmag div.reform {
+
+	width: 48%;
+	float: left;
+	border-radius         : 8px;
+	-moz-border-radius    : 8px;
+	-webkit-border-radius : 8px;
+	-o-border-radius      : 8px;
+	min-height            : 600px;
+	box-shadow: 2px 2px 4px rgba(128, 128, 128, 0.3);
+}
+
+div#mailmag div.new_construction {
+	background-color: #DCEEFF;
+	margin: 0 24px 0 0;
+}
+div#mailmag div.reform {
+	background-color: #FFF5BD;
+}
+
+div#mailmag div.new_construction h2,
+div#mailmag div.reform h2 {
+	font-size : 154%;
+	color     : #FFF;
+	margin    : 0;
+	padding   : 8px 0;
+	width     : 100%;
+	text-indent: 16px;
+
+	border-top-left-radius         : 8px;
+	-moz-border-top-left-radius    : 8px;
+	-webkit-border-top-left-radius : 8px;
+	-o-border-top-left-radius      : 8px;
+
+	border-top-right-radius         : 8px;
+	-moz-border-top-right-radius    : 8px;
+	-webkit-border-top-right-radius : 8px;
+	-o-border-top-right-radius      : 8px;
+}
+
+div#mailmag div.new_construction h2 {
+	background-color: #00B3D6;
+}
+
+div#mailmag div.reform h2 {
+	background-color: #F5A500;
+}
+
+div#mailmag div.new_construction dl,
+div#mailmag div.reform dl {
+	font-size : 116%;
+	color     : #030303;
+	margin    : 0 0 0 12px;
+	padding   : 16px 0 16px 12px;
+	list-style: none;
+}
+
+div#mailmag div.new_construction dl dt,
+div#mailmag div.reform dl dt {
+	width   : 64px;
+	padding : 0 0 2px 0;
+	float   : left;
+	clear   : left;
+}
+
+div#mailmag div.new_construction dl dd,
+div#mailmag div.reform dl dd {
+	padding : 0 0 2px 64px;
+	margin  : 0;
+}
+
+div#mailmag div.balloon_mm_form_new,
+div#mailmag div.balloon_mm_form_reform {
+	margin : 64px auto 8px auto;
+	width  : 480px;
+}
+
+div#mailmag div.balloon_mm_form_new div {
+	background-color : #00B3D6;
+}
+
+div#mailmag div.balloon_mm_form_reform div {
+	background-color : #F6A400;
+}
+
+div#mailmag div.entryform div.btn input {
+	background-color: #00B3D6;
+}
+
+div#mailmag div.entryform div.btn input:hover {
+	opacity : .8;
+}
+
+div#mailmag div.entryform div.btn input.reform {
+	background-color : #F6A400;
+}
+
+div#mailmag div.entryform div.btn input.reform:hover {
+	opacity : .8;
+}
+
+div#mailmag div.entryform table {
+	width: 100%;
+}
+
+div#mailmag div.entryform table th {
+	background-color : #FCF7DE;
+}
+
+div#mailmag div.form_notice {
+	margin : 8px auto;
+	width  : 100%;
+}
+
+div.remodal div.btn input.reform {
+	background-color : #F6A400;
+}
+div.remodal div.btn input.reform:hover {
+	opacity : .8;
+}
+
+div.remodal div.btn input.new {
+	background-color : #00b3d6;
+}
+
+div.remodal div.btn input.new:hover {
+	opacity : .8;
+}
+
+div.remodal table th {
+	background-color : #FCF7DE;
+}
+
+
+div.btn_mm {
+	margin : 6px;
+	display: inline-block;
+}
+
+div.btn_mm span {
+	margin : 0 2em;
+}
+
+div.btn_mm a {
+	display : block;
+	background-color : #54BFC6;
+	height : 32px;
+	color  : #FFF;
+	line-height : 100%;
+	font-size   : 108%;
+	font-weight : bold;
+	text-align  : center;
+	border-radius         : 8px;
+	-moz-border-radius    : 8px;
+	-webkit-border-radius : 8px;
+	padding: 12px 0 0 0;
+}
+
+div.btn_mm img {
+	margin : 0 6px 0 0;
+}
+
+div.btn_mm a:hover {
+	opacity : .8;
+}
+
+/* よくあるご質問
+--------------------------*/
+
+div#faq h2 {
+	background : url("../img/h2_q_category.png") no-repeat;
+	width      : 137px;
+	height     : 36px;
+	color      : #FFF;
+	line-height: 36px;
+	font-size  : 123%;
+	padding    : 2px 0 0 12px;
+}
+
+div#faq h3 {
+	font-size        : 138%;
+	padding          : 8px 0 8px 22px;
+	margin           : 0 0 12px 0;;
+	border-top       : 2px dashed #CCC;
+	border-bottom    : 2px dashed #CCC;
+	background-color : #DCF0FF;
+	color            : #00A0E9;
+	line-height: 120%;
+}
+
+div#faq h3 span {
+	display   : inline-block;
+	width     : 56px;
+	font-size : 30px;
+}
+
+div#faq div.answer {
+	margin: 12px 0 24px 0;
+}
+
+div#faq div.a {
+	float       : left;
+	padding     : 0 0 0 22px;
+	font-size   : 30px;
+	font-weight : bold;
+}
+
+div#faq div.body {
+	margin: 6px 0 16px 80px;
+	line-height: 210%;
+}
+
+div#faq ul.file {
+	margin: 0 0 0 80px;
+}
+
+div#faq ul.menu {
+
+	height          : auto;
+	list-style-type : none;
+	margin          : 34px 0 28px 0;
+	overflow        : hidden;
+	padding         : 0;
+	border-left     : 1px solid #00A0E9;
+
+}
+
+div#faq ul.menu li {
+	border-right : 1px solid #00A0E9;
+	border-left  : none;
+	float        : left;
+	height       : 34px;
+	list-style-type : none;
+	margin       : 0;
+	padding      : 0;
+	white-space  : nowrap;
+}
+
+div#faq ul.menu li a {
+	color : #00A0E9;
+	display : block;
+	padding: 8px 14px;
+}
+
+div#faq ul.menu li a:hover {
+	background-color : #e7f5f6;
+}
+
+div.btn_2p {
+	display : inline-block;
+	float : left;
+	width  : 48%;
+	margin : 28px 1% 46px 1%;
+}
+
+div.btn_2p a {
+	display : block;
+	background-color : #54BFC6;
+	height : 45px;
+	color  : #FFF;
+	line-height : 240%;
+	font-size   : 154%;
+	font-weight : bold;
+	text-align  : center;
+	border-radius         : 8px;
+	-moz-border-radius    : 8px;
+	-webkit-border-radius : 8px;
+	-o-border-radius      : 8px;
+}
+
+div.btn_2p img {
+	margin : 0 8px 0 0;
+}
+
+div.btn a:hover {
+	opacity : .8;
+}
+
+
+/* リンク集
+--------------------------*/
+
+div#link h2 {
+	width       : 100%;
+	font-size   : 154%;
+	font-weight : normal;
+	padding     : 8px 0;
+	background-color : #B4DEAE;
+	text-indent : 0.6em;
+}
+
+div#link table {
+	margin: 20px 0 34px 0;
+}
+
+div#link table th {
+	padding : 0 0 26px 0;
+}
+
+div#link table td {
+	padding : 6px 0 26px 22px
+}
+
+div#link table td div {
+	font-size : 154%;
+}
+
+div#link a img:hover{
+	opacity : .8;
+}
+
+div#link table td p {
+	margin      : 0 0 0 0;
+	line-height : 140%;
+}
+
+ul.link {
+	list-style : none;
+	margin : 0 -40px 0 0;
+	padding: 0;
+}
+
+ul.link li {
+	float  : left;
+	width  : 333px;
+	height : 256px;
+}
+
+ul.link li img {
+	border : 1px solid #333;
+	margin: 0 0 12px 0;
+}
+
+ul.link li a p {
+	font-size : 161.6%;
+	margin    : 0;
+	width   :293px;
+}
+
+ul.link li a p span {
+	font-size : 70%;
+	margin    : 0;
+}
+
+ul.link li p {
+	margin    : 4px 0 0 0;
+	width     : 293px;
+}
+
+
+/* 家ができるまで
+--------------------------*/
+
+div#afterservice h2,
+div#process h2 {
+	border-bottom: 4px dotted #a27658;
+	color: #a27658;
+	font-size: 232%;
+	font-weight: lighter;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+div#process div.summary_images {
+	margin: 32px 0 0 0;
+}
+
+div#process div.summary {
+	width  : 256px;
+	float  : left;
+	margin : 4px 52px 24px 0;
+}
+
+div#process div.summary p {
+	margin : 0 0 4px 1em;
+	line-height : 150%;
+	text-indent: -1em;
+}
+
+div#process div.summary_images h3 {
+	border-bottom : 2px solid #999;
+	border-top    : 2px solid #999;
+	font-size     : 138%;
+	line-height   : 100%;
+	margin        : 0 0 14px 0;
+	padding       : 10px 0;
+	width         : 100%;
+}
+
+div#process div.images {
+	float: left;
+}
+
+div#process div.images h4 {
+	color     : #F39800;
+	margin    : 0 0 6px 0;
+	width     : 100%;
+	font-size : 153%;
+}
+
+div#process div.images p {
+	margin    : 0 0 16px 0;
+	font-size : 123%;
+}
+
+div#process div.images img {
+	margin : 0 20px 0 0;
+	width  : 200px;
+}
+
+div#process div.concepts {
+	margin    : 36px 0 62px 0;
+}
+
+div#process div.concepts h5 {
+	color     : #F39800;
+	font-size : 123%;
+	margin    : 0 0 12px 0;
+}
+
+div#process div.concepts h5 span {
+	display: block;
+}
+
+div#process div.concept {
+	width     : 212px;
+	margin    : 0 40px 0 0;
+	float     : left;
+}
+
+div#process div.concept p {
+	line-height : 168%;
+	margin      : 0 0 32px 0;
+}
+
+div#process img.chart {
+	margin : 40px 0 48px 0;
+	width : 100%;
+}
+
+div#process div.const_diary {
+	margin: 64px 0 0 0;
+}
+
+div#process div.const_diary p {
+	font-size  : 93%;
+	line-height: 130%;
+	margin     : 24px 18px 4px 22px;
+	text-align : left;
+	letter-spacing: 0.1em;
+}
+
+div#process div.const_diary a {
+
+	float    : left;
+	display  : block;
+	margin   : 0 0 0 14px;
+	background-color : #F39800;
+	width  : 190px;
+	height : 168px;
+	color  : #FFF;
+	line-height : 240%;
+	font-size  : 154%;
+	text-align : center;
+	border-radius         : 8px;
+	-moz-border-radius    : 8px;
+	-webkit-border-radius : 8px;
+	-o-border-radius      : 8px;
+}
+
+div#process div.const_diary a:hover {
+	opacity : 0.8;
+}
+
+div#process ul.report {
+	list-style : none;
+	padding    : 0 0 0 1em;
+	margin     : 32px 0 128px 0;
+}
+
+div#process ul.report li {
+	font-size  : 182%;
+}
+
+div#process ul.report li span {
+	display    : inline-block;
+	margin     : 0 0 0 1em;
+	font-size  : 77%;
+	color      : #666;
+}
+
+
+
+/* 一生おつきあい
+--------------------------*/
+
+div#afterservice div#warranty,
+div#afterservice div#maintenance,
+div#afterservice div#renovation,
+div#afterservice div#casbee {
+	margin: 40px 0 0 0;
+	padding: 0;
+}
+
+div#afterservice div#casbee {
+	margin: 40px 0 128px 0;
+}
+
+div#afterservice div#warranty h2,
+div#afterservice div#maintenance h2,
+div#afterservice div#renovation h2,
+div#afterservice div#casbee h2 {
+	margin: 0 0 12px 0;
+	padding: 0;
+}
+
+div#afterservice p {
+	font-size   : 123.1%;
+	line-height : 175%;
+	width       : 56%;
+	float       : left;
+}
+
+div#afterservice div#warranty img,
+div#afterservice div#maintenance img {
+	float     : left;
+	margin    : 8px 0 0 24px;
+	max-width : 364px;
+	width     : 40%
+}
+
+div#afterservice div#renovation p {
+	width : 100%;
+}
+
+div#afterservice div#renovation p.left {
+	margin: 1em 24px 0 0;
+}
+
+div#afterservice div#renovation img {
+	display   : block;
+	border    : 1px solid #333;
+	margin    : 24px auto 0 auto;
+	max-width : 698px;
+	width     : 100%
+}
+
+div#afterservice div#ecoreno img {
+	display   : block;
+	margin    : 48px auto 48px auto;
+}
+
+div#afterservice div#numerical_targets img {
+	display   : block;
+	margin    : 48px auto 0 auto;
+}
+
+
+/* 一生おつきあい > CASBEEとは */
+
+div#afterservice ul.casbee {
+
+	list-style : none;
+	width : 48%;
+	float : left;
+	font-size: 167%;
+	letter-spacing: 0.18em;
+	margin : 28px 0 0 0;
+	padding: 0;
+}
+
+div#afterservice ul.casbee li {
+	margin : 0 0 3px 0;
+}
+
+
+div#afterservice ul.casbee b {
+	color     : #17915F;
+	font-size : 121%;
+}
+
+div#afterservice ul.casbee span {
+	margin : 0 0 0 1em;;
+}
+
+div#afterservice div#casbee h3 {
+	margin    : 12px 0 2px 0;
+	color     : #00AC6F;
+	font-size : 167%;
+}
+
+div#afterservice div.casbee_description {
+	margin : 28px 0 0 0;
+	width  : 52%;
+	float  : left;
+}
+
+div#afterservice div.casbee_description p {
+	width       : 100%;
+	margin      : 0;
+	text-indent : 20px;
+	background  : url(../img/lm_casbee.jpg) no-repeat 0 5px;
+}
+
+div#afterservice div.casbee_description p b {
+	color : #17915F;
+}
+
+/* スタッフ紹介（代表）
+--------------------------*/
+
+div.president {
+	margin   : 0 0 30px 0 ;
+	padding  : 0;
+	position : relative;
+	width    : 960px;
+	height   : 287px;
+}
+
+div.president img.photo {
+	position : absolute;
+	top      : 24px;
+	height   : 242px;
+}
+
+div.president img.frame {
+	position : absolute;
+}
+
+div.president p.position {
+	position    : absolute;
+	top         : 28px;
+	margin      : 0 0 0 330px;
+	font-size   : 108%!important;
+}
+
+div.president p.name {
+	position    : absolute;
+	top         : 46px;
+	margin      : 0 0 0 330px;
+	font-size   : 182%!important;
+}
+
+div.president p.speciality {
+	position    : absolute;
+	top         : 42px;
+	margin      : 0 68px 0 494px;
+	line-height : 140%!important;
+	font-size   : 108%!important;
+}
+
+div.president p.comment {
+	position    : absolute;
+	top         : 118px;
+	margin      : 0 68px 0 350px;
+	line-height : 168%!important;
+	font-size   : 108%!important;
+	height      : 142px;
+	overflow    : hidden;
+}
+
+/* スマホ・タブレット用非表示*/
+div.president_tablet,
+div.president_sp {
+	display    : none;
+	visibility : hidden;
+}
+
+/* スタッフ紹介（スタッフ）
+--------------------------*/
+
+ul.staff {
+	list-style : none;
+	margin   : 0 -30px 0 0;
+	padding  : 0;
+}
+
+ul.staff li {
+	float    : left;
+	position : relative;
+	width    : 300px;
+	height   : 570px;
+	margin   : 0 30px 30px 0;
+}
+
+ul.staff li img.photo {
+	position : absolute;
+	top      : 146px;
+}
+
+ul.staff li img.frame {
+	position : absolute;
+}
+
+ul.staff li p.position {
+	position    : absolute;
+	top         : 0px;
+	padding     : 0 18px;
+	font-size   : 108%!important;
+}
+
+ul.staff li p.name {
+	position    : absolute;
+	top         : 6px;
+	padding     : 0 18px;
+	font-size   : 182%!important;
+}
+
+ul.staff li p.speciality {
+	position    : absolute;
+	top         : 58px;
+	padding     : 0 14px 0 18px;
+	line-height : 140%!important;
+	font-size   : 108%!important;
+
+}
+
+ul.staff li p.comment {
+	position    : absolute;
+	top         : 386px;
+	margin      : 0 36px 0 48px;
+	padding     : 0 6px 0 0;
+	line-height : 160%!important;
+	font-size   : 108%!important;
+	height      : 162px;
+	overflow    : hidden;
+}
+
+
+
+
+/* 共通
+--------------------------*/
+
+ul.file {
+	list-style : none;
+	margin     : 0;
+	padding    : 0;
+}
+
+ul.file li {
+	margin: 0 0 4px 0;
+}
+
+ul.file img {
+	margin         : 0 8px 0 0;
+	vertical-align : middle;
+}
+
+
+/* FOOTER (フッター)
+--------------------------------------------------------------- */
+
+footer {
+
+	clear      : both;
+	padding    : 0 0 12px 0;
+	position   : relative;
+}
+
+footer ul.col {
+
+	list-style : none;
+	width      : 22%;
+	float      : left;
+	text-align : left;
+	margin     : 16px 0 0 12px;
+	padding    : 0;
+}
+
+footer ul.col li {
+
+	margin : 6px 0 0 0;
+}
+
+footer ul.col ul {
+
+	list-style : none;
+	margin     : 0.4em 0 0 0;
+	padding    : 0 0 0 1em;
+}
+
+
+/* コピーライト */
+footer #copyright {
+
+	color       : #999;
+	font-size   : 0.8em;
+	display     : block;
+	padding     : 6px 0 0 0;
+	font-family : verdana;
+}
+
+
+/* ホームとページトップのリンク */
+footer ul.return_link {
+
+	letter-spacing  : 0.1em;
+	line-height     : 120%;
+	margin          : -46px 2px 0 0;
+	position        : absolute;
+	right           : 4px;
+	color           : #360;
+	text-decoration : none;
+	list-style      : none;
+}
+
+footer ul.return_link li {
+
+	float  : right;
+	margin : 0 0 0 24px;
+}
+
+/* トップ */
+footer ul.return_link li.top a {
+
+	display      : block;
+	height       : 40px;
+	padding-top  : 8px;
+	padding-left : 42px;
+	background   : transparent url(../img/top.png) no-repeat;
+}
+
+footer ul.return_link li.top a:hover {
+
+	opacity : .8;
+	/*background : transparent url(../img/top_o.png) no-repeat;*/
+
+}
+
+/* ホームリンク */
+footer ul.return_link li.home a {
+
+	display      : block;
+	height       : 40px;
+	padding-top  : 8px;
+	padding-left : 42px;
+	background   : transparent url(../img/home.png) no-repeat;
+}
+
+footer ul.return_link li.home a:hover {
+
+	opacity : .8;
+	/*background : transparent url(../img/home_o.png) no-repeat;*/
+
+}
+
+footer div.information {
+	margin   : 14px 0 8px 0;
+	position : relative;
+}
+
+footer div.address {
+
+	width : 640px;
+	float : left;
+}
+
+footer div.catch_phrase{
+
+	height    : 52px;
+	position: relative;
+}
+footer div.catch_phrase p {
+
+	font-size : 85%;
+	letter-spacing : 0.05em;
+	position : absolute;
+	bottom: 6px;
+	margin: 0 0 0 8px;
+}
+
+footer img.logo{
+	float  : left;
+	margin : 0 12px 0 8px;
+	width : 308px;
+}
+footer div.phone_fax_address {
+
+	float       : left;
+	line-height : 130%;
+	margin      : 0 0 0 6px;
+	padding     : 6px 0 0 0;
+}
+
+footer div.contact {
+
+	width    : 320px;
+	float    : right;
+	position : relative;
+	margin   : 8px 0 0 0;
+}
+
+footer div.contact a.facebook {
+	position : absolute;
+	bottom   : 0
+}
+
+footer div.contact a.inquiry,
+footer div.contact img.phone {
+
+	float  : right;
+	display: block;
+}
+
+div.paging {
+
+	clear       : both;
+	height      : 1em;
+	line-height : 120%;
+	margin      : 2px 0;
+	padding     : 2px 0;
+	width       : 100%;
+}
+
+div.page_navi {
+
+	float : right;
+}
+
+div.page_total {
+
+	float  : left;
+	margin : 0 0 0 4px;
+}
+
+div.view_select {
+
+	display   : block;
+	font-size : 182%;
+	border    : 2px solid #999;
+	margin    : 24px auto 0 auto;
+	padding   : 4px;
+	width     : 40%;
+	text-align: center;
+}
+
+ul.simple_paging {
+
+	margin : 0 0 48px 0;
+	padding: 0;
+}
+
+ul.simple_paging li {
+
+	float     : left;
+	border    : 1px solid #333;
+	margin    : 0 10px 0 0;
+	width     : 38px;
+	height    : 38px;
+	list-style: none;
+	display   : table;
+	text-align: center;
+	color     : #FFF;
+	font-size : 123%;
+	border-radius         : 4px;
+	-moz-border-radius    : 4px;
+	-webkit-border-radius : 4px;
+	-o-border-radius      : 4px;
+	background-color: #666;
+}
+
+ul.simple_paging li > * {
+
+	display   : table-cell;
+	vertical-align : middle;
+}
+
+ul.simple_paging li.current {
+
+	font-weight : bold;
+}
+
+ul.simple_paging li a {
+
+	color : #FFF;
+}
+
+ul.simple_paging li a:hover {
+
+	background-color : #999;
+}
+
+/* MUURAN (む～らんさんの家)
+--------------------------------------------------------------- */
+
+div#muuran ul.menu {
+	border-left : 1px solid #a27658;
+	color       : #a27658;
+	float       : none;
+	list-style-type: none;
+	margin      : 8px 0 24px 0;
+	padding     : 0;
+	white-space : nowrap;
+	font-size   : 128%;
+}
+
+div#muuran ul.menu li {
+	border-right: 1px solid #a27658;
+	color       : #a27658;
+	float       : left;
+	margin      : 0;
+	white-space : nowrap;
+	padding     : 0;
+	width       : 34px;
+	text-align  : center;
+	height      : 24px;
+}
+
+div#muuran ul.menu li.active {
+	font-weight : bold;
+	background-color : #EFE6E0;
+}
+
+div#muuran ul.menu li a {
+	display : block;
+	padding : 2px;
+}
+
+div#muuran ul.menu li.top {
+	width       : 65px;
+}
+
+div#muuran ul.menu li a:hover {
+	background-color : #EFE6E0;
+	color            : #8F6950;
+}
+
+
+div#muuran ol.index {
+	padding   : 0 0 0 2em;
+	font-size : 182%;
+}
+
+div#muuran ol.index span {
+	font-size : 77%;
+}
+
+div#muuran p.greetings {
+
+	font-weight : bold;
+	font-size   : 138.5%;
+	margin      : 24px 0 0 0;
+}
+
+div#muuran h2 {
+	border-bottom : 4px dotted #a27658;
+	color         : #a27658;
+	font-size     : 232%;
+	font-weight   : bold;
+	margin        : 12px 0 12px 0;
+	padding       : 0;
+	width         : 100%;
+}
+
+div#muuran h3 {
+	font-size   : 167%;
+	font-weight : bold;
+	margin      : 24px 0 0 0;
+	padding     : 0;
+	width       : 100%;
+	text-indent : 1em;
+}
+
+div#muuran div.introduce {
+
+	margin: 0 0 12px 0;
+}
+
+div#muuran div.introduce h3 {
+	margin : 0;
+	width : 192px;
+	float: left;
+}
+
+div#muuran div.introduce p {
+	margin: 4px 0 0 192px;
+}
+
+div#muuran p {
+
+	font-size: 123.1%;
+	line-height: 175%;
+}
+div#muuran p.date {
+
+	margin     : 12px 0;
+	text-align : right;
+	clear      : both;
+}
+
+div#muuran div.img_top {
+	float  : left;
+	border : 1px #CCC solid;
+	margin : 1em 24px 1em 0;
+	padding: 6px;
+	box-shadow         : 2px 2px 4px rgba(64,64,64,.5);
+	-moz-box-shadow    : 2px 2px 4px rgba(64,64,64,.5);
+	-webkit-box-shadow : 2px 2px 4px rgba(64,64,64,.5);
+}
+
+div#muuran div.img_top img {
+	display : block;
+	width   : 440px;
+}
+
+div#muuran div.img_right {
+	float  : right;
+	border : 1px #CCC solid;
+	margin : 1em 0 1em 24px;
+	padding: 6px;
+	box-shadow         : 2px 2px 4px rgba(64,64,64,.5);
+	-moz-box-shadow    : 2px 2px 4px rgba(64,64,64,.5);
+	-webkit-box-shadow : 2px 2px 4px rgba(64,64,64,.5);
+}
+
+div#muuran div.img_left {
+	float  : left;
+	border : 1px #CCC solid;
+	margin : 1em 24px 1em 0;
+	padding: 6px;
+	box-shadow         : 2px 2px 4px rgba(64,64,64,.5);
+	-moz-box-shadow    : 2px 2px 4px rgba(64,64,64,.5);
+	-webkit-box-shadow : 2px 2px 4px rgba(64,64,64,.5);
+}
+
+div#muuran div.img_right p,
+div#muuran div.img_left p {
+
+	margin     : 0;
+	padding    : 0;
+	font-size  : 108%;
+	color      : #333;
+	line-height: 120%
+}
+
+div#muuran div.column {
+	border          : 1px #CCC solid;
+	background-color: #FFFFCC;
+	padding         : 12px;
+	margin          : 24px 0;
+}
+
+div#muuran div.column h4 {
+	font-size: 123.1%;
+	margin : 6px 0;
+}
+
+div#muuran div.column p {
+	margin : 0;
+}
+
+div#muuran ol {
+	margin      : 12px 0 32px 0;
+	padding     : 0 64px 0 64px;
+	font-size   : 123.1%;
+}
+
+div#muuran ol li {
+	margin      : 0 0 12px 0;
+	padding     : 0;
+}
+
+div#muuran ul {
+	margin      : 12px 0 32px 0;
+	padding     : 0 12px 0 32px;
+	font-size   : 123.1%;
+	list-style  : circle;
+}
+
+div#muuran ul.page {
+	padding     : 0;
+}
+
+div#muuran ul li {
+	margin      : 0 0 4px 0;
+}
+
+div#muuran ul.page li.home {
+
+	white-space : nowrap;
+}
+
+div#muuran table.spec,
+div#muuran table.registration {
+
+	border    : solid 1px #CCC;
+	width     : 100%;
+	font-size : 123.1%;
+	margin    : 24px 0;
+}
+
+div#muuran table.spec th,
+div#muuran table.registration th {
+
+	border : solid 1px #666;
+	background-color: #CFCFCF;
+	white-space : nowrap;
+	padding     : 4px 12px;
+}
+
+div#muuran table.spec td,
+div#muuran table.registration td {
+
+	border : solid 1px #666;
+	padding: 4px;
+}
+
+/* PRIVACY (プライバシーポリシー)
+--------------------------------------------------------------- */
+
+div.mainContents h1.privacy {
+	font-size : 182%;
+	width     : 560px;
+	margin    : 44px auto 24px auto;
+}
+
+div#privacy {
+	width  : 560px;
+	margin : 0 auto;
+}
+
+div#privacy p {
+	line-height: 140%;
+}
+
+div#privacy dl {
+	margin      : 2.6em 0 4.5em 0;
+}
+
+div#privacy dl dt {
+	font-weight : bold;
+	font-size   : 123.1%;
+	margin      : 1.0em 0 0 0;
+}
+
+div#privacy dl dd {
+	margin  : 0;
+	padding : 0;
+}
+
+div#privacy ul {
+	margin  : 0 0 0 1em;
+	padding : 0;
+}
+
+div#privacy ul li{
+	margin  : 0 0 0 0;
+	padding : 0;
+}
+
+div#privacy ul.num {
+	list-style : none;
+	margin     : 1em 0 0 2em;
+	padding    : 0;
+	text-indent: -1.5em;
+}
+
+
+/* ABOUTUS (はじめまして、徳武です)
+--------------------------------------------------------------- */
+
+ul.menu {
+
+	list-style-type : none;
+	overflow        : hidden;
+	margin          : 0px 0px 0px 0px;
+	padding         : 0px 0px 0px 0px;
+	border-left    : 1px solid #a27658;
+}
+
+ul.menu li {
+
+	white-space     : nowrap;
+	list-style-type : none;
+	float           : left;
+	margin          : 0px 0px 0px 0px;
+	padding         : 0;
+	border-right    : 1px solid #a27658;
+	color           : #a27658;
+}
+
+ul.menu li a {
+	color   : #a27658;
+	display : block;
+	padding : 6px 12px
+}
+
+ul.menu li a:hover {
+	color           : #a27658;
+	background-color: #e7f5f6;
+}
+
+div#aboutus div#our_history,
+div#aboutus div#housing,
+div#aboutus div#construction,
+div#aboutus div#staff,
+div#aboutus div#recruit {
+	margin      : 50px 0 0 0;
+	padding     : 0;
+}
+
+div#aboutus div#staff {
+	margin      : 32px 0 0 0;
+	padding     : 0;
+}
+
+
+div#aboutus div#company_profile {
+	margin      : 50px 2% 0 0;
+	padding     : 0;
+	width       : 48% ;
+	float       : left;
+}
+
+div#aboutus div#access {
+	margin      : 50px 0 0 2%;
+	padding     : 0;
+	width       : 48% ;
+	float       : left;
+}
+
+div#aboutus h2 {
+
+	margin          : 0;
+	padding         : 0;
+	width           : 100% ;
+	color           : #a27658;
+	font-size       : 232%;
+	font-weight     : bold;
+	border-bottom   : 4px dotted #a27658;
+}
+
+div#aboutus p {
+
+	font-size       : 123.1%;
+	line-height     : 175%;
+}
+
+div#aboutus div#our_history .content,
+div#aboutus div#construction .content {
+	margin          : 0;
+	padding         : 0;
+	width           : 58% ;
+	float           : left;
+}
+
+div#aboutus div#housing .content {
+	margin          : 0;
+	padding         : 0;
+	width           : 58% ;
+	float           : right;
+}
+
+div#aboutus div#our_history img {
+	margin          : 20px 0 0 4%;
+	max-width       : 365px;
+	width           : 38% ;
+}
+
+div#aboutus div#housing img {
+	margin          : 20px 0 0 0;
+	max-width       : 365px;
+	width           : 38% ;
+}
+
+div#aboutus div#construction img {
+	margin          : 15px 0px 0px 4%;
+	max-width       : 365px;
+	width           : 38% ;
+}
+
+.btn_housing{
+	margin                : -150px 0 120px 0;
+}
+
+.btn_housing a {
+	display               : block;
+	width                 : 450px;
+	height                : 45px;
+	background-color      : #54bfc6;
+	color                 : #fff;
+	font-size             : 154%;
+	font-weight           : bold;
+	line-height           : 240%;
+	text-align            : center;
+	border-radius         : 8px;
+	-moz-border-radius    : 8px;
+	-webkit-border-radius : 8px;
+	-o-border-radius      : 8px;
+}
+
+.btn_housing a:hover {
+	opacity           : .8;
+}
+
+div#aboutus div#recruit h2 {
+	font-size       : 197%;
+}
+
+div#aboutus div#recruit ul {
+	margin          : 25px 0 40px 0;
+	padding         : 0;
+	width           : 100%;
+	list-style-type : none;
+}
+
+div#aboutus div#recruit ul li{
+	float                 : left;
+	margin                : 0 1% 10px 0;
+	padding               : 10px;
+	width                 : 24%;
+	max-width             : 212px;
+	min-width             : 208px;
+	height                : 295px;
+	background-color      : #A27658;
+	color                 : #fff;
+	font-weight           : bold;
+	border-radius         : 10px;
+	-moz-border-radius    : 10px;
+	-webkit-border-radius : 10px;
+	-o-border-radius      : 10px;
+}
+
+div#aboutus div#recruit ul li.r{
+	margin          : 0;
+}
+
+div#aboutus div#recruit p.occupation{
+	margin             : 10px 0;
+	font-size          : 200%;
+}
+
+div#aboutus div#recruit p.condition{
+	line-height         : 170%;
+}
+
+div#aboutus iframe {
+	width  :100%;
+	height :486px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+div#aboutus div#company_profile table {
+	width             : 100% ;
+	margin            : 20px 0 0 0;
+	border-top        : 2px dashed #CACACA;
+	border-bottom     : 2px dashed #CACACA;
+	font-size         : 110%;
+}
+
+div#aboutus div#company_profile table tr {
+	width             : 100% ;
+	border-bottom     : 2px dashed #CACACA;
+}
+
+div#aboutus div#company_profile table th,
+div#aboutus div#company_profile table td {
+	padding           : 0 15px 0 15px;
+	vertical-align    : top;
+	line-height       : 300%;
+}
+
+div#aboutus div#company_profile table th {
+	white-space       : nowrap;
+}
+
+div#aboutus div#access .googlemap {
+	margin            : 20px 0 0 0;
+	width             : 100%;
+}
+
+div#aboutus p.quo {
+	margin            : 85px 0 0 0;
+	padding           : 0;
+	color             : #54bfc6;
+	font-size         : 146.5%;
+	font-weight   : bold;
+}
+
+div#aboutus p.quo span {
+	color         : #EF869F;
+}
+
+.btn_modelhouse a {
+	display               : block;
+	margin                : 5px 10px 0 0;
+	width                 : 47%;
+	height                : 45px;
+	background-color      : #54bfc6;
+	color                 : #fff;
+	font-size             : 154%;
+	font-weight   : bold;
+	line-height           : 240%;
+	text-align            : center;
+	border-radius         : 8px;
+	-moz-border-radius    : 8px;
+	-webkit-border-radius : 8px;
+	-o-border-radius      : 8px;
+	float                 : left;
+}
+
+.btn_modelhouse a:hover {
+	opacity : .8;
+}
+
+.btn_tel a,.btn_mail a {
+	display               : block;
+	margin                : 5px 10px 0 0;
+	width                 : 21%;
+	height                : 45px;
+	background-color      : #54bfc6;
+	color                 : #fff;
+	font-size             : 154%;
+	font-weight           : bold;
+	line-height           : 240%;
+	text-align            : center;
+	border-radius         : 8px;
+	-moz-border-radius    : 8px;
+	-webkit-border-radius : 8px;
+	-o-border-radius      : 8px;
+	float                 : left;
+}
+
+.btn_tel a:hover,.btn_mail a:hover {
+	opacity : .8;
+}
+
+
+
+/* HOUSING (うれし徳武家づくり)
+--------------------------------------------------------------- */
+
+div#housing div#model_house,
+div#housing div#omsolar,
+div#housing div#building-plan,
+div#housing div#timber_material,
+div#housing div#subsidy {
+	margin      : 50px 0 0 0;
+	padding     : 0;
+}
+
+div#housing h2 {
+	margin          : 0;
+	padding         : 0;
+	width           : 100% ;
+	color           : #a27658;
+	font-size       : 232%;
+	font-weight     : bold;
+	border-bottom   : 4px dotted #a27658;
+}
+
+div#housing h3 {
+	margin          : 0;
+	padding         : 0;
+	width           : 100%;
+	font-size       : 153.9%;
+	font-weight     : bold;
+}
+
+div#housing p {
+	font-size       : 123.1%;
+	line-height     : 175%;
+}
+
+div#housing div#model_house .model1,
+div#housing div#model_house .model2,
+div#housing div#model_house .model3 {
+	padding         : 0;
+	width           : 100% ;
+}
+
+div#housing div#model_house .model1 {
+	margin          : 40px 0 0 0;
+}
+
+div#housing div#model_house .model2 {
+	margin          : 70px 0 0 0;
+}
+
+div#housing div#model_house .model3 {
+	margin          : 15px 0 30px 0;
+}
+
+div#housing div#model_house .model1 .content {
+	float           : left;
+	margin          : 0;
+	padding         : 0;
+	width           : 58%;
+}
+
+div#housing div#model_house .model1 h3 {
+	color           : #00A0E9;
+}
+
+div#housing div#model_house .model1 img {
+	margin    : 60px 0 0 4%;
+	max-width : 363px;
+	width     : 38%
+}
+
+div#housing div#model_house .model2 .content {
+	float           : right;
+	margin          : 0;
+	padding         : 0;
+	width           : 52%;
+}
+
+div#housing div#model_house .model2 h3 {
+	color           : #22AC38;
+}
+
+div#housing div#model_house .model2 .model2_p {
+	margin         : 50px 0 0 0;
+	padding        : 0;
+	width          : 43%;
+}
+
+div#housing div#model_house .model2 .model2_p img {
+	width          : 100%;
+	max-width      : 406px;
+}
+
+div#housing div#model_house .model2 .model2_p .caption {
+	margin         : 0;
+	padding        : 0;
+	font-size    : 80%;
+	font-weight  : bold;
+}
+
+div#housing div#model_house .model3 ul {
+	margin          : 0;
+	padding         : 0;
+	width           : 100%;
+	list-style-type : none;
+}
+
+div#housing div#model_house .model3 ul li {
+	float           : left;
+	margin          : 0 3% 0 0;
+	padding         : 0;
+	width           : 17%;
+}
+
+div#housing div#model_house .model3 ul li.soil {
+	margin          : 0;
+}
+
+div#housing div#model_house .model3 ul li p {
+	margin          : 0;
+	padding         : 0;
+	height          : 200px;
+	font-size       : 108%;
+	line-height     : 150%;
+}
+
+div#housing div#model_house .model3 ul li p.comment {
+	height          : 120px;
+}
+
+div#housing div#model_house .model3 ul li img {
+	width           : 100%;
+}
+
+div#housing div#model_house .model3 ul li.wind img {
+	margin          : 0 0 0 -35px;
+	width           : 140%;
+}
+
+div#housing div#omsolar h3 {
+	margin          : 40px 0 0 0;
+	color           : #F39800;
+}
+
+div#housing div#omsolar .omsolar1 {
+	margin          : 10px 0 0 0;
+	padding         : 0;
+	width           : 100% ;
+}
+
+.columns {
+	-webkit-columns: 2;
+	-moz-columns: 2;
+	-ms-columns: 2;
+	columns: 2;
+}
+
+div#housing div#omsolar ul.omsolar2 {
+	margin          : 50px auto 0 auto;
+	padding         : 0;
+	max-width       : 899px;
+	width           : 100%;
+	list-style-type : none;
+}
+
+div#housing div#omsolar ul.omsolar2 li {
+	float           : left;
+}
+
+div#housing div#omsolar .omsolar2 li.om_01 {
+	width           : 31.6%;
+}
+
+div#housing div#omsolar .omsolar2 li.om_02 {
+	width           : 33.9%;
+}
+
+div#housing div#omsolar .omsolar2 li.om_03 {
+	width           : 34.5%;
+}
+
+div#housing div#omsolar .omsolar2 li.om_01 img {
+	max-width       : 284px;
+	width           : 100%;
+}
+
+div#housing div#omsolar .omsolar2 li.om_02 img {
+	max-width       : 305px;
+	width           : 100%;
+}
+
+div#housing div#omsolar .omsolar2 li.om_03 img {
+	max-width       : 310px;
+	width           : 100%;
+}
+
+
+div#housing div#omsolar .omsolar3 {
+	margin          : 40px 0 40px 0;
+	padding         : 0;
+}
+
+div#housing div#omsolar .omsolar3 .om3_1 {
+	margin          : 50px 20px 0 0;
+	float           : left;
+	color           : #F39800;
+	font-weight     : bold;
+}
+
+div#housing div#omsolar .omsolar3 .om3_1 span.pc {
+	display         :inline;
+}
+
+div.btn_present {
+	margin : 30px 0 50px 0;
+}
+
+div.btn_present a {
+	display               : block;
+	width                 : 450px;
+	padding               : 10px 0;
+	background-color      : #54BFC6;
+	color                 : #FFF;
+	font-size             : 154%;
+	font-weight           : bold;
+	line-height           : 120%;
+	text-align            : center;
+	border-radius         : 8px;
+	-moz-border-radius    : 8px;
+	-webkit-border-radius : 8px;
+	-o-border-radius      : 8px;
+}
+
+div.btn_present a:hover {
+	opacity : .8;
+}
+
+div#housing div#building-plan .plan1,
+div#housing div#building-plan .plan2,
+div#housing div#building-plan .plan3,
+div#housing div#building-plan .plan4,
+div#housing div#building-plan .plan5 {
+	margin          : 40px 0 0 0;
+	padding         : 0;
+	width           : 100% ;
+}
+
+div#housing div#building-plan .plan1 .content {
+	float           : left;
+	margin          : 0;
+	padding         : 0;
+	width           : 60%;
+}
+
+div#housing div#building-plan .plan1 h3 {
+	color           : #00A0E9;
+}
+
+div#housing div#building-plan .plan1 img {
+	margin    : 30px 0 0 4%;
+	max-width : 346px;
+	width     : 36%
+}
+
+div#housing div#building-plan .plan2 .content {
+	float           : right;
+	margin          : 0;
+	padding         : 0;
+	width           : 57%;
+}
+
+div#housing div#building-plan .plan2 h3 {
+	color           : #F39800;
+}
+
+div#housing div#building-plan .plan2 img {
+	margin         : -30px 0 0 0;
+	padding        : 0;
+	max-width      : 364px;
+	width          : 38%;
+}
+
+div#housing div#building-plan .plan3 .content {
+	float           : left;
+	margin          : 0;
+	padding         : 0;
+	width           : 60%;
+}
+
+div#housing div#building-plan .plan3 h3 {
+	color           : #22AC38;
+}
+
+div#housing div#building-plan .plan3 img {
+	margin    : 30px 0 0 4%;
+	max-width : 346px;
+	width     : 36%
+}
+
+div#housing div#building-plan .plan4 .content {
+	float           : right;
+	margin          : 0;
+	padding         : 0;
+	width           : 57%;
+}
+
+div#housing div#building-plan .plan4 h3 {
+	color           : #EFA39F;
+}
+
+div#housing div#building-plan .plan4 img {
+	margin         : -30px 0 0 0;
+	padding        : 0;
+	max-width      : 364px;
+	width          : 38%;
+}
+
+div#housing div#building-plan .plan5 .content {
+	float           : left;
+	margin          : 0;
+	padding         : 0;
+	width           : 64%;
+}
+
+div#housing div#building-plan .plan5 h3 {
+	color           : #22AC38;
+}
+
+div#housing div#building-plan .plan5 .housing_plan_05 img {
+	margin         : -30px 0 0 4%;
+	padding        : 0;
+	max-width      : 253px;
+	width          : 27%;
+}
+
+div#housing div#timber_material .material1,
+div#housing div#timber_material .material2,
+div#housing div#timber_material .material3 {
+	margin          : 40px 0 0 0;
+	padding         : 0;
+	width           : 100% ;
+}
+
+div#housing div#timber_material .material1 .content {
+	float           : left;
+	margin          : 0;
+	padding         : 0;
+	width           : 60%;
+}
+
+div#housing div#timber_material .material1 h3 {
+	color           : #00A0E9;
+}
+
+div#housing div#timber_material .material1 img {
+	margin    : 30px 0 0 4%;
+	max-width : 346px;
+	width     : 36%
+}
+
+div#housing div#timber_material .material2 .content {
+	float           : right;
+	margin          : 0;
+	padding         : 0;
+	width           : 57%;
+}
+
+div#housing div#timber_material .material2 h3 {
+	color           : #F39800;
+}
+
+div#housing div#timber_material .material2 img {
+	margin         : -30px 0 0 0;
+	padding        : 0;
+	max-width      : 366px;
+	width          : 39%;
+}
+
+div#housing div#timber_material .material3 .content {
+	float           : left;
+	margin          : 0;
+	padding         : 0;
+	width           : 61%;
+}
+
+div#housing div#timber_material .material3 h3 {
+	color           : #22AC38;
+}
+
+div#housing div#timber_material .material3 img {
+	margin    : 30px 0 0 4%;
+	padding   : 0;
+	max-width : 333px;
+	width     : 35%
+}
+
+div.btn_process{
+	margin                : 10px 0 30px 0;
+}
+
+div.btn_process a {
+	display               : block;
+	width                 : 450px;
+	height                : 45px;
+	background-color      : #54bfc6;
+	color                 : #fff;
+	font-size             : 154%;
+	font-weight           : bold;
+	line-height           : 240%;
+	text-align            : center;
+	border-radius         : 8px;
+	-moz-border-radius    : 8px;
+	-webkit-border-radius : 8px;
+	-o-border-radius      : 8px;
+}
+
+div.btn_process a:hover {
+	opacity           : .8;
+}
+
+div#housing div#subsidy .subsidy1 {
+	margin          : 40px 0 0 0;
+	padding         : 0;
+	width           : 100% ;
+}
+
+div#housing div#subsidy .subsidy1 .content {
+	float           : right;
+	margin          : 0;
+	padding         : 0;
+	width           : 59%;
+}
+
+div#housing div#subsidy .subsidy1 h3 {
+	color           : #EF779F;
+}
+
+div#housing div#subsidy .subsidy1 img {
+	margin         : -20px 0 0 0;
+	padding        : 0;
+	max-width      : 364px;
+	width          : 38%;
+}
+
+div.btn_faq {
+	margin : 10px 0 80px 41%;
+}
+
+div.btn_faq a {
+	display               : block;
+	width                 : 450px;
+	height                : 45px;
+	background-color      : #54BFC6;
+	color                 : #FFF;
+	line-height           : 240%;
+	font-size             : 154%;
+	font-weight           : bold;
+	text-align            : center;
+	border-radius         : 8px;
+	-moz-border-radius    : 8px;
+	-webkit-border-radius : 8px;
+	-o-border-radius      : 8px;
+}
+
+div.btn_faq img {
+	margin : 0 8px 0 0;
+}
+
+div.btn_faq a:hover {
+	opacity : .8;
+}
+
+-------------------------------------------------
+
