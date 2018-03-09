@@ -3466,7 +3466,90 @@ section + .sec1 {
 }
 
 
-
+/*---- 店舗デザイン -------
+-------------------------*/
+.pageDesign{
+	.pageMain{
+		background:url(../img/design/main.jpg) center top no-repeat;
+		background-size: cover;
+		margin-bottom: 3px;
+		padding-top: 34px;//大体パンクズの高さ
+		.in{
+			padding: 7% 0;
+			position: static;
+			h1{
+				padding-top: 0;
+				img{
+					opacity: 0;
+					transform: translateY(50px);
+					animation-name: fadeIn;
+					animation-delay: 0.3s;
+					animation-duration: 1.0s;
+					animation-fill-mode: forwards;
+				}
+			}
+		}
+	}
+	.thisPageLead{
+		background-color: #eee;
+	}
+	.designList1{
+		ul{
+			
+		}
+		li{
+			display: flex;
+			.img{
+				background-position: center center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				width: 70%;
+			}
+			dl{
+				padding: 30px;
+			}
+			dt{
+				font-size: 2.6rem;
+				font-weight: bold;
+			}
+			dd{
+				font-size: 1.6rem;
+			}
+			&:nth-child(2n){
+				flex-direction: row-reverse;
+			}
+			&:nth-child(1) .img{
+				background-image:url(../img/design/ph01.jpg);
+			}
+			&:nth-child(2) .img{
+				background-image:url(../img/design/ph02.jpg);
+			}
+			&:nth-child(3) .img{
+				background-image:url(../img/design/ph03.jpg);
+			}
+			&:nth-child(4) .img{
+				background-image:url(../img/design/ph04.jpg);
+			}
+			&:nth-child(5) .img{
+				background-image:url(../img/design/ph05.jpg);
+			}
+		}
+	}
+	@include mq {
+		.pageMain{
+			margin-bottom: 2px;
+			padding-top: 24px;//大体パンクズの高さ
+			.in{
+				padding: 7% 0;
+				position: static;
+				img{
+					width: 90%;
+					height: auto;
+				}
+			}
+		}
+	}
+}
 
 
 /*---- お問い合わせ ------
