@@ -44,6 +44,7 @@
 }
 $res:640;//レスポンシブ計算用
 $per:100%;
+$per1:1%;
 $vw:100vw;
 $em:1em;
 /* Layout.Css
@@ -725,6 +726,7 @@ footer {
 	background-color: rgba(0,0,0,0.5);
 	padding: 9px 0;
 	font-size: 12px;
+	text-align: left;
 	.pageMain &{//パンクズがメイン内にある場合
 		position: absolute;
 		top: 0;
@@ -3469,54 +3471,94 @@ section + .sec1 {
 /*---- 店舗デザイン -------
 -------------------------*/
 .pageDesign{
+	text-align: center;
+	h2{
+		font-size: 3.3rem;
+	}
 	.pageMain{
 		background:url(../img/design/main.jpg) center top no-repeat;
 		background-size: cover;
 		margin-bottom: 3px;
 		padding-top: 34px;//大体パンクズの高さ
 		.in{
-			padding: 7% 0;
+			padding: 11% 0 16%;
 			position: static;
 			h1{
 				padding-top: 0;
-				img{
-					opacity: 0;
-					transform: translateY(50px);
-					animation-name: fadeIn;
-					animation-delay: 0.3s;
-					animation-duration: 1.0s;
-					animation-fill-mode: forwards;
+				font-size: 4.8rem;
+				small{
+					font-size: 1.6rem;
+					font-weight: inherit;
 				}
 			}
 		}
 	}
 	.thisPageLead{
-		background-color: #eee;
+		margin: -15% 0 -20%;
+		position: relative;
+		overflow: hidden;
+		&:before{
+			content: "";
+			background-color: #eee;
+			width: 120%;
+			height: 70%;
+			margin: 8% -10% 0;
+			transform: rotate(-8deg);
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		.in{
+			height: 100%;
+			padding: 13% 10px 20%;
+			box-sizing: border-box;
+			position: relative;
+		}
+		h2{
+			margin-bottom: 30px;
+		}
+		p{
+			font-size: 1.6rem;
+			line-height: (31/16);
+			& + p{
+				margin-top: 15px;
+			}
+		}
 	}
 	.designList1{
+		text-align: left;
+		position: relative;
 		ul{
-			
+			padding: 75px 0 65px;
 		}
 		li{
 			display: flex;
+			padding: 25px 0;
 			.img{
 				background-position: center center;
 				background-repeat: no-repeat;
 				background-size: cover;
-				width: 70%;
+				width: 60%;
 			}
 			dl{
-				padding: 30px;
+				width: 40%;
+				padding:100px 120px 100px 60px;
+				box-sizing: border-box;
 			}
 			dt{
+				margin-bottom: 25px;
 				font-size: 2.6rem;
 				font-weight: bold;
 			}
 			dd{
 				font-size: 1.6rem;
+				line-height: (31/16);
 			}
 			&:nth-child(2n){
 				flex-direction: row-reverse;
+				dl{
+					padding:100px 60px 100px 120px;
+				}
 			}
 			&:nth-child(1) .img{
 				background-image:url(../img/design/ph01.jpg);
@@ -3535,16 +3577,154 @@ section + .sec1 {
 			}
 		}
 	}
+	.tenpodukuriBox{
+		margin-bottom: 60px;
+		color: #fff;
+		.bg{
+			background:url(../img/design/ph_kominka.jpg) center center no-repeat;
+			background-size: cover;
+			padding: 60px 0 130px;
+			h2{
+				margin-bottom: 45px;
+			}
+			p{
+				font-size: 1.6rem;
+				line-height: (31/16);
+			}
+		}
+		.box{
+			background-color: #535353;
+			max-width: 772px;
+			margin:-60px auto 0;
+			padding: 30px 110px;
+			box-sizing: border-box;
+			h3{
+				margin-bottom: 10px;
+				font-size: 1.6rem;
+				font-weight: bold;
+			}
+			p{
+				font-size: 1.4rem;
+				text-align: left;
+				line-height: (25/14);
+			}
+		}
+	}
+	.exampleBox{
+		padding-bottom: 80px;
+		h2{
+			margin-bottom: 30px;
+		}
+		ul{
+			max-width: 1250px;
+			margin: auto;
+		}
+		li{
+			width: (100/3)* $per1;
+			padding: 0 10px;
+		}
+	}
 	@include mq {
+		h2{
+			font-size: 2.4rem;
+		}
 		.pageMain{
 			margin-bottom: 2px;
 			padding-top: 24px;//大体パンクズの高さ
 			.in{
-				padding: 7% 0;
-				position: static;
-				img{
-					width: 90%;
-					height: auto;
+				padding: 10% (10/320)*$per 12%;
+				h1{
+					font-size: 2.4rem;
+					small{
+						font-size: 1.2rem;
+					}
+				}
+			}
+		}
+		.thisPageLead{
+			background-color: #eee;
+			margin: 0;
+			&:before{
+				content: normal;
+			}
+			.in{
+				padding: 5% (10/320)*$per 8%;
+			}
+			h2{
+				margin-bottom: 3%;
+			}
+			p{
+				font-size: 1.4rem;
+				text-align: left;
+				& + p{
+					margin-top: 3%;
+				}
+			}
+		}
+		.designList1{
+			ul{
+				padding: 0;
+			}
+			li{
+				display: block;
+				padding: 0;
+				.img{
+					width: auto;
+					padding-top: 60%;
+				}
+				dl{
+					width: auto;
+					padding:3% (10/320)*$per 7% !important;
+				}
+				dt{
+					margin-bottom: 0;
+					font-size: 1.8rem;
+				}
+				dd{
+					font-size: 1.4rem;
+				}
+			}
+		}
+		.tenpodukuriBox{
+			margin-bottom: 5%;
+			.bg{
+				padding: 5% 0;
+				h2{
+					margin-bottom: 3%;
+				}
+				p{
+					font-size: 1.4rem;
+					text-align: left;
+				}
+			}
+			.box{
+				max-width: none;
+				margin:0;
+				padding: 5% (10/320)*$per;
+				h3{
+					margin-bottom: 3%;
+					font-size: 1.4rem;
+				}
+				p{
+					font-size: 1.2rem;
+				}
+			}
+		}
+		.exampleBox{
+			padding-bottom: 8%;
+			h2{
+				margin-bottom: 3%;
+			}
+			ul{
+				display: block;
+				max-width: none;
+				padding: 0 (10/320)*$per;
+			}
+			li{
+				width: auto;
+				padding: 0;
+				& + li{
+					margin-top: 3%;
 				}
 			}
 		}
