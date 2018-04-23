@@ -42,11 +42,9 @@
 				<div class="ftBns">
 					<div class="inner">
 						<ul>
-							<li><a href="#"><img src="https://placehold.jp/ffffff/666666/409x129.png" alt="#" width="100%" /></a></li>
-							<li><a href="#"><img src="https://placehold.jp/ffffff/666666/409x129.png" alt="#" width="100%" /></a></li>
-							<li><a href="#"><img src="https://placehold.jp/ffffff/666666/409x129.png" alt="#" width="100%" /></a></li>
-							<li><a href="#"><img src="https://placehold.jp/ffffff/666666/409x129.png" alt="#" width="100%" /></a></li>
-							<li><a href="#"><img src="https://placehold.jp/ffffff/666666/409x129.png" alt="#" width="100%" /></a></li>
+							<li><a href="https://www.tokutake-kensetsu.co.jp/casa/" target="_blank"><img src="/img/bn_fudousan.png" alt="#" width="100%" /></a></li>
+							<li><a href="http://naganosouzoku.com/" target="_blank"><img src="/img/bn_souzokujuku.png" alt="#" width="100%" /></a></li>
+							<li><a href="https://www.homepro.jp/kaisha/327466/" target="_blank"><img src="/img/bn_homepro.png" alt="#" width="100%" /></a></li>
 						</ul>
 					</div>
 				</div>

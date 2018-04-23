@@ -68,7 +68,7 @@ _fixedTitle='長野市で新築、注文住宅、木の家を建てるなら、�
 			<a href="lineup/morinoie.html">
 				<div>
 					<h3>杜の家</h3>
-					<p>「OMソーラー」を採用した信州型エコ住宅</p>
+					<p>「太陽」「木」「風」「土」「水」自然の力を上手に利用する家</p>
 				</div>
       </a>
 		</li>
@@ -76,15 +76,15 @@ _fixedTitle='長野市で新築、注文住宅、木の家を建てるなら、�
 			<a href="lineup/zero.html">
 				<div>
 					<h3>0宣言の家</h3>
-					<p>1ミリも嘘のない家づくりを約束する「0宣言の家」</p>
+					<p>医師が勧める本物の健康住宅</p>
 				</div>
       </a>
 		</li>
     <li class="lineup03">
 			<a href="lineup/casacrescendo.html">
 				<div>
-					<h3>CasaCrescendo</h3>
-					<p>「OMソーラー」を採用した信州型エコ住宅</p>
+					<h3>CASA Crescendo</h3>
+					<p>子育て世代に“ちょうどいい家”</p>
 				</div>
       </a>
 		</li>

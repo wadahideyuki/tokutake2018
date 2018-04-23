@@ -1292,11 +1292,11 @@ section + .sec1 {
 		background-image: url(../img/top/lineup_ph01.jpg) ;
 		}
 		&.lineup02{
-		background-image: url(../img/top/lineup_ph01.jpg) ;
+		background-image: url(../img/top/lineup_ph02.jpg) ;
 			margin: 1px 0;
 		}
 		&.lineup03{
-		background-image: url(../img/top/lineup_ph01.jpg) ;
+		background-image: url(../img/top/lineup_ph03.jpg) ;
 		}
 	}
 	@include mq{
@@ -1517,11 +1517,6 @@ section + .sec1 {
 				a{
 					display: flex;
 					transition: 0.3s;
-					.img{
-						background:url(https://dummyimage.com/667x400/aaaaaa/fff) center center no-repeat;
-						background-size: cover;
-						width: 65%;
-					}
 					.txt{
 						width: 35%;
 						padding: 40px;
@@ -1564,17 +1559,41 @@ section + .sec1 {
 					margin-top: 45px;
 				}
 				&.liItem1{
+					.img{
+						background:url(../img/lineup/ph_morinoie.jpg) center center no-repeat;
+						background-size: cover;
+						width: 65%;
+						@include mq{
+							width: 100%;
+						}
+					}
 					.txt{
 						background: url(../img/bg_tree.png) center center repeat #00693e;
 					}
 				}
 				&.liItem2{
+					.img{
+						background:url(../img/lineup/ph_zero.jpg) center center no-repeat;
+						background-size: cover;
+						width: 65%;
+						@include mq{
+							width: 100%;
+						}
+					}
 					.txt{
 						background: url(../img/lineup/list_bg02.png) center center repeat;
 						background-size: cover;
 					}
 				}
 				&.liItem3{
+					.img{
+						background:url(../img/lineup/ph_casa.jpg) center center no-repeat;
+						background-size: cover;
+						width: 65%;
+						@include mq{
+							width: 100%;
+						}
+					}
 					.txt{
 						background: url(../img/lineup/list_bg03.png) center center repeat;
 						background-size: cover;
@@ -4445,3 +4464,6 @@ section + .sec1 {
 		}
 	}
 }
+
+@import "casa";
+

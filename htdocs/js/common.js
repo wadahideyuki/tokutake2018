@@ -57,16 +57,11 @@ $(".slkBox1 ul").slick({
 	autoplaySpeed:5000,
   slidesToShow: 5,
   slidesToScroll: 1,
-	centerMode:true,
-	centerPadding:0,
-	variableWidth:true,
 	responsive:[
 		{
 			breakpoint:768,
 			settings:{
-				slidesToShow: 1,
-				centerPadding:"25%",
-				variableWidth:false
+				slidesToShow: 3
 			}
 		}
 	]
