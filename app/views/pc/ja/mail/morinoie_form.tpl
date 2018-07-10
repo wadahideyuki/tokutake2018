@@ -1,6 +1,7 @@
 {include file='../userHeader.tpl' _title='杜の家モデルハウス見学申込'}
 
 				<!-- /mainContents //-->
+				<div class="mainContents">
 
 				<div class="mainContents pageInquiry">
 					<div id="bc_navi">

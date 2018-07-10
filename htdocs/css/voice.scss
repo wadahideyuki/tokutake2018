@@ -25,126 +25,238 @@
 $res:640;//レスポンシブ計算用
 $per:100%;
 $vw:100vw;
-#voice {
-	&>h2{
-		    margin-bottom: 50px;
-    font-size: 26px;
-    font-weight: bold;
+#voice > h2 {
+  margin-bottom: 50px;
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  #voice > h2 {
+    margin-bottom: 3%;
+  }
+}
+
+.pageVoiceTop .pageMain {
+  background: url(../img/product/main_bg.png) center center no-repeat;
+  background-size: cover;
+}
+
+.voice_list {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding-bottom: 40px;
+  > li {
+    width: 30%;
+    margin: 20px 1.5%;
+    position: relative;
+    a {
+      display: block;
+      &:hover .voice_summary {
+        background: rgba(255, 255, 255, 0.5);
+        color: #000;
+      }
+    }
+    .photo {
+      height: 270px;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      overflow: hidden;
+      padding-bottom: 10px;
+      img {
+        width: auto;
+        height: 300px;
+      }
+    }
+    .voice_summary {
+      position: absolute;
+      text-align: center;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      transition: 0.5s;
+      color: #FFF;
+      .description {
+        margin: 90px 20px 20px 20px;
+        font-size: 1.8rem;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .voice_list > li {
+    margin: 0px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .voice_list {
+    padding-bottom: 5%;
+    > li {
+      width: 100%;
+      margin-bottom: 3.125vw;
+      .photo {
+        width: auto;
+        height: 50vw;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+      a {
+        display: block;
+      }
+      p {
+        font-size: 1.0rem;
+      }
+      .voice_summary .description {
+        margin: 15% 3% 3% 3%;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+
+#bc_navi {
+  z-index: 999;
+  position: relative;
+}
+
+.voiceDetail {
+  .voiceDetailTtl {
+    position: relative;
+    height: 450px;
+    overflow: hidden;
+    background: #000;
+    margin-top: -34px;
+      @include mq{
+          height: 80vw;
+          margin-top: 0px;
+      }
+    img {
+      width: 100%;
+      margin-top: -15%;
+      opacity: 0.5;
+      filter: blur(0px);
+      animation: blur 1s ease 0s;
+        @include mq{
+            height: 80vw;
+            width: auto;
+            margin-top: 0px;
+        }
+    }
+  }
+  .voiceDetailTtlInner {
+    position: absolute;
     text-align: center;
-		
-	@include mq{
-		    margin-bottom: 3%;
-		}
-	}
-}
-.voice_list{
-	justify-content: flex-start;
-	flex-wrap: wrap;
-	padding-bottom: 40px;
-	> li{
-		width:30%;
-		margin: 20px 1.5%;
-		position: relative;
-		
-	@include mq{
-		margin: 0px
-		}
-		a{
-			display: block;
-			&:hover .voice_summary{
-			background: rgba(255,255,255,0.5);
-				color: #000;
-			}
-		}
-		.photo{
-			height: 270px;
-			display: flex;
-			justify-content: center;
-			width: 100%;
-			overflow: hidden;
-			padding-bottom: 10px;
-			img{
-				width: auto;
-			height: 300px;
-			}
-		}
-		.voice_summary{
-			position: absolute;
-			text-align: center;
-			left: 0px;
-			top: 0px;
-			width: 100%;
-			height: 100%;
-			background: rgba(0,0,0,.5);
-			transition: 0.5s;
-			color: #FFF;
-			.description{
-				margin: 90px 20px 20px 20px;
-				font-size: 1.8rem;
-				font-weight: bold;
-			}
-
-		}
-
-	}
-	@include mq{
-		padding-bottom: 5%;
-		> li{
-			width:100%;
-			margin-bottom: (10/320) * $vw;
-			.photo{
-				width: auto;
-				height: 50vw;
-				margin-bottom:0;
-				padding-bottom: 0;
-			}
-			a {
-				display: block;
-				img{
-				}
-				&:hover img{
-				}
-			}
-			p{
-				font-size: 1.0rem;
-			}
-			.voice_summary {
-				.description{
-				margin: 15% 3% 3% 3%;
-					font-size: 1.6rem;
-			}
-			}
-		}
-	}
-}
-.voiceDetail{
-	.voiceDetailTtl{
-		position: relative;
-		height: 450px;
-		overflow: hidden;
-		background: #000;
-	}
-	.voiceDetailTtl img{
-		width: 100%;
-		margin-top: -20%;
-		opacity: 0.6;
-	filter: blur(15px);
-  	animation: blur 1s ease 0s ;
-	}
-	.voiceDetailTtlInner{
-		position: absolute;
-		text-align: center;
-		
-	}
+    z-index: 999;
+    top: 40%;
+    width: 100%;
+    color: #FFF;
+      @include mq{
+          top: 30%;
+      }
+    .descriptions {
+      font-size: 3rem;
+      font-weight: bold;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 3%;
+        @include mq{
+            font-size: 1.8rem;
+        }
+    }
+    h1 {
+      font-size: 2rem;
+      padding-top: 20px;
+    }
+  }
+  article {
+    max-width: 800px;
+    margin: 0 auto;
+    width: 95%;
+    h3 {
+      font-size: 2.2rem;
+      padding: 7% 0 2% 0;
+      font-weight: bold;
+        @include mq{
+            font-size: 1.6rem;
+        }
+    }
+    p {
+      font-size: 1.8rem;
+      line-height: 2;
+        @include mq{
+            font-size: 1.2rem;
+        }
+    }
+  }
+  aside {
+    margin: 0 auto;
+    padding-top: 5%;
+    width: 90%;
+    .imgCenter {
+      text-align: center;
+        img{
+            @include mq{
+            }
+        }
+      > div {
+        display: inline-block;
+        width: 460px;
+        vertical-align: top;
+        text-align: center;
+        margin-right: 0 !important;
+        margin-bottom: 20px;
+        margin: 0 1% 4% 1%;
+          @include mq{
+              width: 95%;
+          }
+        img {
+          max-width: 460px;
+          max-height: 460px;
+          max-width: 100%;
+        }
+        .caption {
+          padding-top: 10px;
+        }
+      }
+    }
+  }
+    .btn_event{
+        text-align: center;
+        padding: 20px 10px 50px 10px;
+        font-size: 3rem;
+        @include mq{
+            font-size: 1.6rem;
+        }
+        a{
+            display: inline-block;
+            &:after{
+                content: "";
+                width: .5em;
+                height: .5em;
+                display: inline-block;
+                border-top: 2px solid #FF7600;
+                border-right: 2px solid #FF7600;
+                transform: rotate(45deg);
+            }
+        }
+    }
 }
 
-@keyframes blur{
-	0% {
-	filter: blur(0px);
-		opacity: 1;
-	}
-	100%{
-		opacity: 0.6;
-	filter: blur(15px);
-	}
+@keyframes blur {
+  0% {
+    filter: blur(20px);
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.5;
+    filter: blur(0px);
+  }
 }

@@ -65,7 +65,7 @@
 					</ul>
 
 					<div class="btn_event">
-						<a href="{$appPath}/afterservice.html">
+						<a href="{$appPath}/housing/otukiai.html">
 							<img src="{$appPath}/img/arrow_r.png" alt="→" />「一生おつきあい」もご覧下さい！
 						</a>
 					</div>

@@ -92,7 +92,11 @@ textarea{
 }
 
 .container {}
-
+.header_wrapper{
+    position: relative;
+    z-index: 9999;
+    background: #FFF;
+}
 .header_wrapper header {
   padding: 15px 0;
 }
